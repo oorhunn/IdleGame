@@ -1,10 +1,15 @@
 #include "Gorg.h"
+#include <iostream>
+
 
 Gorg::Gorg() 
     : Competitor("george", 30, 15),
     max_shield(5)
 {
-    // Nothen
+    std::cout << "constructor is here for gorg" << std::endl;
+}
+Gorg::~Gorg(){
+    std::cout << "destructor is here for gorg" << std::endl;
 }
 
 void Gorg::GetsAttacked() {

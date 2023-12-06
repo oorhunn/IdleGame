@@ -10,37 +10,37 @@ int main () {
     int shield = 100;
     int health = 100000;
     std::string name = "oh";
-    const int NUMBER_OF_SIM = 10000;
+    const int NUMBER_OF_SIM = 1;
 
     int booWins = 0;
     int georgeWins = 0;
-
+    std::shared_ptr<Gorg> george2(new Gorg);
 
     for (int i = 1; i <= NUMBER_OF_SIM; i++){
         Boov oh(name, health, shield);
-        Gorg george;
-        
-        while ((oh.IsDefeated() == false)&&(george.IsDefeated() == false)) {
-            george.GetsAttacked();
-            if (!george.IsDefeated()) {
+        Gorg bigGeorge;
+        Gorg* gorgPtr = &bigGeorge;
+        // Gorg george1;
+        std::shared_ptr<Gorg> george(new Gorg);
+        std::shared_ptr<Gorg> george1(new Gorg);
+        while ((oh.IsDefeated() == false)&&(george->IsDefeated() == false)) {
+            george->GetsAttacked();
+            if (!george->IsDefeated()) {
                 oh.GetsAttacked();
             }
-
         }
-        if (george.IsDefeated()) {
+        if (george->IsDefeated()) {
             ++booWins;
         }
         else {
             ++georgeWins;
         }
+        std::cout << "smart ptr " << george << std::endl;
+        std::cout << "smart ptr " << george2 << std::endl;
+        std::cout << "static ptr " << gorgPtr << std::endl;
+
     }
     std::cout << "average nubmer of rounds until defeat" << std::endl;
-    double average = booWins + static_cast<double>(NUMBER_OF_SIM);
-    std::cout << booWins << std::endl;
-    std::cout << georgeWins << std::endl;
-
-
-    
-
+    std::cout << "booWins wins "<< booWins << " george wins "<< georgeWins << std::endl;
     return 0;
 }

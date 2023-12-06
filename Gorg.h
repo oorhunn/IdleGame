@@ -7,6 +7,7 @@ public:
 
     // constructor
     Gorg();
+    ~Gorg();
     virtual void GetsAttacked() override;
 private:
 

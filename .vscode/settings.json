@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "ostream": "cpp",
+        "iostream": "cpp"
+    },
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, IndentWidth: 4, IndentCaseLabels: false, BraceWrapping: { AfterFunction: true, AfterControlStatement: true } }",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+    
+}

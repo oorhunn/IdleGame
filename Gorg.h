@@ -1,27 +1,16 @@
 #pragma once
-#include <string>
+#include "Competitor.h"
 
-
-class Gorg {
+class Gorg : public Competitor{
 
 public:
 
     // constructor
-    Gorg(const std::string NAME, int HEALTH, int SHIELD);
-
-
-    std::string GetName();
-    int GetHealth();
-    int GetShield();
-
-    bool IsDefeated();
-
-    void GetsAttacked();
-
+    Gorg();
+    virtual void GetsAttacked() override;
 private:
-    std::string name;
-    int health;
-    int shield;
+
+    int max_shield;
 
 
 };

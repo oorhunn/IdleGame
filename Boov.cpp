@@ -1,31 +1,8 @@
 #include "Boov.h"
 
 Boov::Boov(const std::string NAME, int HEALTH, int SHIELD) 
-    : name(NAME), health(HEALTH), shield(SHIELD) {
+    : Competitor(NAME, HEALTH, SHIELD) {
     // Constructor body (if needed)
-}
-
-std::string Boov::GetName()
-{
-    return name;
-}
-
-int Boov::GetHealth()
-{
-    return health;
-}
-
-int Boov::GetShield()
-{
-    return shield;
-}
-
-bool Boov::IsDefeated()
-{
-    if (health <= 0)
-        return true;
-    return false;
-    return false;
 }
 
 void Boov::GetsAttacked() {
@@ -43,6 +20,6 @@ void Boov::GetsAttacked() {
     }
 
     else if (roll <= 79) {
-        health -= (4 + rand() % 5);
+        health -= (5 + rand() % 5);
     }
 }

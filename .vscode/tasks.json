@@ -11,7 +11,8 @@
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe",
                 "Boov.cpp",  // Add Boov.cpp to the compilation command
-                "Gorg.cpp"
+                "Gorg.cpp",
+                "Competitor.cpp"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"

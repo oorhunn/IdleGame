@@ -1,13 +1,3 @@
-**Week 7-8: Object-Oriented Programming (OOP) Basics** 
-
-1.      **Week 7: Introduction to OOP (4 hours)**
-
-~~·         Classes and objects ~~
-
-·         Constructors and destructors 
-
-·         Encapsulation and access modifiers
-
 2.      **Week 8: More on OOP (4 hours)**
 
 ~~·         Inheritance and polymorphism~~ 

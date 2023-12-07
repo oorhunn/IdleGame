@@ -1,11 +1,12 @@
 #include "Competitor.h"
 
-Competitor::Competitor(const std::string NAME, int HEALTH, int SHIELD) 
-            : name(NAME),
-            health(HEALTH),
-            shield(SHIELD)
+Competitor::Competitor(const std::string NAME, int HEALTH, int SHIELD, Weapon weapon)
+    : name(NAME),
+      health(HEALTH),
+      shield(SHIELD),
+      weapon(weapon)
 {
-    // Nothenn
+    dps = weapon.damage / weapon.speed * 60;
 }
 
 std::string Competitor::GetName()
@@ -21,6 +22,10 @@ int Competitor::GetHealth()
 int Competitor::GetShield()
 {
     return shield;
+}
+
+float Competitor::GetAttackSpeed() { 
+    return weapon.speed; 
 }
 
 bool Competitor::IsDefeated()

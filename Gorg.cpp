@@ -3,7 +3,7 @@
 
 
 Gorg::Gorg() 
-    : Competitor("george", 30, 15),
+    : Competitor("george", 30, 15, Weapon(1, 1)),
     max_shield(5)
 {
     std::cout << "constructor is here for gorg" << std::endl;

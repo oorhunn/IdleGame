@@ -1,5 +1,6 @@
 #pragma once
 #include "Competitor.h"
+#include "Weapon.h"
 
 class Gorg : public Competitor{
 
@@ -12,7 +13,6 @@ public:
 private:
 
     int max_shield;
-
 
 };
 

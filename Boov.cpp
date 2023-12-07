@@ -1,7 +1,7 @@
 #include "Boov.h"
 
-Boov::Boov(const std::string NAME, int HEALTH, int SHIELD) 
-    : Competitor(NAME, HEALTH, SHIELD) {
+Boov::Boov(const std::string NAME, int HEALTH, int SHIELD, float WEAPON_DAMAGE, float WEAPON_SPEED) 
+    : Competitor(NAME, HEALTH, SHIELD, Weapon(WEAPON_DAMAGE, WEAPON_SPEED)) {
     // Constructor body (if needed)
 }
 

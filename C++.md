@@ -385,3 +385,161 @@ Similar to a map, an unordered map stores key-value pairs, but it is implemented
 std::unordered_map<std::string, int> um;
 ```
 
+### Compilers
+A compiler is a computer program that translates source code written in one programming language into a different language, usually machine code or assembly. 
+It is essential to know that they work closely with the linker and the standard library. The linker takes care of combining compiled object files and libraries into a single executable, while the standard library provides implementations for common functionalities used in your code.
+
+#### Stages of Compilation in C++
+The process of compilation in C++ can be divided into four primary stages: Preprocessing, compilation, assembly, and linking.
+
+**Preprocessing:** Preprocessors modify the source code before the actual compilation process. They handle directives that start with `#` symbol like `#define` , `#include` , and `#if` . In this stage, included header files are expanded, macros are replaced , and conditional compilation statements are processed. 
+
+**Compilation:** The compiler translates the modified source code into an intermediate representation, usually specific to the target processor architecture. This step also involves performing syntax checking, semantic analysis, and producing error messages for and issues encountered in the source code.
+
+**Assembly:** This stage generates assembly code using mnemonics and syntax that is specific to the target processor architecture. Assemblers then convert this assembly code into object code.
+
+**Linking:** The final stage is the linking of the object code with the necessary libraries and other object files. The linker merges multiple object files and libraries, resolves external references from other modules or libraries, allocates memory addresses for functions and variables, and generates an executable file that can be run on the target platform.
+
+### Build Systems in C++
+A build system is a collection of tools and utilities that automate the process of compiling, linking, and executing source code files in a project. The primary goal of build systems is to manage the complexity of the compilation process and produce a build in the end.
+
+#### CMake
+```
+cmake_minimum_required(VERSION 3.0)
+
+project(MyProject)
+
+set(SRC_DIR "${CMAKE_CURRENT_LIST_DIR}/src")
+set(SOURCES "${SRC_DIR}/main.cpp" "${SRC_DIR}/file1.cpp" "${SRC_DIR}/file2.cpp")
+
+add_executable(${PROJECT_NAME} ${SOURCES})
+
+target_include_directories(${PROJECT_NAME} PRIVATE "${CMAKE_CURRENT_LIST_DIR}/include")
+
+set_target_properties(${PROJECT_NAME} PROPERTIES
+    CXX_STANDARD 14
+    CXX_STANDARD_REQUIRED ON
+    CXX_EXTENSIONS OFF
+)
+```
+
+### Package Managers
+Some popular package managers used in the C++ ecosystem include:
+	- Conan
+	- vcpkg
+	- C++ Archive Network (cppan)
+
+### Working with Libraries in C++
+In C++ libraries can be either static libraries (.lib) or dynamic libraries (.dll).
+
+#### 1.) Static Libraries
+Static libraries are incorporated into your program during compile time. They are linked with your code, creating a larger executable file, but it does not require any external files during runtime. 
+
+#### 2.) Dynamic Libraries
+Dynamic libraries are loaded during runtime, which means that your executable file only contains references to these libraries. The libraries need to be available on the system where your program is running.
+
+### C++ Idioms
+
+#### Rule of Three, Five
+```
+#include <iostream>
+// violating rule of three example
+class RuleOfThree {
+public:
+    RuleOfThree(){
+        mData = new int(0);
+    }
+    ~RuleOfThree(){
+        delete mData;
+    }
+    void setValue(int value) {
+        *mData = value;
+    }
+    int* getValue() {
+        return mData;
+    }
+private:
+    int *mData;
+};
+int main() {
+    RuleOfThree obj1;
+    obj1.setValue(42);
+    RuleOfThree obj2 = obj1;
+    obj1.setValue(10);
+}
+```
+in this example if rule of three is not followed, obj2 shallow copying obj1. 
+To avoid this kind of phenomena there is rule of three, five and six.
+```
+class MyClass {
+public:
+    MyClass();
+    MyClass(const MyClass& other); // Copy constructor
+    MyClass(MyClass&& other); // Move constructor
+    MyClass& operator=(const MyClass& other); // Copy assignment operator
+    MyClass& operator=(MyClass&& other); // Move assignment operator
+    ~MyClass(); // Destructor
+};
+```
+
+#### Resource Acquisition is Initialization (RAII)
+Ensure that resources are always properly acquired and released by trying their lifetime to the lifetime of an object. When the object gets created, it acquires the resources and when it gets destroyed, it releases them.
+```
+class Resource {
+public:
+    Resource() { /* Acquire resource */ }
+    ~Resource() { /* Release resource */ }
+};
+
+void function() {
+    Resource r; // Resource is acquired
+    // ...
+} // Resource is released when r goes out of scope
+```
+
+#### Plmpl (Pointer to Implementation)
+This is used to separate the implementation details of a class from its interface, resulting in faster compile times and the ability to change implementation without affecting clients.
+```
+// header file
+class MyClass {
+public:
+    MyClass();
+    ~MyClass();
+    void someMethod();
+
+private:
+    class Impl;
+    Impl* pImpl;
+};
+
+// implementation file
+class MyClass::Impl {
+public:
+    void someMethod() { /* Implementation */ }
+};
+
+MyClass::MyClass() : pImpl(new Impl()) {}
+MyClass::~MyClass() { delete pImpl; }
+void MyClass::someMethod() { pImpl->someMethod(); }
+```
+#### Non-Virtual Interface(NVI)
+This enforces a fixed public interface and allows subclasses to only override specific private or protected virtual methods.
+```
+class Base {
+public:
+    void publicMethod() {
+        // Common behavior
+        privateMethod(); // Calls overridden implementation
+    }
+
+protected:
+    virtual void privateMethod() = 0; // Pure virtual method
+};
+
+class Derived : public Base {
+protected:
+    virtual void privateMethod() override {
+        // Derived implementation
+    }
+};
+```

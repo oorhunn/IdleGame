@@ -10,3 +10,6 @@
     ```
     virtual ~WeaponBase() = default;  // Virtual destructor for proper cleanup
     ```
+
+
+- there is a difference between \n and endl in cpp. in a nutshell when endl used it flushes the output buffer and then accepts new output values to the buffer on the other hand \n does not. performance difference may not be so clear in smaller programs but in large programs it causes big performance decreases.

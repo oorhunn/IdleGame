@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdleGame.dir/includes_CXX.rsp -g -o CMakeFiles\\IdleGame.dir\\main.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\Sandbox\\main.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/main.cpp",
+  "output": "CMakeFiles/IdleGame.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdleGame.dir/includes_CXX.rsp -g -o CMakeFiles\\IdleGame.dir\\player\\Player.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\Sandbox\\player\\Player.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/player/Player.cpp",
+  "output": "CMakeFiles/IdleGame.dir/player/Player.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdleGame.dir/includes_CXX.rsp -g -o CMakeFiles\\IdleGame.dir\\player\\User.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\Sandbox\\player\\User.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/player/User.cpp",
+  "output": "CMakeFiles/IdleGame.dir/player/User.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdleGame.dir/includes_CXX.rsp -g -o CMakeFiles\\IdleGame.dir\\math_utils\\WorstMatrix.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\Sandbox\\math_utils\\WorstMatrix.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/math_utils/WorstMatrix.cpp",
+  "output": "CMakeFiles/IdleGame.dir/math_utils/WorstMatrix.cpp.obj"
+}
+]

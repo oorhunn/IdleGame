@@ -83,7 +83,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/aorhun.demiroglu/workspace/codes/Sandbox/build"
+			"value" : "c:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -187,10 +187,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "C:/msys64/mingw64/bin/g++.exe"
 		},
 		{
@@ -331,10 +331,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "C:/msys64/mingw64/bin/gcc.exe"
 		},
 		{
@@ -619,7 +619,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/build/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -691,7 +691,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox"
+			"value" : "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1675,7 +1675,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/build"
+			"value" : "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build"
 		},
 		{
 			"name" : "IdleGame_IS_TOP_LEVEL",
@@ -1699,7 +1699,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox"
+			"value" : "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame"
 		},
 		{
 			"name" : "MAKECOMMAND",

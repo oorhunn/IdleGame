@@ -221,7 +221,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "IdleGame::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-IdleGame-Debug-5088f362cc83b568044c.json",
+					"jsonFile" : "target-IdleGame-Debug-98f49a21187a285d2d14.json",
 					"name" : "IdleGame",
 					"projectIndex" : 0
 				},
@@ -301,8 +301,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/build",
-		"source" : "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox"
+		"build" : "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build",
+		"source" : "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame"
 	},
 	"version" : 
 	{

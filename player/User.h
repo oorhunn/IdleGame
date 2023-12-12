@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <vector>
 #include "PlayerBase.h"
 #include "../weapon/weapon_base.h"
 
@@ -16,7 +17,8 @@ public:
     
     bool wieldWeapon(Weapon weapon);
     
-    virtual void Hit() override;
+    virtual void Hit(PlayerBase& enemy) override;
+
 private:
     int weapon_id;
 

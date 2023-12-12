@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/aorhun.demiroglu/workspace/codes/Sandbox
+# Install script for directory: C:/Users/aorhun.demiroglu/workspace/codes/IdleGame
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

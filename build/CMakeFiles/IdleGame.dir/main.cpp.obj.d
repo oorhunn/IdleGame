@@ -1,5 +1,5 @@
 CMakeFiles/IdleGame.dir/main.cpp.obj: \
- C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\main.cpp \
+ C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\main.cpp \
  C:/msys64/mingw64/include/c++/13.2.0/iostream \
  C:/msys64/mingw64/include/c++/13.2.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -169,9 +169,10 @@ CMakeFiles/IdleGame.dir/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_bvector.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/vector.tcc \
  C:/msys64/mingw64/include/c++/13.2.0/chrono \
- C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\player/User.h \
- C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\player/PlayerBase.h \
- C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/weapon/weapon_base.h \
- C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\player/Monster.h \
- C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\math_utils/WorstMathUtils.h \
- C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\fight/Fight.h
+ C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\player/User.h \
+ C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\player/PlayerBase.h \
+ C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/weapon/weapon_base.h \
+ C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\player/Monster.h \
+ C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\map/Map.h \
+ C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\math_utils/WorstMathUtils.h \
+ C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\fight/Fight.h

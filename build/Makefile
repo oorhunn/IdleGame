@@ -56,10 +56,10 @@ RM = C:\Users\aorhun.demiroglu\CMake\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\aorhun.demiroglu\workspace\codes\Sandbox
+CMAKE_SOURCE_DIR = C:\Users\aorhun.demiroglu\workspace\codes\IdleGame
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\build
+CMAKE_BINARY_DIR = C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -77,7 +77,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	C:\Users\aorhun.demiroglu\CMake\bin\cpack.exe --config ./CPackSourceConfig.cmake C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/build/CPackSourceConfig.cmake
+	C:\Users\aorhun.demiroglu\CMake\bin\cpack.exe --config ./CPackSourceConfig.cmake C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -116,9 +116,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\build\CMakeFiles C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -546,6 +546,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+map/Map.obj: map/Map.cpp.obj
+.PHONY : map/Map.obj
+
+# target to build an object file
+map/Map.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/map/Map.cpp.obj
+.PHONY : map/Map.cpp.obj
+
+map/Map.i: map/Map.cpp.i
+.PHONY : map/Map.i
+
+# target to preprocess a source file
+map/Map.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/map/Map.cpp.i
+.PHONY : map/Map.cpp.i
+
+map/Map.s: map/Map.cpp.s
+.PHONY : map/Map.s
+
+# target to generate assembly for a file
+map/Map.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/map/Map.cpp.s
+.PHONY : map/Map.cpp.s
+
 math_utils/WorstMathUtils.obj: math_utils/WorstMathUtils.cpp.obj
 .PHONY : math_utils/WorstMathUtils.obj
 
@@ -709,6 +733,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... map/Map.obj
+	@echo ... map/Map.i
+	@echo ... map/Map.s
 	@echo ... math_utils/WorstMathUtils.obj
 	@echo ... math_utils/WorstMathUtils.i
 	@echo ... math_utils/WorstMathUtils.s

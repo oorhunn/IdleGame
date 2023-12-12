@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/IdleGame.dir/main.cpp.obj"
   "CMakeFiles/IdleGame.dir/main.cpp.obj.d"
+  "CMakeFiles/IdleGame.dir/map/Map.cpp.obj"
+  "CMakeFiles/IdleGame.dir/map/Map.cpp.obj.d"
   "CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.obj"
   "CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.obj.d"
   "CMakeFiles/IdleGame.dir/player/Monster.cpp.obj"

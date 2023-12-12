@@ -52,10 +52,10 @@ RM = C:\Users\aorhun.demiroglu\CMake\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\aorhun.demiroglu\workspace\codes\Sandbox
+CMAKE_SOURCE_DIR = C:\Users\aorhun.demiroglu\workspace\codes\IdleGame
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\build
+CMAKE_BINARY_DIR = C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build
 
 # Utility rule file for ExperimentalUpdate.
 
@@ -81,6 +81,6 @@ CMakeFiles/ExperimentalUpdate.dir/clean:
 .PHONY : CMakeFiles/ExperimentalUpdate.dir/clean
 
 CMakeFiles/ExperimentalUpdate.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\aorhun.demiroglu\workspace\codes\Sandbox C:\Users\aorhun.demiroglu\workspace\codes\Sandbox C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\build C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\build C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\build\CMakeFiles\ExperimentalUpdate.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\aorhun.demiroglu\workspace\codes\IdleGame C:\Users\aorhun.demiroglu\workspace\codes\IdleGame C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles\ExperimentalUpdate.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ExperimentalUpdate.dir/depend
 

@@ -64,3 +64,22 @@ bool PlayerBase::IsDefeated()
         return true;
     return false;
 }
+
+void PlayerBase::EatDamage(int damage)
+{
+    if (shield > 0) {
+        shield -= damage;
+        if (shield < 0) {
+            health += shield;
+            shield = 0;
+        }
+    }
+    else {
+        health -= damage;
+    }
+}
+
+void PlayerBase::Hit(PlayerBase &enemy)
+{
+    // nohetynnnn
+}

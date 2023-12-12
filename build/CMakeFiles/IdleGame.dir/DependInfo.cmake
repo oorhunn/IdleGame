@@ -8,12 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/main.cpp" "CMakeFiles/IdleGame.dir/main.cpp.obj" "gcc" "CMakeFiles/IdleGame.dir/main.cpp.obj.d"
-  "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/math_utils/WorstMathUtils.cpp" "CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.obj" "gcc" "CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.obj.d"
-  "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/player/Monster.cpp" "CMakeFiles/IdleGame.dir/player/Monster.cpp.obj" "gcc" "CMakeFiles/IdleGame.dir/player/Monster.cpp.obj.d"
-  "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/player/PlayerBase.cpp" "CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.obj" "gcc" "CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.obj.d"
-  "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/player/User.cpp" "CMakeFiles/IdleGame.dir/player/User.cpp.obj" "gcc" "CMakeFiles/IdleGame.dir/player/User.cpp.obj.d"
-  "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/weapon/weapon_base.cpp" "CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.obj" "gcc" "CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.obj.d"
+  "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/main.cpp" "CMakeFiles/IdleGame.dir/main.cpp.obj" "gcc" "CMakeFiles/IdleGame.dir/main.cpp.obj.d"
+  "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/map/Map.cpp" "CMakeFiles/IdleGame.dir/map/Map.cpp.obj" "gcc" "CMakeFiles/IdleGame.dir/map/Map.cpp.obj.d"
+  "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/math_utils/WorstMathUtils.cpp" "CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.obj" "gcc" "CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.obj.d"
+  "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/player/Monster.cpp" "CMakeFiles/IdleGame.dir/player/Monster.cpp.obj" "gcc" "CMakeFiles/IdleGame.dir/player/Monster.cpp.obj.d"
+  "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/player/PlayerBase.cpp" "CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.obj" "gcc" "CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.obj.d"
+  "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/player/User.cpp" "CMakeFiles/IdleGame.dir/player/User.cpp.obj" "gcc" "CMakeFiles/IdleGame.dir/player/User.cpp.obj.d"
+  "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/weapon/weapon_base.cpp" "CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.obj" "gcc" "CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

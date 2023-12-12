@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: C:/Users/aorhun.demiroglu/workspace/codes/Sandbox
-BuildDirectory: C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/build
+SourceDirectory: C:/Users/aorhun.demiroglu/workspace/codes/IdleGame
+BuildDirectory: C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -27,7 +27,7 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "C:/Users/aorhun.demiroglu/CMake/bin/cmake.exe" "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox"
+ConfigureCommand: "C:/Users/aorhun.demiroglu/CMake/bin/cmake.exe" "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame"
 MakeCommand: C:/Users/aorhun.demiroglu/CMake/bin/cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 

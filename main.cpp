@@ -4,26 +4,33 @@
 #include <thread>
 #include <vector>
 #include <chrono>
+#include <typeinfo>
 
 #include "player/User.h"
 #include "player/Monster.h"
 #include "weapon/weapon_base.h"
+#include "map/Map.h"
 #include "math_utils/WorstMathUtils.h"
 #include "fight/Fight.h"
 
 
-
 int main()
 {
-	User user1("necmi", 100, 100);
-	Weapon wep1(1, 10, 10);
-	Monster m1;
-	user1.wieldWeapon(wep1);
-	user1.Hit();
-	int a;	
+	// std::vector<std::vector<int>> mat(4, std::vector<int>(4, 0));
 
+	
+	// mat[1][2] = 1;
+	// for (auto it : mat){
+	// 	for (auto it2 : it) {
+	// 		// if (mat[it][it2])
+	// 		std::cout << it2 << ' ';
+	// 	}
+	// 	std::cout << '\n';
+	// }    
+	User me1("necati", 100, 100);
+	Map hello(2, 2);
 
-
+	hello.Spawn(me1);
 
 	return 0;
 }

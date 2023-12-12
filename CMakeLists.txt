@@ -8,8 +8,8 @@ set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CTest)
 enable_testing()
 
-add_executable(IdleGame main.cpp player/PlayerBase.cpp player/User.cpp math_utils/WorstMathUtils.cpp player/Monster.cpp weapon/weapon_base.cpp)
+add_executable(IdleGame main.cpp player/PlayerBase.cpp player/User.cpp math_utils/WorstMathUtils.cpp player/Monster.cpp weapon/weapon_base.cpp map/Map.cpp)
 
-target_include_directories(IdleGame PRIVATE ${WORKING_DIRECTORY}/player ${WORKING_DIRECTORY}/math_utils ${WORKING_DIRECTORY}/weapon)
+target_include_directories(IdleGame PRIVATE ${WORKING_DIRECTORY}/player ${WORKING_DIRECTORY}/math_utils ${WORKING_DIRECTORY}/weapon ${WORKING_DIRECTORY}/map)
 
 include(CPack)

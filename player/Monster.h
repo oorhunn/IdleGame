@@ -13,7 +13,7 @@ public:
 
 
 
-    virtual void Hit() override;
+    virtual void Hit(PlayerBase& enemy) override;
 
 
 private:

@@ -1,38 +1,44 @@
 [
 {
-  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdleGame.dir/includes_CXX.rsp -g -o CMakeFiles\\IdleGame.dir\\main.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\Sandbox\\main.cpp",
-  "file": "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/main.cpp",
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdleGame.dir/includes_CXX.rsp -g -o CMakeFiles\\IdleGame.dir\\main.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\main.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/main.cpp",
   "output": "CMakeFiles/IdleGame.dir/main.cpp.obj"
 },
 {
-  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdleGame.dir/includes_CXX.rsp -g -o CMakeFiles\\IdleGame.dir\\player\\PlayerBase.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\Sandbox\\player\\PlayerBase.cpp",
-  "file": "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/player/PlayerBase.cpp",
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdleGame.dir/includes_CXX.rsp -g -o CMakeFiles\\IdleGame.dir\\player\\PlayerBase.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\player\\PlayerBase.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/player/PlayerBase.cpp",
   "output": "CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.obj"
 },
 {
-  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdleGame.dir/includes_CXX.rsp -g -o CMakeFiles\\IdleGame.dir\\player\\User.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\Sandbox\\player\\User.cpp",
-  "file": "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/player/User.cpp",
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdleGame.dir/includes_CXX.rsp -g -o CMakeFiles\\IdleGame.dir\\player\\User.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\player\\User.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/player/User.cpp",
   "output": "CMakeFiles/IdleGame.dir/player/User.cpp.obj"
 },
 {
-  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdleGame.dir/includes_CXX.rsp -g -o CMakeFiles\\IdleGame.dir\\math_utils\\WorstMathUtils.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\Sandbox\\math_utils\\WorstMathUtils.cpp",
-  "file": "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/math_utils/WorstMathUtils.cpp",
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdleGame.dir/includes_CXX.rsp -g -o CMakeFiles\\IdleGame.dir\\math_utils\\WorstMathUtils.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\math_utils\\WorstMathUtils.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/math_utils/WorstMathUtils.cpp",
   "output": "CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.obj"
 },
 {
-  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdleGame.dir/includes_CXX.rsp -g -o CMakeFiles\\IdleGame.dir\\player\\Monster.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\Sandbox\\player\\Monster.cpp",
-  "file": "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/player/Monster.cpp",
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdleGame.dir/includes_CXX.rsp -g -o CMakeFiles\\IdleGame.dir\\player\\Monster.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\player\\Monster.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/player/Monster.cpp",
   "output": "CMakeFiles/IdleGame.dir/player/Monster.cpp.obj"
 },
 {
-  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdleGame.dir/includes_CXX.rsp -g -o CMakeFiles\\IdleGame.dir\\weapon\\weapon_base.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\Sandbox\\weapon\\weapon_base.cpp",
-  "file": "C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/weapon/weapon_base.cpp",
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdleGame.dir/includes_CXX.rsp -g -o CMakeFiles\\IdleGame.dir\\weapon\\weapon_base.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\weapon\\weapon_base.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/weapon/weapon_base.cpp",
   "output": "CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdleGame.dir/includes_CXX.rsp -g -o CMakeFiles\\IdleGame.dir\\map\\Map.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\map\\Map.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/map/Map.cpp",
+  "output": "CMakeFiles/IdleGame.dir/map/Map.cpp.obj"
 }
 ]

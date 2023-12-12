@@ -1,5 +1,6 @@
 #pragma once 
 #include <string>
+#include <vector>
 // #include "../weapon/weapon_base.h"
 
 // MyStruct(int m1, double m2, char m3) : member1(m1), member2(m2), member3(m3) {}
@@ -29,7 +30,8 @@ public:
 
     bool IsDefeated();
 
-    virtual void Hit() = 0;
+    void EatDamage(int damage);
+    virtual void Hit(PlayerBase& enemy) = 0;
 
 protected:
     std::string name;
@@ -37,5 +39,6 @@ protected:
     float dps;
     int health;
     int shield;
+    std::vector<int> position;
 
 };

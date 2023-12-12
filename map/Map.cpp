@@ -15,10 +15,16 @@ Map::~Map()
 
 std::vector<int> Map::Spawn(User npc)
 {
-    if(spawned_units.empty()){
-        int x;
+    // if(spawned_units.empty()){
+    //     int x;
 
-    } 
-    spawned_units.resize()
+    // } 
+    // spawned_units.resize()
+    int random_x = rand() % row;
+    int random_y = rand() % col;
+    std::vector<int> coordinate(random_x, random_y);
+    
+
+
     return std::vector<int>(1,2);
 }

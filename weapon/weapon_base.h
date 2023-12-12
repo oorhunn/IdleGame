@@ -1,8 +1,16 @@
+#pragma once
 
+class Weapon {
+public:
+    Weapon(int WEAPON_ID, float DAMAGE, float SPEED);
 
-struct Weapon {
+    float getWeaponSpeed();
+    float getWeaponDamage();
+    int getWeaponID();
+
+private:
+    int weapon_id;
     float damage;
     float speed;
     
-    Weapon(float DAMAGE, float SPEED) : damage(DAMAGE), speed(SPEED) {}
 };

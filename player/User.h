@@ -1,9 +1,9 @@
 #pragma once
 #include <string>
-#include "Player.h"
+#include "PlayerBase.h"
+#include "../weapon/weapon_base.h"
 
-
-class User : public Player{
+class User : public PlayerBase{
 
 public:
 
@@ -14,9 +14,11 @@ public:
 
     User& operator=(const User& user);
     
+    bool wieldWeapon(Weapon weapon);
     
-    
-    virtual void GetsAttacked() override;
+    virtual void Hit() override;
+private:
+    int weapon_id;
 
 };
 

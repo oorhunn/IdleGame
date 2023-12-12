@@ -546,53 +546,77 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-math_utils/WorstMatrix.obj: math_utils/WorstMatrix.cpp.obj
-.PHONY : math_utils/WorstMatrix.obj
+math_utils/WorstMathUtils.obj: math_utils/WorstMathUtils.cpp.obj
+.PHONY : math_utils/WorstMathUtils.obj
 
 # target to build an object file
-math_utils/WorstMatrix.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/math_utils/WorstMatrix.cpp.obj
-.PHONY : math_utils/WorstMatrix.cpp.obj
+math_utils/WorstMathUtils.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.obj
+.PHONY : math_utils/WorstMathUtils.cpp.obj
 
-math_utils/WorstMatrix.i: math_utils/WorstMatrix.cpp.i
-.PHONY : math_utils/WorstMatrix.i
+math_utils/WorstMathUtils.i: math_utils/WorstMathUtils.cpp.i
+.PHONY : math_utils/WorstMathUtils.i
 
 # target to preprocess a source file
-math_utils/WorstMatrix.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/math_utils/WorstMatrix.cpp.i
-.PHONY : math_utils/WorstMatrix.cpp.i
+math_utils/WorstMathUtils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.i
+.PHONY : math_utils/WorstMathUtils.cpp.i
 
-math_utils/WorstMatrix.s: math_utils/WorstMatrix.cpp.s
-.PHONY : math_utils/WorstMatrix.s
+math_utils/WorstMathUtils.s: math_utils/WorstMathUtils.cpp.s
+.PHONY : math_utils/WorstMathUtils.s
 
 # target to generate assembly for a file
-math_utils/WorstMatrix.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/math_utils/WorstMatrix.cpp.s
-.PHONY : math_utils/WorstMatrix.cpp.s
+math_utils/WorstMathUtils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.s
+.PHONY : math_utils/WorstMathUtils.cpp.s
 
-player/Player.obj: player/Player.cpp.obj
-.PHONY : player/Player.obj
+player/Monster.obj: player/Monster.cpp.obj
+.PHONY : player/Monster.obj
 
 # target to build an object file
-player/Player.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/player/Player.cpp.obj
-.PHONY : player/Player.cpp.obj
+player/Monster.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/player/Monster.cpp.obj
+.PHONY : player/Monster.cpp.obj
 
-player/Player.i: player/Player.cpp.i
-.PHONY : player/Player.i
+player/Monster.i: player/Monster.cpp.i
+.PHONY : player/Monster.i
 
 # target to preprocess a source file
-player/Player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/player/Player.cpp.i
-.PHONY : player/Player.cpp.i
+player/Monster.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/player/Monster.cpp.i
+.PHONY : player/Monster.cpp.i
 
-player/Player.s: player/Player.cpp.s
-.PHONY : player/Player.s
+player/Monster.s: player/Monster.cpp.s
+.PHONY : player/Monster.s
 
 # target to generate assembly for a file
-player/Player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/player/Player.cpp.s
-.PHONY : player/Player.cpp.s
+player/Monster.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/player/Monster.cpp.s
+.PHONY : player/Monster.cpp.s
+
+player/PlayerBase.obj: player/PlayerBase.cpp.obj
+.PHONY : player/PlayerBase.obj
+
+# target to build an object file
+player/PlayerBase.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.obj
+.PHONY : player/PlayerBase.cpp.obj
+
+player/PlayerBase.i: player/PlayerBase.cpp.i
+.PHONY : player/PlayerBase.i
+
+# target to preprocess a source file
+player/PlayerBase.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.i
+.PHONY : player/PlayerBase.cpp.i
+
+player/PlayerBase.s: player/PlayerBase.cpp.s
+.PHONY : player/PlayerBase.s
+
+# target to generate assembly for a file
+player/PlayerBase.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.s
+.PHONY : player/PlayerBase.cpp.s
 
 player/User.obj: player/User.cpp.obj
 .PHONY : player/User.obj
@@ -617,6 +641,30 @@ player/User.s: player/User.cpp.s
 player/User.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/player/User.cpp.s
 .PHONY : player/User.cpp.s
+
+weapon/weapon_base.obj: weapon/weapon_base.cpp.obj
+.PHONY : weapon/weapon_base.obj
+
+# target to build an object file
+weapon/weapon_base.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.obj
+.PHONY : weapon/weapon_base.cpp.obj
+
+weapon/weapon_base.i: weapon/weapon_base.cpp.i
+.PHONY : weapon/weapon_base.i
+
+# target to preprocess a source file
+weapon/weapon_base.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.i
+.PHONY : weapon/weapon_base.cpp.i
+
+weapon/weapon_base.s: weapon/weapon_base.cpp.s
+.PHONY : weapon/weapon_base.s
+
+# target to generate assembly for a file
+weapon/weapon_base.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.s
+.PHONY : weapon/weapon_base.cpp.s
 
 # Help Target
 help:
@@ -661,15 +709,21 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... math_utils/WorstMatrix.obj
-	@echo ... math_utils/WorstMatrix.i
-	@echo ... math_utils/WorstMatrix.s
-	@echo ... player/Player.obj
-	@echo ... player/Player.i
-	@echo ... player/Player.s
+	@echo ... math_utils/WorstMathUtils.obj
+	@echo ... math_utils/WorstMathUtils.i
+	@echo ... math_utils/WorstMathUtils.s
+	@echo ... player/Monster.obj
+	@echo ... player/Monster.i
+	@echo ... player/Monster.s
+	@echo ... player/PlayerBase.obj
+	@echo ... player/PlayerBase.i
+	@echo ... player/PlayerBase.s
 	@echo ... player/User.obj
 	@echo ... player/User.i
 	@echo ... player/User.s
+	@echo ... weapon/weapon_base.obj
+	@echo ... weapon/weapon_base.i
+	@echo ... weapon/weapon_base.s
 .PHONY : help
 
 

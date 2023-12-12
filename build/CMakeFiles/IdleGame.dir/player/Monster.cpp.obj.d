@@ -1,6 +1,7 @@
-CMakeFiles/IdleGame.dir/player/User.cpp.obj: \
- C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\player\User.cpp \
- C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\player\User.h \
+CMakeFiles/IdleGame.dir/player/Monster.cpp.obj: \
+ C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\player\Monster.cpp \
+ C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\player\Monster.h \
+ C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\player\PlayerBase.h \
  C:/msys64/mingw64/include/c++/13.2.0/string \
  C:/msys64/mingw64/include/c++/13.2.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -95,6 +96,4 @@ CMakeFiles/IdleGame.dir/player/User.cpp.obj: \
  C:/msys64/mingw64/include/stddef.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/uses_allocator.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/uses_allocator_args.h \
- C:/msys64/mingw64/include/c++/13.2.0/tuple \
- C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\player\PlayerBase.h \
- C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/weapon/weapon_base.h
+ C:/msys64/mingw64/include/c++/13.2.0/tuple

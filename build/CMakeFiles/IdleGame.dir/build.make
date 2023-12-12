@@ -83,20 +83,20 @@ CMakeFiles/IdleGame.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IdleGame.dir/main.cpp.s"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\main.cpp -o CMakeFiles\IdleGame.dir\main.cpp.s
 
-CMakeFiles/IdleGame.dir/player/Player.cpp.obj: CMakeFiles/IdleGame.dir/flags.make
-CMakeFiles/IdleGame.dir/player/Player.cpp.obj: CMakeFiles/IdleGame.dir/includes_CXX.rsp
-CMakeFiles/IdleGame.dir/player/Player.cpp.obj: C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/player/Player.cpp
-CMakeFiles/IdleGame.dir/player/Player.cpp.obj: CMakeFiles/IdleGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/IdleGame.dir/player/Player.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IdleGame.dir/player/Player.cpp.obj -MF CMakeFiles\IdleGame.dir\player\Player.cpp.obj.d -o CMakeFiles\IdleGame.dir\player\Player.cpp.obj -c C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\player\Player.cpp
+CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.obj: CMakeFiles/IdleGame.dir/flags.make
+CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.obj: CMakeFiles/IdleGame.dir/includes_CXX.rsp
+CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.obj: C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/player/PlayerBase.cpp
+CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.obj: CMakeFiles/IdleGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.obj -MF CMakeFiles\IdleGame.dir\player\PlayerBase.cpp.obj.d -o CMakeFiles\IdleGame.dir\player\PlayerBase.cpp.obj -c C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\player\PlayerBase.cpp
 
-CMakeFiles/IdleGame.dir/player/Player.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IdleGame.dir/player/Player.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\player\Player.cpp > CMakeFiles\IdleGame.dir\player\Player.cpp.i
+CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\player\PlayerBase.cpp > CMakeFiles\IdleGame.dir\player\PlayerBase.cpp.i
 
-CMakeFiles/IdleGame.dir/player/Player.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IdleGame.dir/player/Player.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\player\Player.cpp -o CMakeFiles\IdleGame.dir\player\Player.cpp.s
+CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\player\PlayerBase.cpp -o CMakeFiles\IdleGame.dir\player\PlayerBase.cpp.s
 
 CMakeFiles/IdleGame.dir/player/User.cpp.obj: CMakeFiles/IdleGame.dir/flags.make
 CMakeFiles/IdleGame.dir/player/User.cpp.obj: CMakeFiles/IdleGame.dir/includes_CXX.rsp
@@ -113,40 +113,74 @@ CMakeFiles/IdleGame.dir/player/User.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IdleGame.dir/player/User.cpp.s"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\player\User.cpp -o CMakeFiles\IdleGame.dir\player\User.cpp.s
 
-CMakeFiles/IdleGame.dir/math_utils/WorstMatrix.cpp.obj: CMakeFiles/IdleGame.dir/flags.make
-CMakeFiles/IdleGame.dir/math_utils/WorstMatrix.cpp.obj: CMakeFiles/IdleGame.dir/includes_CXX.rsp
-CMakeFiles/IdleGame.dir/math_utils/WorstMatrix.cpp.obj: C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/math_utils/WorstMatrix.cpp
-CMakeFiles/IdleGame.dir/math_utils/WorstMatrix.cpp.obj: CMakeFiles/IdleGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/IdleGame.dir/math_utils/WorstMatrix.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IdleGame.dir/math_utils/WorstMatrix.cpp.obj -MF CMakeFiles\IdleGame.dir\math_utils\WorstMatrix.cpp.obj.d -o CMakeFiles\IdleGame.dir\math_utils\WorstMatrix.cpp.obj -c C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\math_utils\WorstMatrix.cpp
+CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.obj: CMakeFiles/IdleGame.dir/flags.make
+CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.obj: CMakeFiles/IdleGame.dir/includes_CXX.rsp
+CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.obj: C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/math_utils/WorstMathUtils.cpp
+CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.obj: CMakeFiles/IdleGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.obj -MF CMakeFiles\IdleGame.dir\math_utils\WorstMathUtils.cpp.obj.d -o CMakeFiles\IdleGame.dir\math_utils\WorstMathUtils.cpp.obj -c C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\math_utils\WorstMathUtils.cpp
 
-CMakeFiles/IdleGame.dir/math_utils/WorstMatrix.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IdleGame.dir/math_utils/WorstMatrix.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\math_utils\WorstMatrix.cpp > CMakeFiles\IdleGame.dir\math_utils\WorstMatrix.cpp.i
+CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\math_utils\WorstMathUtils.cpp > CMakeFiles\IdleGame.dir\math_utils\WorstMathUtils.cpp.i
 
-CMakeFiles/IdleGame.dir/math_utils/WorstMatrix.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IdleGame.dir/math_utils/WorstMatrix.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\math_utils\WorstMatrix.cpp -o CMakeFiles\IdleGame.dir\math_utils\WorstMatrix.cpp.s
+CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\math_utils\WorstMathUtils.cpp -o CMakeFiles\IdleGame.dir\math_utils\WorstMathUtils.cpp.s
+
+CMakeFiles/IdleGame.dir/player/Monster.cpp.obj: CMakeFiles/IdleGame.dir/flags.make
+CMakeFiles/IdleGame.dir/player/Monster.cpp.obj: CMakeFiles/IdleGame.dir/includes_CXX.rsp
+CMakeFiles/IdleGame.dir/player/Monster.cpp.obj: C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/player/Monster.cpp
+CMakeFiles/IdleGame.dir/player/Monster.cpp.obj: CMakeFiles/IdleGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/IdleGame.dir/player/Monster.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IdleGame.dir/player/Monster.cpp.obj -MF CMakeFiles\IdleGame.dir\player\Monster.cpp.obj.d -o CMakeFiles\IdleGame.dir\player\Monster.cpp.obj -c C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\player\Monster.cpp
+
+CMakeFiles/IdleGame.dir/player/Monster.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IdleGame.dir/player/Monster.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\player\Monster.cpp > CMakeFiles\IdleGame.dir\player\Monster.cpp.i
+
+CMakeFiles/IdleGame.dir/player/Monster.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IdleGame.dir/player/Monster.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\player\Monster.cpp -o CMakeFiles\IdleGame.dir\player\Monster.cpp.s
+
+CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.obj: CMakeFiles/IdleGame.dir/flags.make
+CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.obj: CMakeFiles/IdleGame.dir/includes_CXX.rsp
+CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.obj: C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/weapon/weapon_base.cpp
+CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.obj: CMakeFiles/IdleGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.obj -MF CMakeFiles\IdleGame.dir\weapon\weapon_base.cpp.obj.d -o CMakeFiles\IdleGame.dir\weapon\weapon_base.cpp.obj -c C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\weapon\weapon_base.cpp
+
+CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\weapon\weapon_base.cpp > CMakeFiles\IdleGame.dir\weapon\weapon_base.cpp.i
+
+CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\weapon\weapon_base.cpp -o CMakeFiles\IdleGame.dir\weapon\weapon_base.cpp.s
 
 # Object files for target IdleGame
 IdleGame_OBJECTS = \
 "CMakeFiles/IdleGame.dir/main.cpp.obj" \
-"CMakeFiles/IdleGame.dir/player/Player.cpp.obj" \
+"CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.obj" \
 "CMakeFiles/IdleGame.dir/player/User.cpp.obj" \
-"CMakeFiles/IdleGame.dir/math_utils/WorstMatrix.cpp.obj"
+"CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.obj" \
+"CMakeFiles/IdleGame.dir/player/Monster.cpp.obj" \
+"CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.obj"
 
 # External object files for target IdleGame
 IdleGame_EXTERNAL_OBJECTS =
 
 IdleGame.exe: CMakeFiles/IdleGame.dir/main.cpp.obj
-IdleGame.exe: CMakeFiles/IdleGame.dir/player/Player.cpp.obj
+IdleGame.exe: CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.obj
 IdleGame.exe: CMakeFiles/IdleGame.dir/player/User.cpp.obj
-IdleGame.exe: CMakeFiles/IdleGame.dir/math_utils/WorstMatrix.cpp.obj
+IdleGame.exe: CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.obj
+IdleGame.exe: CMakeFiles/IdleGame.dir/player/Monster.cpp.obj
+IdleGame.exe: CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.obj
 IdleGame.exe: CMakeFiles/IdleGame.dir/build.make
 IdleGame.exe: CMakeFiles/IdleGame.dir/linkLibs.rsp
 IdleGame.exe: CMakeFiles/IdleGame.dir/objects1.rsp
 IdleGame.exe: CMakeFiles/IdleGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable IdleGame.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\Sandbox\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable IdleGame.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\IdleGame.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

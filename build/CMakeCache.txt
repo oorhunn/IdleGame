@@ -302,6 +302,9 @@ CTEST_SUBMIT_RETRY_DELAY:STRING=5
 //Maximum time allowed before CTest will kill the test.
 DART_TESTING_TIMEOUT:STRING=1500
 
+//Path to a program.
+GITCOMMAND:FILEPATH=C:/Users/aorhun.demiroglu/AppData/Local/Programs/Git/cmd/git.exe
+
 //Value Computed by CMake
 IdleGame_BINARY_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/Sandbox/build
 
@@ -315,7 +318,7 @@ IdleGame_SOURCE_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/Sandbox
 MAKECOMMAND:STRING=C:/Users/aorhun.demiroglu/CMake/bin/cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 
 //Path to the memory checking command, used for memory error detection.
-MEMORYCHECK_COMMAND:FILEPATH=MEMORYCHECK_COMMAND-NOTFOUND
+MEMORYCHECK_COMMAND:FILEPATH=C:/Users/aorhun.demiroglu/DrMemory/DrMemory-Windows-2.6.0/DrMemory-Windows-2.6.0/bin/drmemory.exe
 
 //File that contains suppressions for the memory checker
 MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
@@ -516,6 +519,8 @@ CTEST_SUBMIT_RETRY_COUNT-ADVANCED:INTERNAL=1
 CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DART_TESTING_TIMEOUT
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GITCOMMAND
+GITCOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MAKECOMMAND
 MAKECOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MEMORYCHECK_COMMAND

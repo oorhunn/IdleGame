@@ -1,17 +1,27 @@
 #include "User.h"
 
 User::User(const std::string NAME, int HEALTH, int SHIELD) 
-    : Player(NAME, HEALTH, SHIELD) {
+    : PlayerBase(NAME, HEALTH, SHIELD) {
     // Constructor body (if needed)
 }
 
 User &User::operator=(const User &user)
 {
-    Player::operator=(user);
+    PlayerBase::operator=(user);
     return *this;
 }
 
-void User::GetsAttacked() {
+bool User::wieldWeapon(Weapon weapon)
+{
+    dps = weapon.getWeaponDamage() * weapon.getWeaponSpeed();
+    weapon_id = weapon.getWeaponID();
+    if (dps != 0.0){
+        return true;
+    }
+    return false;
+}
+
+void User::Hit() {
     int roll = rand() % 100;
 
     if (roll == 0) {

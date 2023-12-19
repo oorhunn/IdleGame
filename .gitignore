@@ -1,2 +1,33 @@
+# Ignore compiled files
+*.o
+*.out
+*.exe
 
-build/
+# Ignore build directories
+/build/
+/bin/
+/lib/
+
+# Ignore Visual Studio Code directories
+.vscode/
+
+# Ignore Xcode directories
+*.xcodeproj/
+
+# Ignore CMake build directory
+/CMakeFiles/
+/CMakeCache.txt
+/CMakeScripts/
+/CMakeScripts/CMakeTmp/
+
+# Ignore compiled Python files
+__pycache__/
+
+# Ignore temporary files
+*.swp
+*.swo
+*.swn
+
+# Ignore user-specific files
+.DS_Store
+Thumbs.db

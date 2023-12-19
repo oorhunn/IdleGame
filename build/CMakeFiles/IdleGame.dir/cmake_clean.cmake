@@ -1,25 +1,15 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/IdleGame.dir/main.cpp.obj"
-  "CMakeFiles/IdleGame.dir/main.cpp.obj.d"
-  "CMakeFiles/IdleGame.dir/map/Map.cpp.obj"
-  "CMakeFiles/IdleGame.dir/map/Map.cpp.obj.d"
-  "CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.obj"
-  "CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.obj.d"
-  "CMakeFiles/IdleGame.dir/player/Monster.cpp.obj"
-  "CMakeFiles/IdleGame.dir/player/Monster.cpp.obj.d"
-  "CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.obj"
-  "CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.obj.d"
-  "CMakeFiles/IdleGame.dir/player/User.cpp.obj"
-  "CMakeFiles/IdleGame.dir/player/User.cpp.obj.d"
-  "CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.obj"
-  "CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.obj.d"
-  "IdleGame.exe"
-  "IdleGame.exe.manifest"
-  "IdleGame.pdb"
-  "libIdleGame.dll.a"
+  "CMakeFiles/Idlegame.dir/worst_algorithms/WorstBasicDataStructures.cpp.obj"
+  "CMakeFiles/Idlegame.dir/worst_algorithms/WorstBasicDataStructures.cpp.obj.d"
+  "CMakeFiles/Idlegame.dir/worst_algorithms/WorstLinkedList.cpp.obj"
+  "CMakeFiles/Idlegame.dir/worst_algorithms/WorstLinkedList.cpp.obj.d"
+  "CMakeFiles/Idlegame.dir/worst_algorithms/WorstSearchAlgorithms.cpp.obj"
+  "CMakeFiles/Idlegame.dir/worst_algorithms/WorstSearchAlgorithms.cpp.obj.d"
+  "libIdlegame.a"
+  "libIdlegame.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
 foreach(lang CXX)
-  include(CMakeFiles/IdleGame.dir/cmake_clean_${lang}.cmake OPTIONAL)
+  include(CMakeFiles/Idlegame.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

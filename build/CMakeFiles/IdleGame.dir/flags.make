@@ -4,7 +4,7 @@
 # compile CXX with C:/msys64/mingw64/bin/g++.exe
 CXX_DEFINES = 
 
-CXX_INCLUDES = @CMakeFiles/IdleGame.dir/includes_CXX.rsp
+CXX_INCLUDES = 
 
-CXX_FLAGS = -g
+CXX_FLAGS = -g -std=gnu++17
 

@@ -1,44 +1,56 @@
 [
 {
   "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdleGame.dir/includes_CXX.rsp -g -o CMakeFiles\\IdleGame.dir\\main.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\main.cpp",
-  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/main.cpp",
-  "output": "CMakeFiles/IdleGame.dir/main.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\Idlegame.dir\\worst_algorithms\\WorstSearchAlgorithms.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_algorithms\\WorstSearchAlgorithms.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_algorithms/WorstSearchAlgorithms.cpp",
+  "output": "CMakeFiles/Idlegame.dir/worst_algorithms/WorstSearchAlgorithms.cpp.obj"
 },
 {
   "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdleGame.dir/includes_CXX.rsp -g -o CMakeFiles\\IdleGame.dir\\player\\PlayerBase.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\player\\PlayerBase.cpp",
-  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/player/PlayerBase.cpp",
-  "output": "CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\Idlegame.dir\\worst_algorithms\\WorstBasicDataStructures.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_algorithms\\WorstBasicDataStructures.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_algorithms/WorstBasicDataStructures.cpp",
+  "output": "CMakeFiles/Idlegame.dir/worst_algorithms/WorstBasicDataStructures.cpp.obj"
 },
 {
   "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdleGame.dir/includes_CXX.rsp -g -o CMakeFiles\\IdleGame.dir\\player\\User.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\player\\User.cpp",
-  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/player/User.cpp",
-  "output": "CMakeFiles/IdleGame.dir/player/User.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\Idlegame.dir\\worst_algorithms\\WorstLinkedList.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_algorithms\\WorstLinkedList.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_algorithms/WorstLinkedList.cpp",
+  "output": "CMakeFiles/Idlegame.dir/worst_algorithms/WorstLinkedList.cpp.obj"
 },
 {
-  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdleGame.dir/includes_CXX.rsp -g -o CMakeFiles\\IdleGame.dir\\math_utils\\WorstMathUtils.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\math_utils\\WorstMathUtils.cpp",
-  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/math_utils/WorstMathUtils.cpp",
-  "output": "CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.obj"
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googlemock",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/gmock.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\googletest\\googlemock\\src\\gmock-all.cc",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/googletest/googlemock/src/gmock-all.cc",
+  "output": "googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj"
 },
 {
-  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdleGame.dir/includes_CXX.rsp -g -o CMakeFiles\\IdleGame.dir\\player\\Monster.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\player\\Monster.cpp",
-  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/player/Monster.cpp",
-  "output": "CMakeFiles/IdleGame.dir/player/Monster.cpp.obj"
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googlemock",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/gmock_main.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gmock_main.dir\\src\\gmock_main.cc.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\googletest\\googlemock\\src\\gmock_main.cc",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/googletest/googlemock/src/gmock_main.cc",
+  "output": "googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj"
 },
 {
-  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdleGame.dir/includes_CXX.rsp -g -o CMakeFiles\\IdleGame.dir\\weapon\\weapon_base.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\weapon\\weapon_base.cpp",
-  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/weapon/weapon_base.cpp",
-  "output": "CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.obj"
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googletest",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/gtest.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\googletest\\googletest\\src\\gtest-all.cc",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/googletest/googletest/src/gtest-all.cc",
+  "output": "googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj"
 },
 {
-  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdleGame.dir/includes_CXX.rsp -g -o CMakeFiles\\IdleGame.dir\\map\\Map.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\map\\Map.cpp",
-  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/map/Map.cpp",
-  "output": "CMakeFiles/IdleGame.dir/map/Map.cpp.obj"
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googletest",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/gtest_main.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\googletest\\googletest\\src\\gtest_main.cc",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/googletest/googletest/src/gtest_main.cc",
+  "output": "googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdlegameTests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\IdlegameTests.dir\\WorstSearchAlgorithmsTest.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\test\\WorstSearchAlgorithmsTest.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/test/WorstSearchAlgorithmsTest.cpp",
+  "output": "test/CMakeFiles/IdlegameTests.dir/WorstSearchAlgorithmsTest.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdlegameTests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\IdlegameTests.dir\\WorstBasicDataStructuresTest.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\test\\WorstBasicDataStructuresTest.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/test/WorstBasicDataStructuresTest.cpp",
+  "output": "test/CMakeFiles/IdlegameTests.dir/WorstBasicDataStructuresTest.cpp.obj"
 }
 ]

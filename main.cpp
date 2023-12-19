@@ -14,24 +14,38 @@
 #include "fight/Fight.h"
 
 
+template <typename MyType>
+int worst_binary_search(const std::vector<MyType>& in_arr, const MyType& x){
+	int low = 0;
+	int high = in_arr.size() - 1;
+	while (low <= high){
+		int mid = (low + high) / 2;
+		int temp = in_arr[mid];
+		if (temp < x) {
+			low = mid + 1;
+		}
+		else if (temp > x) {
+			high = mid - 1;
+		}
+		else {
+			return mid;
+		}
+	}
+	return -1;
+}
+
+
 int main()
 {
-	// std::vector<std::vector<int>> mat(4, std::vector<int>(4, 0));
+	std::vector<int> myArr;
+	for (int i = 0; i < 1000000000000; ++i){
+		myArr.resize(myArr.size() + 1);
+		myArr[i] = i;
+	}
 
-	
-	// mat[1][2] = 1;
-	// for (auto it : mat){
-	// 	for (auto it2 : it) {
-	// 		// if (mat[it][it2])
-	// 		std::cout << it2 << ' ';
-	// 	}
-	// 	std::cout << '\n';
-	// }    
-	User me1("necati", 100, 100);
-	Map hello(2, 2);
+	int mInd = worst_binary_search<int>(myArr, 3);
 
-	hello.Spawn(me1);
-
+	std::cout << mInd << "\n";
 	return 0;
 }
 

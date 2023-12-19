@@ -114,6 +114,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"gmock\" \"gtest\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	C:\Users\aorhun.demiroglu\CMake\bin\cmake.exe -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	C:\Users\aorhun.demiroglu\CMake\bin\cmake.exe -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	C:\Users\aorhun.demiroglu\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	C:\Users\aorhun.demiroglu\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	C:\Users\aorhun.demiroglu\CMake\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	C:\Users\aorhun.demiroglu\CMake\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\\CMakeFiles\progress.marks
@@ -146,549 +191,154 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Experimental
+# Target rules for targets named Idlegame
 
 # Build rule for target.
-Experimental: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Experimental
-.PHONY : Experimental
+Idlegame: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Idlegame
+.PHONY : Idlegame
 
 # fast build rule for target.
-Experimental/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Experimental.dir\build.make CMakeFiles/Experimental.dir/build
-.PHONY : Experimental/fast
+Idlegame/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Idlegame.dir\build.make CMakeFiles/Idlegame.dir/build
+.PHONY : Idlegame/fast
 
 #=============================================================================
-# Target rules for targets named Nightly
+# Target rules for targets named gmock
 
 # Build rule for target.
-Nightly: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Nightly
-.PHONY : Nightly
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock
+.PHONY : gmock
 
 # fast build rule for target.
-Nightly/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Nightly.dir\build.make CMakeFiles/Nightly.dir/build
-.PHONY : Nightly/fast
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock.dir\build.make googletest/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
 
 #=============================================================================
-# Target rules for targets named Continuous
+# Target rules for targets named gmock_main
 
 # Build rule for target.
-Continuous: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Continuous
-.PHONY : Continuous
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock_main
+.PHONY : gmock_main
 
 # fast build rule for target.
-Continuous/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Continuous.dir\build.make CMakeFiles/Continuous.dir/build
-.PHONY : Continuous/fast
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock_main.dir\build.make googletest/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
 
 #=============================================================================
-# Target rules for targets named NightlyMemoryCheck
+# Target rules for targets named gtest
 
 # Build rule for target.
-NightlyMemoryCheck: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlyMemoryCheck
-.PHONY : NightlyMemoryCheck
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest
+.PHONY : gtest
 
 # fast build rule for target.
-NightlyMemoryCheck/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyMemoryCheck.dir\build.make CMakeFiles/NightlyMemoryCheck.dir/build
-.PHONY : NightlyMemoryCheck/fast
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest.dir\build.make googletest/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
 
 #=============================================================================
-# Target rules for targets named NightlyStart
+# Target rules for targets named gtest_main
 
 # Build rule for target.
-NightlyStart: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlyStart
-.PHONY : NightlyStart
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest_main
+.PHONY : gtest_main
 
 # fast build rule for target.
-NightlyStart/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyStart.dir\build.make CMakeFiles/NightlyStart.dir/build
-.PHONY : NightlyStart/fast
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest_main.dir\build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
 
 #=============================================================================
-# Target rules for targets named NightlyUpdate
+# Target rules for targets named IdlegameTests
 
 # Build rule for target.
-NightlyUpdate: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlyUpdate
-.PHONY : NightlyUpdate
+IdlegameTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 IdlegameTests
+.PHONY : IdlegameTests
 
 # fast build rule for target.
-NightlyUpdate/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyUpdate.dir\build.make CMakeFiles/NightlyUpdate.dir/build
-.PHONY : NightlyUpdate/fast
-
-#=============================================================================
-# Target rules for targets named NightlyConfigure
-
-# Build rule for target.
-NightlyConfigure: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlyConfigure
-.PHONY : NightlyConfigure
-
-# fast build rule for target.
-NightlyConfigure/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyConfigure.dir\build.make CMakeFiles/NightlyConfigure.dir/build
-.PHONY : NightlyConfigure/fast
-
-#=============================================================================
-# Target rules for targets named NightlyBuild
-
-# Build rule for target.
-NightlyBuild: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlyBuild
-.PHONY : NightlyBuild
-
-# fast build rule for target.
-NightlyBuild/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyBuild.dir\build.make CMakeFiles/NightlyBuild.dir/build
-.PHONY : NightlyBuild/fast
-
-#=============================================================================
-# Target rules for targets named NightlyTest
-
-# Build rule for target.
-NightlyTest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlyTest
-.PHONY : NightlyTest
-
-# fast build rule for target.
-NightlyTest/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyTest.dir\build.make CMakeFiles/NightlyTest.dir/build
-.PHONY : NightlyTest/fast
-
-#=============================================================================
-# Target rules for targets named NightlyCoverage
-
-# Build rule for target.
-NightlyCoverage: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlyCoverage
-.PHONY : NightlyCoverage
-
-# fast build rule for target.
-NightlyCoverage/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyCoverage.dir\build.make CMakeFiles/NightlyCoverage.dir/build
-.PHONY : NightlyCoverage/fast
-
-#=============================================================================
-# Target rules for targets named NightlyMemCheck
-
-# Build rule for target.
-NightlyMemCheck: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlyMemCheck
-.PHONY : NightlyMemCheck
-
-# fast build rule for target.
-NightlyMemCheck/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyMemCheck.dir\build.make CMakeFiles/NightlyMemCheck.dir/build
-.PHONY : NightlyMemCheck/fast
-
-#=============================================================================
-# Target rules for targets named NightlySubmit
-
-# Build rule for target.
-NightlySubmit: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlySubmit
-.PHONY : NightlySubmit
-
-# fast build rule for target.
-NightlySubmit/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlySubmit.dir\build.make CMakeFiles/NightlySubmit.dir/build
-.PHONY : NightlySubmit/fast
-
-#=============================================================================
-# Target rules for targets named ExperimentalStart
-
-# Build rule for target.
-ExperimentalStart: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ExperimentalStart
-.PHONY : ExperimentalStart
-
-# fast build rule for target.
-ExperimentalStart/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ExperimentalStart.dir\build.make CMakeFiles/ExperimentalStart.dir/build
-.PHONY : ExperimentalStart/fast
-
-#=============================================================================
-# Target rules for targets named ExperimentalUpdate
-
-# Build rule for target.
-ExperimentalUpdate: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ExperimentalUpdate
-.PHONY : ExperimentalUpdate
-
-# fast build rule for target.
-ExperimentalUpdate/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ExperimentalUpdate.dir\build.make CMakeFiles/ExperimentalUpdate.dir/build
-.PHONY : ExperimentalUpdate/fast
-
-#=============================================================================
-# Target rules for targets named ExperimentalConfigure
-
-# Build rule for target.
-ExperimentalConfigure: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ExperimentalConfigure
-.PHONY : ExperimentalConfigure
-
-# fast build rule for target.
-ExperimentalConfigure/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ExperimentalConfigure.dir\build.make CMakeFiles/ExperimentalConfigure.dir/build
-.PHONY : ExperimentalConfigure/fast
-
-#=============================================================================
-# Target rules for targets named ExperimentalBuild
-
-# Build rule for target.
-ExperimentalBuild: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ExperimentalBuild
-.PHONY : ExperimentalBuild
-
-# fast build rule for target.
-ExperimentalBuild/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ExperimentalBuild.dir\build.make CMakeFiles/ExperimentalBuild.dir/build
-.PHONY : ExperimentalBuild/fast
-
-#=============================================================================
-# Target rules for targets named ExperimentalTest
-
-# Build rule for target.
-ExperimentalTest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ExperimentalTest
-.PHONY : ExperimentalTest
-
-# fast build rule for target.
-ExperimentalTest/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ExperimentalTest.dir\build.make CMakeFiles/ExperimentalTest.dir/build
-.PHONY : ExperimentalTest/fast
-
-#=============================================================================
-# Target rules for targets named ExperimentalCoverage
-
-# Build rule for target.
-ExperimentalCoverage: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ExperimentalCoverage
-.PHONY : ExperimentalCoverage
-
-# fast build rule for target.
-ExperimentalCoverage/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ExperimentalCoverage.dir\build.make CMakeFiles/ExperimentalCoverage.dir/build
-.PHONY : ExperimentalCoverage/fast
-
-#=============================================================================
-# Target rules for targets named ExperimentalMemCheck
-
-# Build rule for target.
-ExperimentalMemCheck: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ExperimentalMemCheck
-.PHONY : ExperimentalMemCheck
-
-# fast build rule for target.
-ExperimentalMemCheck/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ExperimentalMemCheck.dir\build.make CMakeFiles/ExperimentalMemCheck.dir/build
-.PHONY : ExperimentalMemCheck/fast
-
-#=============================================================================
-# Target rules for targets named ExperimentalSubmit
-
-# Build rule for target.
-ExperimentalSubmit: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ExperimentalSubmit
-.PHONY : ExperimentalSubmit
-
-# fast build rule for target.
-ExperimentalSubmit/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ExperimentalSubmit.dir\build.make CMakeFiles/ExperimentalSubmit.dir/build
-.PHONY : ExperimentalSubmit/fast
-
-#=============================================================================
-# Target rules for targets named ContinuousStart
-
-# Build rule for target.
-ContinuousStart: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ContinuousStart
-.PHONY : ContinuousStart
-
-# fast build rule for target.
-ContinuousStart/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousStart.dir\build.make CMakeFiles/ContinuousStart.dir/build
-.PHONY : ContinuousStart/fast
-
-#=============================================================================
-# Target rules for targets named ContinuousUpdate
-
-# Build rule for target.
-ContinuousUpdate: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ContinuousUpdate
-.PHONY : ContinuousUpdate
-
-# fast build rule for target.
-ContinuousUpdate/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousUpdate.dir\build.make CMakeFiles/ContinuousUpdate.dir/build
-.PHONY : ContinuousUpdate/fast
-
-#=============================================================================
-# Target rules for targets named ContinuousConfigure
-
-# Build rule for target.
-ContinuousConfigure: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ContinuousConfigure
-.PHONY : ContinuousConfigure
-
-# fast build rule for target.
-ContinuousConfigure/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousConfigure.dir\build.make CMakeFiles/ContinuousConfigure.dir/build
-.PHONY : ContinuousConfigure/fast
-
-#=============================================================================
-# Target rules for targets named ContinuousBuild
-
-# Build rule for target.
-ContinuousBuild: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ContinuousBuild
-.PHONY : ContinuousBuild
-
-# fast build rule for target.
-ContinuousBuild/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousBuild.dir\build.make CMakeFiles/ContinuousBuild.dir/build
-.PHONY : ContinuousBuild/fast
-
-#=============================================================================
-# Target rules for targets named ContinuousTest
-
-# Build rule for target.
-ContinuousTest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ContinuousTest
-.PHONY : ContinuousTest
-
-# fast build rule for target.
-ContinuousTest/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousTest.dir\build.make CMakeFiles/ContinuousTest.dir/build
-.PHONY : ContinuousTest/fast
-
-#=============================================================================
-# Target rules for targets named ContinuousCoverage
-
-# Build rule for target.
-ContinuousCoverage: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ContinuousCoverage
-.PHONY : ContinuousCoverage
-
-# fast build rule for target.
-ContinuousCoverage/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousCoverage.dir\build.make CMakeFiles/ContinuousCoverage.dir/build
-.PHONY : ContinuousCoverage/fast
-
-#=============================================================================
-# Target rules for targets named ContinuousMemCheck
-
-# Build rule for target.
-ContinuousMemCheck: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ContinuousMemCheck
-.PHONY : ContinuousMemCheck
-
-# fast build rule for target.
-ContinuousMemCheck/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousMemCheck.dir\build.make CMakeFiles/ContinuousMemCheck.dir/build
-.PHONY : ContinuousMemCheck/fast
-
-#=============================================================================
-# Target rules for targets named ContinuousSubmit
-
-# Build rule for target.
-ContinuousSubmit: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ContinuousSubmit
-.PHONY : ContinuousSubmit
-
-# fast build rule for target.
-ContinuousSubmit/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousSubmit.dir\build.make CMakeFiles/ContinuousSubmit.dir/build
-.PHONY : ContinuousSubmit/fast
-
-#=============================================================================
-# Target rules for targets named IdleGame
-
-# Build rule for target.
-IdleGame: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 IdleGame
-.PHONY : IdleGame
-
-# fast build rule for target.
-IdleGame/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/build
-.PHONY : IdleGame/fast
-
-main.obj: main.cpp.obj
-.PHONY : main.obj
+IdlegameTests/fast:
+	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/build
+.PHONY : IdlegameTests/fast
+
+worst_algorithms/WorstBasicDataStructures.obj: worst_algorithms/WorstBasicDataStructures.cpp.obj
+.PHONY : worst_algorithms/WorstBasicDataStructures.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+worst_algorithms/WorstBasicDataStructures.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Idlegame.dir\build.make CMakeFiles/Idlegame.dir/worst_algorithms/WorstBasicDataStructures.cpp.obj
+.PHONY : worst_algorithms/WorstBasicDataStructures.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+worst_algorithms/WorstBasicDataStructures.i: worst_algorithms/WorstBasicDataStructures.cpp.i
+.PHONY : worst_algorithms/WorstBasicDataStructures.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/main.cpp.i
-.PHONY : main.cpp.i
+worst_algorithms/WorstBasicDataStructures.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Idlegame.dir\build.make CMakeFiles/Idlegame.dir/worst_algorithms/WorstBasicDataStructures.cpp.i
+.PHONY : worst_algorithms/WorstBasicDataStructures.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+worst_algorithms/WorstBasicDataStructures.s: worst_algorithms/WorstBasicDataStructures.cpp.s
+.PHONY : worst_algorithms/WorstBasicDataStructures.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/main.cpp.s
-.PHONY : main.cpp.s
+worst_algorithms/WorstBasicDataStructures.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Idlegame.dir\build.make CMakeFiles/Idlegame.dir/worst_algorithms/WorstBasicDataStructures.cpp.s
+.PHONY : worst_algorithms/WorstBasicDataStructures.cpp.s
 
-map/Map.obj: map/Map.cpp.obj
-.PHONY : map/Map.obj
+worst_algorithms/WorstLinkedList.obj: worst_algorithms/WorstLinkedList.cpp.obj
+.PHONY : worst_algorithms/WorstLinkedList.obj
 
 # target to build an object file
-map/Map.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/map/Map.cpp.obj
-.PHONY : map/Map.cpp.obj
+worst_algorithms/WorstLinkedList.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Idlegame.dir\build.make CMakeFiles/Idlegame.dir/worst_algorithms/WorstLinkedList.cpp.obj
+.PHONY : worst_algorithms/WorstLinkedList.cpp.obj
 
-map/Map.i: map/Map.cpp.i
-.PHONY : map/Map.i
+worst_algorithms/WorstLinkedList.i: worst_algorithms/WorstLinkedList.cpp.i
+.PHONY : worst_algorithms/WorstLinkedList.i
 
 # target to preprocess a source file
-map/Map.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/map/Map.cpp.i
-.PHONY : map/Map.cpp.i
+worst_algorithms/WorstLinkedList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Idlegame.dir\build.make CMakeFiles/Idlegame.dir/worst_algorithms/WorstLinkedList.cpp.i
+.PHONY : worst_algorithms/WorstLinkedList.cpp.i
 
-map/Map.s: map/Map.cpp.s
-.PHONY : map/Map.s
+worst_algorithms/WorstLinkedList.s: worst_algorithms/WorstLinkedList.cpp.s
+.PHONY : worst_algorithms/WorstLinkedList.s
 
 # target to generate assembly for a file
-map/Map.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/map/Map.cpp.s
-.PHONY : map/Map.cpp.s
+worst_algorithms/WorstLinkedList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Idlegame.dir\build.make CMakeFiles/Idlegame.dir/worst_algorithms/WorstLinkedList.cpp.s
+.PHONY : worst_algorithms/WorstLinkedList.cpp.s
 
-math_utils/WorstMathUtils.obj: math_utils/WorstMathUtils.cpp.obj
-.PHONY : math_utils/WorstMathUtils.obj
+worst_algorithms/WorstSearchAlgorithms.obj: worst_algorithms/WorstSearchAlgorithms.cpp.obj
+.PHONY : worst_algorithms/WorstSearchAlgorithms.obj
 
 # target to build an object file
-math_utils/WorstMathUtils.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.obj
-.PHONY : math_utils/WorstMathUtils.cpp.obj
+worst_algorithms/WorstSearchAlgorithms.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Idlegame.dir\build.make CMakeFiles/Idlegame.dir/worst_algorithms/WorstSearchAlgorithms.cpp.obj
+.PHONY : worst_algorithms/WorstSearchAlgorithms.cpp.obj
 
-math_utils/WorstMathUtils.i: math_utils/WorstMathUtils.cpp.i
-.PHONY : math_utils/WorstMathUtils.i
-
-# target to preprocess a source file
-math_utils/WorstMathUtils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.i
-.PHONY : math_utils/WorstMathUtils.cpp.i
-
-math_utils/WorstMathUtils.s: math_utils/WorstMathUtils.cpp.s
-.PHONY : math_utils/WorstMathUtils.s
-
-# target to generate assembly for a file
-math_utils/WorstMathUtils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/math_utils/WorstMathUtils.cpp.s
-.PHONY : math_utils/WorstMathUtils.cpp.s
-
-player/Monster.obj: player/Monster.cpp.obj
-.PHONY : player/Monster.obj
-
-# target to build an object file
-player/Monster.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/player/Monster.cpp.obj
-.PHONY : player/Monster.cpp.obj
-
-player/Monster.i: player/Monster.cpp.i
-.PHONY : player/Monster.i
+worst_algorithms/WorstSearchAlgorithms.i: worst_algorithms/WorstSearchAlgorithms.cpp.i
+.PHONY : worst_algorithms/WorstSearchAlgorithms.i
 
 # target to preprocess a source file
-player/Monster.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/player/Monster.cpp.i
-.PHONY : player/Monster.cpp.i
+worst_algorithms/WorstSearchAlgorithms.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Idlegame.dir\build.make CMakeFiles/Idlegame.dir/worst_algorithms/WorstSearchAlgorithms.cpp.i
+.PHONY : worst_algorithms/WorstSearchAlgorithms.cpp.i
 
-player/Monster.s: player/Monster.cpp.s
-.PHONY : player/Monster.s
-
-# target to generate assembly for a file
-player/Monster.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/player/Monster.cpp.s
-.PHONY : player/Monster.cpp.s
-
-player/PlayerBase.obj: player/PlayerBase.cpp.obj
-.PHONY : player/PlayerBase.obj
-
-# target to build an object file
-player/PlayerBase.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.obj
-.PHONY : player/PlayerBase.cpp.obj
-
-player/PlayerBase.i: player/PlayerBase.cpp.i
-.PHONY : player/PlayerBase.i
-
-# target to preprocess a source file
-player/PlayerBase.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.i
-.PHONY : player/PlayerBase.cpp.i
-
-player/PlayerBase.s: player/PlayerBase.cpp.s
-.PHONY : player/PlayerBase.s
+worst_algorithms/WorstSearchAlgorithms.s: worst_algorithms/WorstSearchAlgorithms.cpp.s
+.PHONY : worst_algorithms/WorstSearchAlgorithms.s
 
 # target to generate assembly for a file
-player/PlayerBase.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/player/PlayerBase.cpp.s
-.PHONY : player/PlayerBase.cpp.s
-
-player/User.obj: player/User.cpp.obj
-.PHONY : player/User.obj
-
-# target to build an object file
-player/User.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/player/User.cpp.obj
-.PHONY : player/User.cpp.obj
-
-player/User.i: player/User.cpp.i
-.PHONY : player/User.i
-
-# target to preprocess a source file
-player/User.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/player/User.cpp.i
-.PHONY : player/User.cpp.i
-
-player/User.s: player/User.cpp.s
-.PHONY : player/User.s
-
-# target to generate assembly for a file
-player/User.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/player/User.cpp.s
-.PHONY : player/User.cpp.s
-
-weapon/weapon_base.obj: weapon/weapon_base.cpp.obj
-.PHONY : weapon/weapon_base.obj
-
-# target to build an object file
-weapon/weapon_base.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.obj
-.PHONY : weapon/weapon_base.cpp.obj
-
-weapon/weapon_base.i: weapon/weapon_base.cpp.i
-.PHONY : weapon/weapon_base.i
-
-# target to preprocess a source file
-weapon/weapon_base.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.i
-.PHONY : weapon/weapon_base.cpp.i
-
-weapon/weapon_base.s: weapon/weapon_base.cpp.s
-.PHONY : weapon/weapon_base.s
-
-# target to generate assembly for a file
-weapon/weapon_base.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IdleGame.dir\build.make CMakeFiles/IdleGame.dir/weapon/weapon_base.cpp.s
-.PHONY : weapon/weapon_base.cpp.s
+worst_algorithms/WorstSearchAlgorithms.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Idlegame.dir\build.make CMakeFiles/Idlegame.dir/worst_algorithms/WorstSearchAlgorithms.cpp.s
+.PHONY : worst_algorithms/WorstSearchAlgorithms.cpp.s
 
 # Help Target
 help:
@@ -697,60 +347,29 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
+	@echo ... install
+	@echo ... install/local
+	@echo ... install/strip
+	@echo ... list_install_components
 	@echo ... package
 	@echo ... package_source
 	@echo ... rebuild_cache
 	@echo ... test
-	@echo ... Continuous
-	@echo ... ContinuousBuild
-	@echo ... ContinuousConfigure
-	@echo ... ContinuousCoverage
-	@echo ... ContinuousMemCheck
-	@echo ... ContinuousStart
-	@echo ... ContinuousSubmit
-	@echo ... ContinuousTest
-	@echo ... ContinuousUpdate
-	@echo ... Experimental
-	@echo ... ExperimentalBuild
-	@echo ... ExperimentalConfigure
-	@echo ... ExperimentalCoverage
-	@echo ... ExperimentalMemCheck
-	@echo ... ExperimentalStart
-	@echo ... ExperimentalSubmit
-	@echo ... ExperimentalTest
-	@echo ... ExperimentalUpdate
-	@echo ... Nightly
-	@echo ... NightlyBuild
-	@echo ... NightlyConfigure
-	@echo ... NightlyCoverage
-	@echo ... NightlyMemCheck
-	@echo ... NightlyMemoryCheck
-	@echo ... NightlyStart
-	@echo ... NightlySubmit
-	@echo ... NightlyTest
-	@echo ... NightlyUpdate
-	@echo ... IdleGame
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
-	@echo ... map/Map.obj
-	@echo ... map/Map.i
-	@echo ... map/Map.s
-	@echo ... math_utils/WorstMathUtils.obj
-	@echo ... math_utils/WorstMathUtils.i
-	@echo ... math_utils/WorstMathUtils.s
-	@echo ... player/Monster.obj
-	@echo ... player/Monster.i
-	@echo ... player/Monster.s
-	@echo ... player/PlayerBase.obj
-	@echo ... player/PlayerBase.i
-	@echo ... player/PlayerBase.s
-	@echo ... player/User.obj
-	@echo ... player/User.i
-	@echo ... player/User.s
-	@echo ... weapon/weapon_base.obj
-	@echo ... weapon/weapon_base.i
-	@echo ... weapon/weapon_base.s
+	@echo ... Idlegame
+	@echo ... IdlegameTests
+	@echo ... gmock
+	@echo ... gmock_main
+	@echo ... gtest
+	@echo ... gtest_main
+	@echo ... worst_algorithms/WorstBasicDataStructures.obj
+	@echo ... worst_algorithms/WorstBasicDataStructures.i
+	@echo ... worst_algorithms/WorstBasicDataStructures.s
+	@echo ... worst_algorithms/WorstLinkedList.obj
+	@echo ... worst_algorithms/WorstLinkedList.i
+	@echo ... worst_algorithms/WorstLinkedList.s
+	@echo ... worst_algorithms/WorstSearchAlgorithms.obj
+	@echo ... worst_algorithms/WorstSearchAlgorithms.i
+	@echo ... worst_algorithms/WorstSearchAlgorithms.s
 .PHONY : help
 
 

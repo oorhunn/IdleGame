@@ -316,13 +316,13 @@ GTEST_HAS_ABSL:BOOL=OFF
 INSTALL_GTEST:BOOL=ON
 
 //Value Computed by CMake
-IdleGame_BINARY_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test
+IdlegameTests_BINARY_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test
 
 //Value Computed by CMake
-IdleGame_IS_TOP_LEVEL:STATIC=OFF
+IdlegameTests_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-IdleGame_SOURCE_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/test
+IdlegameTests_SOURCE_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/test
 
 //Value Computed by CMake
 Idlegame_BINARY_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build
@@ -378,6 +378,15 @@ gtest_force_shared_crt:BOOL=OFF
 
 //Build gtest with internal symbols hidden in shared libraries.
 gtest_hide_internal_symbols:BOOL=OFF
+
+//Value Computed by CMake
+worstAlgorithms_BINARY_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms
+
+//Value Computed by CMake
+worstAlgorithms_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+worstAlgorithms_SOURCE_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_algorithms
 
 
 ########################
@@ -518,7 +527,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

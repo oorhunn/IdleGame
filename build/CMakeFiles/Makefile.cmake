@@ -49,6 +49,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/googletest/googletest/cmake/gtest_main.pc.in"
   "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/googletest/googletest/cmake/internal_utils.cmake"
   "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/test/CMakeLists.txt"
+  "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_algorithms/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -69,15 +70,17 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "googletest/googletest/generated/gtest.pc"
   "googletest/googletest/generated/gtest_main.pc"
   "googletest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "worst_algorithms/CMakeFiles/CMakeDirectoryInformation.cmake"
   "test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Idlegame.dir/DependInfo.cmake"
   "googletest/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "googletest/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   "googletest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "worst_algorithms/CMakeFiles/worstAlgorithms.dir/DependInfo.cmake"
+  "worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/DependInfo.cmake"
   "test/CMakeFiles/IdlegameTests.dir/DependInfo.cmake"
   )

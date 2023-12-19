@@ -1,6 +1,3 @@
-C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/CMakeFiles/Idlegame.dir
-C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/CMakeFiles/package.dir
-C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/CMakeFiles/package_source.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/CMakeFiles/test.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/CMakeFiles/edit_cache.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/CMakeFiles/rebuild_cache.dir
@@ -8,8 +5,6 @@ C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/CMakeFiles/list_install
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/CMakeFiles/install.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/CMakeFiles/install/local.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/CMakeFiles/install/strip.dir
-C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/CMakeFiles/package.dir
-C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/CMakeFiles/package_source.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/CMakeFiles/test.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/CMakeFiles/edit_cache.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/CMakeFiles/rebuild_cache.dir
@@ -19,8 +14,6 @@ C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/CMakeFiles/i
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/CMakeFiles/install/strip.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googlemock/CMakeFiles/gmock.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googlemock/CMakeFiles/gmock_main.dir
-C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googlemock/CMakeFiles/package.dir
-C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googlemock/CMakeFiles/package_source.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googlemock/CMakeFiles/test.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googlemock/CMakeFiles/edit_cache.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googlemock/CMakeFiles/rebuild_cache.dir
@@ -30,8 +23,6 @@ C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googlemock/C
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googlemock/CMakeFiles/install/strip.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googletest/CMakeFiles/gtest.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googletest/CMakeFiles/gtest_main.dir
-C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googletest/CMakeFiles/package.dir
-C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googletest/CMakeFiles/package_source.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googletest/CMakeFiles/test.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googletest/CMakeFiles/edit_cache.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googletest/CMakeFiles/rebuild_cache.dir
@@ -39,9 +30,16 @@ C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googletest/C
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googletest/CMakeFiles/install.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googletest/CMakeFiles/install/local.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googletest/CMakeFiles/install/strip.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms/CMakeFiles/worstAlgorithms.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms/CMakeFiles/test.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms/CMakeFiles/edit_cache.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms/CMakeFiles/rebuild_cache.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms/CMakeFiles/list_install_components.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms/CMakeFiles/install.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms/CMakeFiles/install/local.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms/CMakeFiles/install/strip.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test/CMakeFiles/IdlegameTests.dir
-C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test/CMakeFiles/package.dir
-C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test/CMakeFiles/package_source.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test/CMakeFiles/test.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test/CMakeFiles/edit_cache.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test/CMakeFiles/rebuild_cache.dir

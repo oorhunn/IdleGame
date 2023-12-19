@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(IdleGame VERSION 0.1.0 LANGUAGES C CXX)
 set(This IdlegameTests)
+
+project(${This} VERSION 0.1.0 LANGUAGES C CXX)
 set(CMAKE_BUILD_TYPE Debug)
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
@@ -18,7 +19,7 @@ set(Sources
 add_executable(${This} ${Sources})
 target_link_libraries(${This} PUBLIC
     gtest_main
-    Idlegame
+    worstAlgorithms
 )
 
 

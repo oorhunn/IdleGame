@@ -1,4 +1,4 @@
-#include "../worst_algorithms/WorstSearchAlgorithms.h"
+#include "../worst_algorithms/include/WorstSearchAlgorithms.h"
 
 #include <gtest/gtest.h>
 #include <vector>

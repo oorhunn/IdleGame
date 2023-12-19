@@ -13,20 +13,6 @@ set(CMAKE_CXX_STANDARD 17)
 enable_testing()
 
 add_subdirectory(googletest)
-
-set(Headers
-    worst_algorithms/WorstBasicDataStructures.h
-    worst_algorithms/WorstLinkedList.h
-    worst_algorithms/WorstSearchAlgorithms.h
-)
-
-set(SOURCES
-    worst_algorithms/WorstSearchAlgorithms.cpp
-    worst_algorithms/WorstBasicDataStructures.cpp
-    worst_algorithms/WorstLinkedList.cpp
-
-)
-
-add_library(${This} STATIC ${SOURCES} ${Headers})
-
+add_subdirectory(worst_algorithms)
 add_subdirectory(test)
+

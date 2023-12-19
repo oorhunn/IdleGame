@@ -1,4 +1,4 @@
-#include "../worst_algorithms/WorstLinkedList.h"
+#include "../worst_algorithms/include/WorstLinkedList.h"
 
 #include <gtest/gtest.h>
 #include <vector>

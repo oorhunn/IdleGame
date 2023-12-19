@@ -1,23 +1,5 @@
 [
 {
-  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\Idlegame.dir\\worst_algorithms\\WorstSearchAlgorithms.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_algorithms\\WorstSearchAlgorithms.cpp",
-  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_algorithms/WorstSearchAlgorithms.cpp",
-  "output": "CMakeFiles/Idlegame.dir/worst_algorithms/WorstSearchAlgorithms.cpp.obj"
-},
-{
-  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\Idlegame.dir\\worst_algorithms\\WorstBasicDataStructures.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_algorithms\\WorstBasicDataStructures.cpp",
-  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_algorithms/WorstBasicDataStructures.cpp",
-  "output": "CMakeFiles/Idlegame.dir/worst_algorithms/WorstBasicDataStructures.cpp.obj"
-},
-{
-  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\Idlegame.dir\\worst_algorithms\\WorstLinkedList.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_algorithms\\WorstLinkedList.cpp",
-  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_algorithms/WorstLinkedList.cpp",
-  "output": "CMakeFiles/Idlegame.dir/worst_algorithms/WorstLinkedList.cpp.obj"
-},
-{
   "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googlemock",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/gmock.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\googletest\\googlemock\\src\\gmock-all.cc",
   "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/googletest/googlemock/src/gmock-all.cc",
@@ -40,6 +22,66 @@
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/gtest_main.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\googletest\\googletest\\src\\gtest_main.cc",
   "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/googletest/googletest/src/gtest_main.cc",
   "output": "googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/worstAlgorithms.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\worstAlgorithms.dir\\main.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_algorithms\\main.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_algorithms/main.cpp",
+  "output": "worst_algorithms/CMakeFiles/worstAlgorithms.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/worstAlgorithms.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\worstAlgorithms.dir\\src\\WorstBasicDataStructures.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_algorithms\\src\\WorstBasicDataStructures.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_algorithms/src/WorstBasicDataStructures.cpp",
+  "output": "worst_algorithms/CMakeFiles/worstAlgorithms.dir/src/WorstBasicDataStructures.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/worstAlgorithms.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\worstAlgorithms.dir\\src\\WorstDoubleLinkedList.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_algorithms\\src\\WorstDoubleLinkedList.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_algorithms/src/WorstDoubleLinkedList.cpp",
+  "output": "worst_algorithms/CMakeFiles/worstAlgorithms.dir/src/WorstDoubleLinkedList.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/worstAlgorithms.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\worstAlgorithms.dir\\src\\WorstLinkedList.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_algorithms\\src\\WorstLinkedList.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_algorithms/src/WorstLinkedList.cpp",
+  "output": "worst_algorithms/CMakeFiles/worstAlgorithms.dir/src/WorstLinkedList.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/worstAlgorithms.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\worstAlgorithms.dir\\src\\WorstSearchAlgorithms.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_algorithms\\src\\WorstSearchAlgorithms.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_algorithms/src/WorstSearchAlgorithms.cpp",
+  "output": "worst_algorithms/CMakeFiles/worstAlgorithms.dir/src/WorstSearchAlgorithms.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/worstAlgorithmsinstance.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\worstAlgorithmsinstance.dir\\main.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_algorithms\\main.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_algorithms/main.cpp",
+  "output": "worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/worstAlgorithmsinstance.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\worstAlgorithmsinstance.dir\\src\\WorstBasicDataStructures.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_algorithms\\src\\WorstBasicDataStructures.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_algorithms/src/WorstBasicDataStructures.cpp",
+  "output": "worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/src/WorstBasicDataStructures.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/worstAlgorithmsinstance.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\worstAlgorithmsinstance.dir\\src\\WorstDoubleLinkedList.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_algorithms\\src\\WorstDoubleLinkedList.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_algorithms/src/WorstDoubleLinkedList.cpp",
+  "output": "worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/src/WorstDoubleLinkedList.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/worstAlgorithmsinstance.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\worstAlgorithmsinstance.dir\\src\\WorstLinkedList.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_algorithms\\src\\WorstLinkedList.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_algorithms/src/WorstLinkedList.cpp",
+  "output": "worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/src/WorstLinkedList.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/worstAlgorithmsinstance.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\worstAlgorithmsinstance.dir\\src\\WorstSearchAlgorithms.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_algorithms\\src\\WorstSearchAlgorithms.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_algorithms/src/WorstSearchAlgorithms.cpp",
+  "output": "worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/src/WorstSearchAlgorithms.cpp.obj"
 },
 {
   "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test",

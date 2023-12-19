@@ -1,3 +1,0 @@
-IdlegameTests 0 0
----
-IdlegameTests

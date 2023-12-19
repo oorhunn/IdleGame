@@ -64,26 +64,6 @@ CMAKE_BINARY_DIR = C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target package
-package: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	C:\Users\aorhun.demiroglu\CMake\bin\cpack.exe --config ./CPackConfig.cmake
-.PHONY : package
-
-# Special rule for the target package
-package/fast: package
-.PHONY : package/fast
-
-# Special rule for the target package_source
-package_source:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	C:\Users\aorhun.demiroglu\CMake\bin\cpack.exe --config ./CPackSourceConfig.cmake C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/CPackSourceConfig.cmake
-.PHONY : package_source
-
-# Special rule for the target package_source
-package_source/fast: package_source
-.PHONY : package_source/fast
-
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
@@ -191,19 +171,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Idlegame
-
-# Build rule for target.
-Idlegame: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Idlegame
-.PHONY : Idlegame
-
-# fast build rule for target.
-Idlegame/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Idlegame.dir\build.make CMakeFiles/Idlegame.dir/build
-.PHONY : Idlegame/fast
-
-#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -256,6 +223,32 @@ gtest_main/fast:
 .PHONY : gtest_main/fast
 
 #=============================================================================
+# Target rules for targets named worstAlgorithms
+
+# Build rule for target.
+worstAlgorithms: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worstAlgorithms
+.PHONY : worstAlgorithms
+
+# fast build rule for target.
+worstAlgorithms/fast:
+	$(MAKE) $(MAKESILENT) -f worst_algorithms\CMakeFiles\worstAlgorithms.dir\build.make worst_algorithms/CMakeFiles/worstAlgorithms.dir/build
+.PHONY : worstAlgorithms/fast
+
+#=============================================================================
+# Target rules for targets named worstAlgorithmsinstance
+
+# Build rule for target.
+worstAlgorithmsinstance: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worstAlgorithmsinstance
+.PHONY : worstAlgorithmsinstance
+
+# fast build rule for target.
+worstAlgorithmsinstance/fast:
+	$(MAKE) $(MAKESILENT) -f worst_algorithms\CMakeFiles\worstAlgorithmsinstance.dir\build.make worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/build
+.PHONY : worstAlgorithmsinstance/fast
+
+#=============================================================================
 # Target rules for targets named IdlegameTests
 
 # Build rule for target.
@@ -268,78 +261,6 @@ IdlegameTests/fast:
 	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/build
 .PHONY : IdlegameTests/fast
 
-worst_algorithms/WorstBasicDataStructures.obj: worst_algorithms/WorstBasicDataStructures.cpp.obj
-.PHONY : worst_algorithms/WorstBasicDataStructures.obj
-
-# target to build an object file
-worst_algorithms/WorstBasicDataStructures.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Idlegame.dir\build.make CMakeFiles/Idlegame.dir/worst_algorithms/WorstBasicDataStructures.cpp.obj
-.PHONY : worst_algorithms/WorstBasicDataStructures.cpp.obj
-
-worst_algorithms/WorstBasicDataStructures.i: worst_algorithms/WorstBasicDataStructures.cpp.i
-.PHONY : worst_algorithms/WorstBasicDataStructures.i
-
-# target to preprocess a source file
-worst_algorithms/WorstBasicDataStructures.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Idlegame.dir\build.make CMakeFiles/Idlegame.dir/worst_algorithms/WorstBasicDataStructures.cpp.i
-.PHONY : worst_algorithms/WorstBasicDataStructures.cpp.i
-
-worst_algorithms/WorstBasicDataStructures.s: worst_algorithms/WorstBasicDataStructures.cpp.s
-.PHONY : worst_algorithms/WorstBasicDataStructures.s
-
-# target to generate assembly for a file
-worst_algorithms/WorstBasicDataStructures.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Idlegame.dir\build.make CMakeFiles/Idlegame.dir/worst_algorithms/WorstBasicDataStructures.cpp.s
-.PHONY : worst_algorithms/WorstBasicDataStructures.cpp.s
-
-worst_algorithms/WorstLinkedList.obj: worst_algorithms/WorstLinkedList.cpp.obj
-.PHONY : worst_algorithms/WorstLinkedList.obj
-
-# target to build an object file
-worst_algorithms/WorstLinkedList.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Idlegame.dir\build.make CMakeFiles/Idlegame.dir/worst_algorithms/WorstLinkedList.cpp.obj
-.PHONY : worst_algorithms/WorstLinkedList.cpp.obj
-
-worst_algorithms/WorstLinkedList.i: worst_algorithms/WorstLinkedList.cpp.i
-.PHONY : worst_algorithms/WorstLinkedList.i
-
-# target to preprocess a source file
-worst_algorithms/WorstLinkedList.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Idlegame.dir\build.make CMakeFiles/Idlegame.dir/worst_algorithms/WorstLinkedList.cpp.i
-.PHONY : worst_algorithms/WorstLinkedList.cpp.i
-
-worst_algorithms/WorstLinkedList.s: worst_algorithms/WorstLinkedList.cpp.s
-.PHONY : worst_algorithms/WorstLinkedList.s
-
-# target to generate assembly for a file
-worst_algorithms/WorstLinkedList.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Idlegame.dir\build.make CMakeFiles/Idlegame.dir/worst_algorithms/WorstLinkedList.cpp.s
-.PHONY : worst_algorithms/WorstLinkedList.cpp.s
-
-worst_algorithms/WorstSearchAlgorithms.obj: worst_algorithms/WorstSearchAlgorithms.cpp.obj
-.PHONY : worst_algorithms/WorstSearchAlgorithms.obj
-
-# target to build an object file
-worst_algorithms/WorstSearchAlgorithms.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Idlegame.dir\build.make CMakeFiles/Idlegame.dir/worst_algorithms/WorstSearchAlgorithms.cpp.obj
-.PHONY : worst_algorithms/WorstSearchAlgorithms.cpp.obj
-
-worst_algorithms/WorstSearchAlgorithms.i: worst_algorithms/WorstSearchAlgorithms.cpp.i
-.PHONY : worst_algorithms/WorstSearchAlgorithms.i
-
-# target to preprocess a source file
-worst_algorithms/WorstSearchAlgorithms.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Idlegame.dir\build.make CMakeFiles/Idlegame.dir/worst_algorithms/WorstSearchAlgorithms.cpp.i
-.PHONY : worst_algorithms/WorstSearchAlgorithms.cpp.i
-
-worst_algorithms/WorstSearchAlgorithms.s: worst_algorithms/WorstSearchAlgorithms.cpp.s
-.PHONY : worst_algorithms/WorstSearchAlgorithms.s
-
-# target to generate assembly for a file
-worst_algorithms/WorstSearchAlgorithms.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Idlegame.dir\build.make CMakeFiles/Idlegame.dir/worst_algorithms/WorstSearchAlgorithms.cpp.s
-.PHONY : worst_algorithms/WorstSearchAlgorithms.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -351,25 +272,15 @@ help:
 	@echo ... install/local
 	@echo ... install/strip
 	@echo ... list_install_components
-	@echo ... package
-	@echo ... package_source
 	@echo ... rebuild_cache
 	@echo ... test
-	@echo ... Idlegame
 	@echo ... IdlegameTests
 	@echo ... gmock
 	@echo ... gmock_main
 	@echo ... gtest
 	@echo ... gtest_main
-	@echo ... worst_algorithms/WorstBasicDataStructures.obj
-	@echo ... worst_algorithms/WorstBasicDataStructures.i
-	@echo ... worst_algorithms/WorstBasicDataStructures.s
-	@echo ... worst_algorithms/WorstLinkedList.obj
-	@echo ... worst_algorithms/WorstLinkedList.i
-	@echo ... worst_algorithms/WorstLinkedList.s
-	@echo ... worst_algorithms/WorstSearchAlgorithms.obj
-	@echo ... worst_algorithms/WorstSearchAlgorithms.i
-	@echo ... worst_algorithms/WorstSearchAlgorithms.s
+	@echo ... worstAlgorithms
+	@echo ... worstAlgorithmsinstance
 .PHONY : help
 
 

@@ -1,9 +1,9 @@
 #include <iostream>
-#include "WorstDoubleLinkedList.h"
+#include "WorstBinaryTree.h"
 
 int main()
 {
-    WorstDoubleLinkedList<int> hello;
+    WorstBinaryTree<int> hello;
 
     return 0;
 }

@@ -3,11 +3,12 @@ set(This worstAlgorithms)
 project(${This} CXX C)
 set(Sources
     main.cpp
-    src/WorstBasicDataStructures.cpp
-    src/WorstDoubleLinkedList.cpp
-    src/WorstLinkedList.cpp
-    src/WorstSearchAlgorithms.cpp
     src/WorstListBase.cpp
+    src/WorstLinkedList.cpp
+    src/WorstDoubleLinkedList.cpp
+    src/WorstSearchAlgorithms.cpp
+    src/WorstBinaryTree.cpp
+
 )
 
 add_library(${This} STATIC ${Sources})

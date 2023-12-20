@@ -1,27 +1,15 @@
-#include "WorstBasicDataStructures.h"
+#pragma once
+#include "WorstListBase.h"
 
 template <typename nodeType>
-class Node {
-public:
-    nodeType data;
-    class Node* next;
-    Node() : next(nullptr) {};
-    Node(nodeType val): data(val), next(nullptr) {};
-};
-
-template <typename nodeType>
-class WorstLinkedList : public WorstBasicDataStructures, public Node<nodeType> {
+class WorstLinkedList : public WorstListBase<nodeType>, public NodeBase<nodeType> {
 public:
     WorstLinkedList();
     ~WorstLinkedList();
     
 
-    void worstAppend(nodeType val);
-    void worstDisplay();
-    void worstDeleteNode(nodeType node);
-    void worstInsertafter();
+    virtual void worstAppend(nodeType val) override;
+    virtual void worstDeleteNode(nodeType val) override;
 
-private:
-    Node<nodeType>* head;
 };
 

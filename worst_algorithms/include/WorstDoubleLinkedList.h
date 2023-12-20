@@ -1,25 +1,17 @@
+#pragma once  // Include guard to prevent multiple inclusions
+
+#include "WorstListBase.h"
 
 
 
 template<typename nodeType>
-class DoubleNode {
-public:
-    nodeType data;
-    class DoubleNode* next;
-    class DoubleNode* prev;
-    DoubleNode() : next(nullptr), prev(nullptr) {};
-    DoubleNode(nodeType val) : data(val), next(nullptr), prev(this) {} ;
-};
-
-template<typename nodeType>
-class WorstDoubleLinkedList : public DoubleNode<nodeType>{
+class WorstDoubleLinkedList : public WorstListBase<nodeType>, public DoubleNode<nodeType> {
 public:
     WorstDoubleLinkedList();
     ~WorstDoubleLinkedList();
 
-    void worstAppend(nodeType val);
-    void worstDisplay();
+    virtual void worstAppend(nodeType val) override;
+    virtual void worstDeleteNode(nodeType val) override;
 private:
     DoubleNode<nodeType>* head;
 };
-

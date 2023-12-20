@@ -1,5 +1,8 @@
+
 #include "../include/WorstDoubleLinkedList.h"
 #include <iostream>
+
+
 template class WorstDoubleLinkedList<int>;
 
 
@@ -40,12 +43,28 @@ void WorstDoubleLinkedList<nodeType>::worstAppend(nodeType val)
     current->next = newNode;
     newNode->prev = current;
 }
+
 template <typename nodeType>
-void WorstDoubleLinkedList<nodeType>::worstDisplay()
+void WorstDoubleLinkedList<nodeType>::worstDeleteNode(nodeType val)
 {
-    DoubleNode<nodeType>* current = head;
-    while(current){
-        std::cout << current->data << " \n"; 
+    if(!this->head){
+        return;
+    }
+    if (this->head->data == val) {
+        DoubleNode<nodeType>* temp = this->head;
+        this->head = this->head->next;
+        delete temp;
+        return;
+    }
+    DoubleNode<nodeType>* current = this->head;
+    DoubleNode<nodeType>* prev = nullptr;
+
+    while (current && current->data != val) {
+        prev = current;
         current = current->next;
+    }
+    if (current) {
+        prev->next = current->next;
+        delete current;
     }
 }

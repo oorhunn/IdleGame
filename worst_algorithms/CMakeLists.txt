@@ -7,11 +7,13 @@ set(Sources
     src/WorstDoubleLinkedList.cpp
     src/WorstLinkedList.cpp
     src/WorstSearchAlgorithms.cpp
+    src/WorstListBase.cpp
 )
 
 add_library(${This} STATIC ${Sources})
 
-target_include_directories(${This} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+target_include_directories(${This} 
+    PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 add_executable(${This}instance ${Sources})
 

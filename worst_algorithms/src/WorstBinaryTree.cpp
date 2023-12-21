@@ -79,11 +79,13 @@ void WorstBinaryTree<nodeType>::_traversePreOrder(std::string& out_str, std::str
         out_str.append(pointer);
         out_str.append(std::to_string(t->element));
         out_str.append("\n");
-        out_str.append("│  ");
-        out_str.append("└──");
+
+
+        std::string paddingBuilder.append("│  ");
+        std::string pointerForRight.append("└──");
         std::string temp = (t->right != nullptr) ? "├──" : "└──";
         out_str.append(temp);
-
+// https://www.baeldung.com/java-print-binary-tree-diagram
         _traversePreOrder(out_str, p, ,  t->left);
         _traversePreOrder(out_str, t->right);
     }

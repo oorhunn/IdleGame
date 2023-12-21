@@ -11,11 +11,15 @@ template <typename nodeType>
 inline WorstDoubleLinkedList<nodeType>::WorstDoubleLinkedList() :
     head(nullptr)
 {
+    std::cout << "WorstDoubleLinkedList constructor here \n";
+
 }
 
 template <typename nodeType>
 WorstDoubleLinkedList<nodeType>::~WorstDoubleLinkedList()
 {
+    std::cout << "WorstDoubleLinkedList destructor here \n";
+
     DoubleNode<nodeType>* current = head;
     DoubleNode<nodeType>* next;
     while (current)

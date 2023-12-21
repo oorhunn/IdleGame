@@ -25,8 +25,8 @@ public:
 template <typename nodeType>
 class WorstListBase {
 public:
-    WorstListBase();    // constructor
-    ~WorstListBase();   // destructor
+    WorstListBase();  // constructor
+    virtual ~WorstListBase();   // destructor
 
 
     virtual void worstAppend(nodeType val) = 0;

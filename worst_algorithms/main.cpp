@@ -1,11 +1,12 @@
 #include <iostream>
-#include "WorstBinaryTree.h"
 #include <sstream>
+#include "WorstBinaryTree.h"
 
 // #include "WorstDoubleLinkedList.h"
 
 
 
+template class WorstBinaryTree<int>;
 
 int main()
 {
@@ -17,11 +18,12 @@ int main()
     myTree.insert(4);
     myTree.insert(3);
     myTree.insert(5);
+    myTree.insert(9);
 
-    std::ostringstream traversed = myTree.traversePreOrder();
-    std::cout << traversed.str();
-    // std::string to_print = myTree.traversePreOrder();
-    // std::cout << to_print << "\n";
+    myTree.printTree();
+
+    myTree.deleteElement(9);
+    myTree.printTree();
 
     return 0;
 }

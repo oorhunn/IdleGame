@@ -1,7 +1,7 @@
-#include "../include/WorstBinaryTree.h"
-#include "WorstBinaryTree.h"
 #include <iostream>
 #include <sstream>
+#include "../include/WorstBinaryTree.h"
+#include "WorstBinaryTree.h"
 
 template class WorstBinaryTree<int>;
 
@@ -65,7 +65,7 @@ void WorstBinaryTree<nodeType>::_makeEmpty(BinaryNode *&t)
 }
 
 template <typename nodeType>
-std::ostringstream WorstBinaryTree<nodeType>::traversePreOrder()
+std::ostringstream WorstBinaryTree<nodeType>::traversePreOrder() const
 {
     std::ostringstream str_stream;
     _traversePreOrder(str_stream, "", "", root);
@@ -73,7 +73,7 @@ std::ostringstream WorstBinaryTree<nodeType>::traversePreOrder()
 }
 
 template <typename nodeType>
-void WorstBinaryTree<nodeType>::_traversePreOrder(std::ostringstream& out_str, const std::string& padding, const std::string& pointer, BinaryNode* t) {
+void WorstBinaryTree<nodeType>::_traversePreOrder(std::ostringstream& out_str, const std::string& padding, const std::string& pointer, BinaryNode* t) const {
     if (t != nullptr) {
         out_str << padding << pointer << t->element << "\n";
 
@@ -81,10 +81,11 @@ void WorstBinaryTree<nodeType>::_traversePreOrder(std::ostringstream& out_str, c
         std::string pointerRight = "└──";
         std::string pointerLeft = (t->right != nullptr) ? "├──" : "└──";
 
-        traverseNodes(out_str, paddingForBoth, pointerLeft, t->left, t->right != nullptr);
-        traverseNodes(out_str, paddingForBoth, pointerRight, t->right, false);
+        _traversePreOrder(out_str, paddingForBoth, pointerLeft, t->left);
+        _traversePreOrder(out_str, paddingForBoth, pointerRight, t->right);
     }
 }
+
 
 template <typename nodeType>
 void WorstBinaryTree<nodeType>::traverseNodes(std::ostringstream& out_str, const std::string& padding, const std::string& pointer, BinaryNode* node, bool hasRightSibling) {
@@ -117,6 +118,8 @@ int WorstBinaryTree<nodeType>::getDepth()
     return depth;
 }
 
+
+
 template <typename nodeType>
 int WorstBinaryTree<nodeType>::_getDepth(int depth, BinaryNode *&t)
 {
@@ -133,16 +136,62 @@ int WorstBinaryTree<nodeType>::_getDepth(int depth, BinaryNode *&t)
 template <typename nodeType>
 void WorstBinaryTree<nodeType>::printTree(std::ostream &out) const
 {
-    std::ostringstream traversed = myTree.traversePreOrder();
-    std::cout << traversed.str();
+    std::ostringstream str_stream = traversePreOrder(); // Assuming traversePreOrder returns std::ostringstream
+    out << str_stream.str();
 }
 
+template <typename nodeType>
+bool WorstBinaryTree<nodeType>::deleteElement(const nodeType& x)
+{
+    if (root == nullptr) {
+        return false;
+    }
+    else if (contains(x) == false) {
+        return false;
+    }
+    _deleteElement(x, root);
+    return true;
+}
+template <typename nodeType>
+typename WorstBinaryTree<nodeType>::BinaryNode* WorstBinaryTree<nodeType>::_deleteElement(const nodeType &x, BinaryNode *&t)
+{
+    // move until the node
+    if (x < t->element){
+        t->left = _deleteElement(x, t->left);
+    }
+    else if (x > t->element){
+        t->right = _deleteElement(x, t->right);
+    }
+    // found the node
 
+    // case 1: no children
+    else {
+        if (t->left == nullptr && t->right == nullptr){
+            delete t;
+            return nullptr;
+        }
+        else if (t->left == nullptr){
+            BinaryNode* temp = t->right;
+            delete t;
+            return temp;
+        }
+        else if (t->right == nullptr){
+            BinaryNode* temp = t->left;
+            delete t;
+            return temp;
+        }
+        
+    }
+    // case 2: one child
+    // case 3: two children
+    return t;
+}
 template <typename nodeType>
 inline bool WorstBinaryTree<nodeType>::contains(const nodeType &x) const
 {
     return _contains(x, root);
 }
+
 
 template <typename nodeType>
 inline bool WorstBinaryTree<nodeType>::_contains(const nodeType &x, BinaryNode *t) const
@@ -159,3 +208,23 @@ inline bool WorstBinaryTree<nodeType>::_contains(const nodeType &x, BinaryNode *
     return true;
 }
 
+template <typename nodeType>
+nodeType WorstBinaryTree<nodeType>::findMin()  {
+    if (root == nullptr) {
+        return nodeType();
+    }
+    BinaryNode* minNode = _findMin(root);
+    return minNode->element;
+}
+
+template<typename nodeType>
+typename WorstBinaryTree<nodeType>::BinaryNode* WorstBinaryTree<nodeType>::_findMin(BinaryNode*& t) 
+{
+    if (t == nullptr) {
+        return nullptr;
+    }
+    else if (t->left == nullptr) {
+        return t;
+    }
+    return _findMin(t->left);
+}

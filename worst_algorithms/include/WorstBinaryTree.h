@@ -15,7 +15,7 @@ public:
     bool contains(const nodeType& x) const;
     const nodeType& findMin() const;
     const nodeType& findMax() const;
-    // void printTree(std::ostream& out = std::cout) const;
+    void printTree(std::ostream& out = std::cout) const;
 
     
     
@@ -43,7 +43,6 @@ private:
     int _getDepth(int depth, BinaryNode*& t);
     void _insert(const nodeType& x, BinaryNode*& t);
     void _makeEmpty(BinaryNode*& t);
-    // void _printTree(BinaryNode*& t, int tabLength = 0, std::ostream& out = std::cout);
     bool _contains(const nodeType& x, BinaryNode* t ) const;
     void _traversePreOrder(std::ostringstream& out_str, const std::string& padding, const std::string& pointer, BinaryNode* t);
     void traverseNodes(std::ostringstream& out_str, const std::string& padding, const std::string& pointer, BinaryNode* node, bool hasRightSibling);

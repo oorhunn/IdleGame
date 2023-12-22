@@ -130,17 +130,13 @@ int WorstBinaryTree<nodeType>::_getDepth(int depth, BinaryNode *&t)
     return std::max(rigth_depth, left_depth);
 }
 
-// template <typename nodeType>
-// void WorstBinaryTree<nodeType>::printTree(std::ostream &out) const
-// {
-//     _printTree(root);
-// }
+template <typename nodeType>
+void WorstBinaryTree<nodeType>::printTree(std::ostream &out) const
+{
+    std::ostringstream traversed = myTree.traversePreOrder();
+    std::cout << traversed.str();
+}
 
-// template <typename nodeType>
-// void WorstBinaryTree<nodeType>::_printTree(BinaryNode *&t, int tabLength = 0, std::ostream &out)
-// {
-//     std::cout << "not implemented yet \n";
-// }
 
 template <typename nodeType>
 inline bool WorstBinaryTree<nodeType>::contains(const nodeType &x) const

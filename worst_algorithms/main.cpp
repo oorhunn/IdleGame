@@ -1,5 +1,7 @@
 #include <iostream>
 #include "WorstBinaryTree.h"
+#include <sstream>
+
 // #include "WorstDoubleLinkedList.h"
 
 
@@ -16,7 +18,8 @@ int main()
     myTree.insert(3);
     myTree.insert(5);
 
-
+    std::ostringstream traversed = myTree.traversePreOrder();
+    std::cout << traversed.str();
     // std::string to_print = myTree.traversePreOrder();
     // std::cout << to_print << "\n";
 

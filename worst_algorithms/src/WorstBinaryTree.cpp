@@ -1,6 +1,8 @@
 #include "../include/WorstBinaryTree.h"
 #include "WorstBinaryTree.h"
 #include <iostream>
+#include <sstream>
+
 template class WorstBinaryTree<int>;
 
 
@@ -63,33 +65,46 @@ void WorstBinaryTree<nodeType>::_makeEmpty(BinaryNode *&t)
 }
 
 template <typename nodeType>
-std::string WorstBinaryTree<nodeType>::traversePreOrder()
+std::ostringstream WorstBinaryTree<nodeType>::traversePreOrder()
 {
-
-    std::string tree_str; 
-    _traversePreOrder(tree_str, "", "", root);
-    return tree_str;
+    std::ostringstream str_stream;
+    _traversePreOrder(str_stream, "", "", root);
+    return str_stream;
 }
 
 template <typename nodeType>
-void WorstBinaryTree<nodeType>::_traversePreOrder(std::string& out_str, std::string padding, std::string pointer, BinaryNode*& t)
-{
-    if (t != nullptr){
-        out_str.append(padding);
-        out_str.append(pointer);
-        out_str.append(std::to_string(t->element));
-        out_str.append("\n");
+void WorstBinaryTree<nodeType>::_traversePreOrder(std::ostringstream& out_str, const std::string& padding, const std::string& pointer, BinaryNode* t) {
+    if (t != nullptr) {
+        out_str << padding << pointer << t->element << "\n";
 
+        std::string paddingForBoth = padding + "│  ";
+        std::string pointerRight = "└──";
+        std::string pointerLeft = (t->right != nullptr) ? "├──" : "└──";
 
-        std::string paddingBuilder.append("│  ");
-        std::string pointerForRight.append("└──");
-        std::string temp = (t->right != nullptr) ? "├──" : "└──";
-        out_str.append(temp);
-// https://www.baeldung.com/java-print-binary-tree-diagram
-        _traversePreOrder(out_str, p, ,  t->left);
-        _traversePreOrder(out_str, t->right);
+        traverseNodes(out_str, paddingForBoth, pointerLeft, t->left, t->right != nullptr);
+        traverseNodes(out_str, paddingForBoth, pointerRight, t->right, false);
     }
+}
 
+template <typename nodeType>
+void WorstBinaryTree<nodeType>::traverseNodes(std::ostringstream& out_str, const std::string& padding, const std::string& pointer, BinaryNode* node, bool hasRightSibling) {
+    if (node != nullptr) {
+        out_str << "\n" << padding << pointer << node->element;
+
+        std::string paddingBuilder = padding;
+        if (hasRightSibling) {
+            paddingBuilder += "│  ";
+        } else {
+            paddingBuilder += "   ";
+        }
+
+        std::string paddingForBoth = paddingBuilder;
+        std::string pointerRight = "└──";
+        std::string pointerLeft = (node->right != nullptr) ? "├──" : "└──";
+
+        traverseNodes(out_str, paddingForBoth, pointerLeft, node->left, node->right != nullptr);
+        traverseNodes(out_str, paddingForBoth, pointerRight, node->right, false);
+    }
 }
 
 template <typename nodeType>

@@ -23,7 +23,7 @@ public:
     void makeEmpty();
     
 
-    std::string traversePreOrder();
+    std::ostringstream traversePreOrder();
     int getDepth();
 
 private:
@@ -45,7 +45,8 @@ private:
     void _makeEmpty(BinaryNode*& t);
     // void _printTree(BinaryNode*& t, int tabLength = 0, std::ostream& out = std::cout);
     bool _contains(const nodeType& x, BinaryNode* t ) const;
-    void _traversePreOrder(std::string& out_str, std::string padding, std::string pointer, BinaryNode*& t);
+    void _traversePreOrder(std::ostringstream& out_str, const std::string& padding, const std::string& pointer, BinaryNode* t);
+    void traverseNodes(std::ostringstream& out_str, const std::string& padding, const std::string& pointer, BinaryNode* node, bool hasRightSibling);
     // void WorstBinaryTree<nodeType>::_traversePreOrder(std::string& out_str, std::string padding, std::string pointer, BinaryNode*& t)
 
 };

@@ -3,11 +3,11 @@
 #define WORST_BINARY_TREE_H
 #include <iostream>
 #include <vector>
-
+#include "WorstTreeBase.h"
 
 
 template <typename nodeType>
-class WorstBinaryTree{
+class WorstBinaryTree {
 public:
     WorstBinaryTree(); 
     ~WorstBinaryTree();
@@ -52,8 +52,7 @@ private:
     void _insert(const nodeType& x, BinaryNode*& t);
     void _makeEmpty(BinaryNode*& t);
     bool _contains(const nodeType& x, BinaryNode* t ) const;
-    void _traversePreOrder(std::ostringstream &out_str, const std::string &padding, const std::string &pointer, BinaryNode *t) const;
-    void traverseNodes(std::ostringstream& out_str, const std::string& padding, const std::string& pointer, BinaryNode* node, bool hasRightSibling);
+    void traverseNodes(std::ostringstream& out_str, const std::string& padding, const std::string& pointer, BinaryNode* node, bool hasRightSibling) const;
 
 
 };

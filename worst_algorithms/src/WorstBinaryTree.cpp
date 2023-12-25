@@ -75,27 +75,14 @@ template <typename nodeType>
 std::ostringstream WorstBinaryTree<nodeType>::traversePreOrder() const
 {
     std::ostringstream str_stream;
-    _traversePreOrder(str_stream, "", "", root);
+    traverseNodes(str_stream, "", "", root, (root != nullptr) && (root->right != nullptr));
     return str_stream;
 }
 
-template <typename nodeType>
-void WorstBinaryTree<nodeType>::_traversePreOrder(std::ostringstream& out_str, const std::string& padding, const std::string& pointer, BinaryNode* t) const {
-    if (t != nullptr) {
-        out_str << padding << pointer << t->element << "\n";
-
-        std::string paddingForBoth = padding + "│  ";
-        std::string pointerRight = "└──";
-        std::string pointerLeft = (t->right != nullptr) ? "├──" : "└──";
-
-        _traversePreOrder(out_str, paddingForBoth, pointerLeft, t->left);
-        _traversePreOrder(out_str, paddingForBoth, pointerRight, t->right);
-    }
-}
 
 
 template <typename nodeType>
-void WorstBinaryTree<nodeType>::traverseNodes(std::ostringstream& out_str, const std::string& padding, const std::string& pointer, BinaryNode* node, bool hasRightSibling) {
+void WorstBinaryTree<nodeType>::traverseNodes(std::ostringstream& out_str, const std::string& padding, const std::string& pointer, BinaryNode* node, bool hasRightSibling) const{
     if (node != nullptr) {
         out_str << "\n" << padding << pointer << node->element;
 
@@ -114,6 +101,14 @@ void WorstBinaryTree<nodeType>::traverseNodes(std::ostringstream& out_str, const
         traverseNodes(out_str, paddingForBoth, pointerRight, node->right, false);
     }
 }
+
+template <typename nodeType>
+void WorstBinaryTree<nodeType>::printTree(std::ostream &out) const
+{
+    std::ostringstream str_stream = traversePreOrder(); // Assuming traversePreOrder returns std::ostringstream
+    out << str_stream.str();
+}
+
 
 template <typename nodeType>
 int WorstBinaryTree<nodeType>::getDepth()
@@ -140,12 +135,6 @@ int WorstBinaryTree<nodeType>::_getDepth(int depth, BinaryNode *&t)
     return std::max(rigth_depth, left_depth);
 }
 
-template <typename nodeType>
-void WorstBinaryTree<nodeType>::printTree(std::ostream &out) const
-{
-    std::ostringstream str_stream = traversePreOrder(); // Assuming traversePreOrder returns std::ostringstream
-    out << str_stream.str();
-}
 
 template <typename nodeType>
 bool WorstBinaryTree<nodeType>::deleteElement(const nodeType& x)

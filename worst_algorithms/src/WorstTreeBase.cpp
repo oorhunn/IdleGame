@@ -1,6 +1,7 @@
 #include "../include/WorstTreeBase.h"
 #include <sstream>
 #include <ostream>
+#include "WorstTreeBase.h"
 
 
 template <typename nodeElementType, typename nodeType>
@@ -32,7 +33,6 @@ inline bool WorstTreeBase<nodeElementType, nodeType>::_contains(const nodeElemen
     }
     return true;
 }
-
 
 template <typename nodeElementType, typename nodeType>
 nodeElementType WorstTreeBase<nodeElementType, nodeType>::findMin() {

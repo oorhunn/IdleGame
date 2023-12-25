@@ -4,6 +4,9 @@ project(${This} CXX C)
 set(Sources
     main.cpp
     src/WorstTreeBase.cpp
+    src/WorstLeafBase.cpp
+    src/WorstTree.cpp
+    
 
 )
 

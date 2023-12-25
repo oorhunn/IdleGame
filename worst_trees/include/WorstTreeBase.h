@@ -3,18 +3,18 @@
 template <typename nodeElementType, typename nodeType>
 class WorstTreeBase {
 public:
-    WorstTreeBase {}();
-    virtual ~WorstTreeBase {}();
+    WorstTreeBase() {};
+    virtual ~WorstTreeBase() {};
 
-    virtual void printTree(std::ostream& out = std::cout) const;
+    virtual void printTree();
     virtual void insert(const nodeElementType& x) = 0;
     virtual void makeEmpty() = 0;
     virtual bool deleteElement(const nodeElementType& x) = 0;
 
-    nodeElementType findMin();
-    std::ostringstream traversePreOrder() const;
-    int getDepth();
-    bool contains(const nodeElementType& x) const;
+    // nodeElementType findMin();
+    // std::ostringstream traversePreOrder() const;
+    // int getDepth();
+    // bool contains(const nodeElementType& x) const;
 
 protected:
     nodeType* root;
@@ -30,3 +30,4 @@ protected:
     // bool _contains(const nodeElementType& x, nodeType* t ) const;
 
 };
+

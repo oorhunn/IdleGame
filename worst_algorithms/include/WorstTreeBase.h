@@ -3,7 +3,7 @@
 #include "WorstNodes.h"
 
 
-template <typename nodeType, typename nodePtr>
+template <typename nodeElementType, typename nodeType>
 class WorstTreeBase {
 public:
     WorstTreeBase();
@@ -11,27 +11,27 @@ public:
 
     virtual void printTree(std::ostream& out = std::cout) const;
     
-    virtual void insert(const nodeType& x) = 0;
+    virtual void insert(const nodeElementType& x) = 0;
     virtual void makeEmpty() = 0;
-    virtual bool deleteElement(const nodeType& x) = 0;
+    virtual bool deleteElement(const nodeElementType& x) = 0;
 
-    nodeType findMin();
+    nodeElementType findMin();
     std::ostringstream traversePreOrder() const;
     int getDepth();
-    bool contains(const nodeType& x) const;
+    bool contains(const nodeElementType& x) const;
 
 protected:
-    nodePtr root;
+    nodeType* root;
 
-    virtual void _insert(const nodeType& x, nodePtr& t) = 0;
-    virtual void _makeEmpty(nodePtr& t) = 0;
+    virtual void _insert(const nodeElementType& x, nodeType*& t) = 0;
+    virtual void _makeEmpty(nodeType*& t) = 0;
 
-    int _getDepth(int depth, nodePtr& t);
-    void _traversePreOrder(std::ostringstream &out_str, const std::string &padding, const std::string &pointer, nodePtr t) const;
-    void traverseNodes(std::ostringstream& out_str, const std::string& padding, const std::string& pointer, nodePtr node, bool hasRightSibling);
+    int _getDepth(int depth, nodeType*& t);
+    void _traversePreOrder(std::ostringstream &out_str, const std::string &padding, const std::string &pointer, nodeType* t) const;
+    void traverseNodes(std::ostringstream& out_str, const std::string& padding, const std::string& pointer, nodeType* node, bool hasRightSibling);
 
 
-    bool _contains(const nodeType& x, nodePtr t ) const;
+    bool _contains(const nodeElementType& x, nodeType* t ) const;
 
 private:
 

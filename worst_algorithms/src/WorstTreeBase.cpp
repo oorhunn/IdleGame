@@ -3,24 +3,24 @@
 #include <ostream>
 
 
-template <typename nodeType, typename nodePtr>
-WorstTreeBase<nodeType, nodePtr>::WorstTreeBase()
+template <typename nodeElementType, typename nodeType>
+WorstTreeBase<nodeElementType, nodeType>::WorstTreeBase()
 {
 }
 
-template <typename nodeType, typename nodePtr>
-WorstTreeBase<nodeType, nodePtr>::~WorstTreeBase()
+template <typename nodeElementType, typename nodeType>
+WorstTreeBase<nodeElementType, nodeType>::~WorstTreeBase()
 {
 }
 
-template <typename nodeType, typename nodePtr>
-bool WorstTreeBase<nodeType, nodePtr>::contains(const nodeType &x) const
+template <typename nodeElementType, typename nodeType>
+bool WorstTreeBase<nodeElementType, nodeType>::contains(const nodeElementType &x) const
 {
     return _contains(x, root);
 }
 
-template <typename nodeType, typename nodePtr>
-inline bool WorstTreeBase<nodeType, nodePtr>::_contains(const nodeType &x, nodePtr t) const {
+template <typename nodeElementType, typename nodeType>
+inline bool WorstTreeBase<nodeElementType, nodeType>::_contains(const nodeElementType &x, nodeType* t) const {
     if(t == nullptr) {
         return false;
     }
@@ -34,18 +34,18 @@ inline bool WorstTreeBase<nodeType, nodePtr>::_contains(const nodeType &x, nodeP
 }
 
 
-template <typename nodeType, typename nodePtr>
-nodeType WorstTreeBase<nodeType, nodePtr>::findMin() {
+template <typename nodeElementType, typename nodeType>
+nodeElementType WorstTreeBase<nodeElementType, nodeType>::findMin() {
     if (root == nullptr) {
-        return nodeType();
+        return nodeElementType();
     }
-    nodePtr minNode = _findMin(root);
+    nodeType minNode = _findMin(root);
     return minNode->element;
 }
 
 
-template <typename nodeType, typename nodePtr>
-int WorstTreeBase<nodeType, nodePtr>::getDepth() {
+template <typename nodeElementType, typename nodeType>
+int WorstTreeBase<nodeElementType, nodeType>::getDepth() {
     if (root == nullptr){
         return 0;
     }
@@ -53,8 +53,8 @@ int WorstTreeBase<nodeType, nodePtr>::getDepth() {
     return depth;
 }
 
-template <typename nodeType, typename nodePtr>
-inline int WorstTreeBase<nodeType, nodePtr>::_getDepth(int depth, nodePtr &t) {
+template <typename nodeElementType, typename nodeType>
+inline int WorstTreeBase<nodeElementType, nodeType>::_getDepth(int depth, nodeType *&t) {
     if (t == nullptr) {
         return depth;
     }

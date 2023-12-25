@@ -21,9 +21,10 @@ int main()
     myTree.insert(9);
 
     myTree.printTree();
+    WorstBinaryTree<int> helloTree(myTree);
 
-    myTree.deleteElement(2);
-    myTree.printTree();
+    helloTree.insert(41);
+
 
     return 0;
 }

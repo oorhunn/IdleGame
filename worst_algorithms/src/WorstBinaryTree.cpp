@@ -20,6 +20,13 @@ WorstBinaryTree<nodeType>::~WorstBinaryTree()
 }
 
 template <typename nodeType>
+WorstBinaryTree<nodeType>::WorstBinaryTree(const WorstBinaryTree &rhs) :
+    root(nullptr)
+{
+    root = _clone(rhs.root);
+}
+
+template <typename nodeType>
 void WorstBinaryTree<nodeType>::insert(const nodeType& x) {
     if (root == nullptr) {
         root = new BinaryNode{x, nullptr, nullptr};
@@ -194,6 +201,14 @@ typename WorstBinaryTree<nodeType>::BinaryNode* WorstBinaryTree<nodeType>::_dele
         }
     }
     return t;
+}
+template <typename nodeType>
+typename WorstBinaryTree<nodeType>::BinaryNode* WorstBinaryTree<nodeType>::_clone(BinaryNode *t) const
+{
+    if(t == nullptr){
+        return nullptr;
+    }
+    return new BinaryNode(t->element, _clone(t->left), _clone(t->right));
 }
 template <typename nodeType>
 inline bool WorstBinaryTree<nodeType>::contains(const nodeType &x) const

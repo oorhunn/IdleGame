@@ -46,6 +46,7 @@ private:
     // const BinaryNode* _findMax(BinaryNode*& t);
     BinaryNode* _findMin(BinaryNode*& t);
     BinaryNode* _deleteElement(const nodeType& x, BinaryNode*& t);
+    BinaryNode* _clone(BinaryNode* t) const;
 
     int _getDepth(int depth, BinaryNode*& t);
     void _insert(const nodeType& x, BinaryNode*& t);

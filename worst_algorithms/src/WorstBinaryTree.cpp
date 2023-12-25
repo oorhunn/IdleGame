@@ -1,7 +1,6 @@
 #include <iostream>
 #include <sstream>
 #include "../include/WorstBinaryTree.h"
-#include "WorstBinaryTree.h"
 
 template class WorstBinaryTree<int>;
 

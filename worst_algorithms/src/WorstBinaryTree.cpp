@@ -166,24 +166,33 @@ typename WorstBinaryTree<nodeType>::BinaryNode* WorstBinaryTree<nodeType>::_dele
 
     // case 1: no children
     else {
-        if (t->left == nullptr && t->right == nullptr){
+        bool left_exists = t->left != nullptr;
+        bool right_exists = t->right != nullptr;
+        // case 1 no child 
+        if (!left_exists && !right_exists){
             delete t;
             return nullptr;
         }
-        else if (t->left == nullptr){
+        // case 2: one child
+        else if (!left_exists && right_exists){
             BinaryNode* temp = t->right;
             delete t;
             return temp;
         }
-        else if (t->right == nullptr){
+        // case 2: one child
+        else if (!right_exists && left_exists){
             BinaryNode* temp = t->left;
             delete t;
             return temp;
         }
+        // case 3: two children
+        else {
+            BinaryNode* temp = _findMin(t->right);
+            t->element = temp->element;
+            t->right = _deleteElement(temp->element, t->right);
         
+        }
     }
-    // case 2: one child
-    // case 3: two children
     return t;
 }
 template <typename nodeType>

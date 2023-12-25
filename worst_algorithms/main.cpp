@@ -22,7 +22,7 @@ int main()
 
     myTree.printTree();
 
-    myTree.deleteElement(9);
+    myTree.deleteElement(2);
     myTree.printTree();
 
     return 0;

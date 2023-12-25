@@ -249,6 +249,32 @@ worstAlgorithmsinstance/fast:
 .PHONY : worstAlgorithmsinstance/fast
 
 #=============================================================================
+# Target rules for targets named worstTrees
+
+# Build rule for target.
+worstTrees: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worstTrees
+.PHONY : worstTrees
+
+# fast build rule for target.
+worstTrees/fast:
+	$(MAKE) $(MAKESILENT) -f worst_trees\CMakeFiles\worstTrees.dir\build.make worst_trees/CMakeFiles/worstTrees.dir/build
+.PHONY : worstTrees/fast
+
+#=============================================================================
+# Target rules for targets named worstTreesinstance
+
+# Build rule for target.
+worstTreesinstance: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worstTreesinstance
+.PHONY : worstTreesinstance
+
+# fast build rule for target.
+worstTreesinstance/fast:
+	$(MAKE) $(MAKESILENT) -f worst_trees\CMakeFiles\worstTreesinstance.dir\build.make worst_trees/CMakeFiles/worstTreesinstance.dir/build
+.PHONY : worstTreesinstance/fast
+
+#=============================================================================
 # Target rules for targets named IdlegameTests
 
 # Build rule for target.
@@ -281,6 +307,8 @@ help:
 	@echo ... gtest_main
 	@echo ... worstAlgorithms
 	@echo ... worstAlgorithmsinstance
+	@echo ... worstTrees
+	@echo ... worstTreesinstance
 .PHONY : help
 
 

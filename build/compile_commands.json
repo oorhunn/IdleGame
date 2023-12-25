@@ -96,6 +96,30 @@
   "output": "worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/src/WorstBinaryTree.cpp.obj"
 },
 {
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_trees",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/worstTrees.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\worstTrees.dir\\main.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_trees\\main.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_trees/main.cpp",
+  "output": "worst_trees/CMakeFiles/worstTrees.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_trees",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/worstTrees.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\worstTrees.dir\\src\\WorstTreeBase.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_trees\\src\\WorstTreeBase.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_trees/src/WorstTreeBase.cpp",
+  "output": "worst_trees/CMakeFiles/worstTrees.dir/src/WorstTreeBase.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_trees",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/worstTreesinstance.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\worstTreesinstance.dir\\main.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_trees\\main.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_trees/main.cpp",
+  "output": "worst_trees/CMakeFiles/worstTreesinstance.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_trees",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/worstTreesinstance.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\worstTreesinstance.dir\\src\\WorstTreeBase.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_trees\\src\\WorstTreeBase.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_trees/src/WorstTreeBase.cpp",
+  "output": "worst_trees/CMakeFiles/worstTreesinstance.dir/src/WorstTreeBase.cpp.obj"
+},
+{
   "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdlegameTests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\IdlegameTests.dir\\WorstSearchAlgorithmsTest.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\test\\WorstSearchAlgorithmsTest.cpp",
   "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/test/WorstSearchAlgorithmsTest.cpp",

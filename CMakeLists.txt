@@ -14,5 +14,6 @@ enable_testing()
 
 add_subdirectory(googletest)
 add_subdirectory(worst_algorithms)
+add_subdirectory(worst_trees)
 add_subdirectory(test)
 

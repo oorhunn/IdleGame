@@ -64,18 +64,21 @@ CMAKE_BINARY_DIR = C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build
 # The main recursive "all" target.
 all: googletest/all
 all: worst_algorithms/all
+all: worst_trees/all
 all: test/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: googletest/preinstall
 preinstall: worst_algorithms/preinstall
+preinstall: worst_trees/preinstall
 preinstall: test/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: googletest/clean
 clean: worst_algorithms/clean
+clean: worst_trees/clean
 clean: test/clean
 .PHONY : clean
 
@@ -161,6 +164,23 @@ worst_algorithms/preinstall:
 worst_algorithms/clean: worst_algorithms/CMakeFiles/worstAlgorithms.dir/clean
 worst_algorithms/clean: worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/clean
 .PHONY : worst_algorithms/clean
+
+#=============================================================================
+# Directory level rules for directory worst_trees
+
+# Recursive "all" directory target.
+worst_trees/all: worst_trees/CMakeFiles/worstTrees.dir/all
+worst_trees/all: worst_trees/CMakeFiles/worstTreesinstance.dir/all
+.PHONY : worst_trees/all
+
+# Recursive "preinstall" directory target.
+worst_trees/preinstall:
+.PHONY : worst_trees/preinstall
+
+# Recursive "clean" directory target.
+worst_trees/clean: worst_trees/CMakeFiles/worstTrees.dir/clean
+worst_trees/clean: worst_trees/CMakeFiles/worstTreesinstance.dir/clean
+.PHONY : worst_trees/clean
 
 #=============================================================================
 # Target rules for target googletest/googlemock/CMakeFiles/gmock.dir
@@ -320,11 +340,63 @@ worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/clean:
 .PHONY : worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/clean
 
 #=============================================================================
+# Target rules for target worst_trees/CMakeFiles/worstTrees.dir
+
+# All Build rule for target.
+worst_trees/CMakeFiles/worstTrees.dir/all:
+	$(MAKE) $(MAKESILENT) -f worst_trees\CMakeFiles\worstTrees.dir\build.make worst_trees/CMakeFiles/worstTrees.dir/depend
+	$(MAKE) $(MAKESILENT) -f worst_trees\CMakeFiles\worstTrees.dir\build.make worst_trees/CMakeFiles/worstTrees.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=26,27,28 "Built target worstTrees"
+.PHONY : worst_trees/CMakeFiles/worstTrees.dir/all
+
+# Build rule for subdir invocation for target.
+worst_trees/CMakeFiles/worstTrees.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worst_trees/CMakeFiles/worstTrees.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 0
+.PHONY : worst_trees/CMakeFiles/worstTrees.dir/rule
+
+# Convenience name for target.
+worstTrees: worst_trees/CMakeFiles/worstTrees.dir/rule
+.PHONY : worstTrees
+
+# clean rule for target.
+worst_trees/CMakeFiles/worstTrees.dir/clean:
+	$(MAKE) $(MAKESILENT) -f worst_trees\CMakeFiles\worstTrees.dir\build.make worst_trees/CMakeFiles/worstTrees.dir/clean
+.PHONY : worst_trees/CMakeFiles/worstTrees.dir/clean
+
+#=============================================================================
+# Target rules for target worst_trees/CMakeFiles/worstTreesinstance.dir
+
+# All Build rule for target.
+worst_trees/CMakeFiles/worstTreesinstance.dir/all: worst_trees/CMakeFiles/worstTrees.dir/all
+	$(MAKE) $(MAKESILENT) -f worst_trees\CMakeFiles\worstTreesinstance.dir\build.make worst_trees/CMakeFiles/worstTreesinstance.dir/depend
+	$(MAKE) $(MAKESILENT) -f worst_trees\CMakeFiles\worstTreesinstance.dir\build.make worst_trees/CMakeFiles/worstTreesinstance.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=29,30,31 "Built target worstTreesinstance"
+.PHONY : worst_trees/CMakeFiles/worstTreesinstance.dir/all
+
+# Build rule for subdir invocation for target.
+worst_trees/CMakeFiles/worstTreesinstance.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worst_trees/CMakeFiles/worstTreesinstance.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 0
+.PHONY : worst_trees/CMakeFiles/worstTreesinstance.dir/rule
+
+# Convenience name for target.
+worstTreesinstance: worst_trees/CMakeFiles/worstTreesinstance.dir/rule
+.PHONY : worstTreesinstance
+
+# clean rule for target.
+worst_trees/CMakeFiles/worstTreesinstance.dir/clean:
+	$(MAKE) $(MAKESILENT) -f worst_trees\CMakeFiles\worstTreesinstance.dir\build.make worst_trees/CMakeFiles/worstTreesinstance.dir/clean
+.PHONY : worst_trees/CMakeFiles/worstTreesinstance.dir/clean
+
+#=============================================================================
 # Target rules for target test/CMakeFiles/IdlegameTests.dir
 
 # All Build rule for target.
-test/CMakeFiles/IdlegameTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 test/CMakeFiles/IdlegameTests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
+test/CMakeFiles/IdlegameTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 test/CMakeFiles/IdlegameTests.dir/all: worst_algorithms/CMakeFiles/worstAlgorithms.dir/all
 	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/build

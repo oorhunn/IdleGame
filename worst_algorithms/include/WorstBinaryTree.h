@@ -7,7 +7,7 @@
 
 
 template <typename nodeType>
-class WorstBinaryTree {
+class WorstBinaryTree : public WorstTreeBase {
 public:
     WorstBinaryTree(); 
     ~WorstBinaryTree();

@@ -16,7 +16,7 @@ WorstTreeBase<nodeType, nodePtr>::~WorstTreeBase()
 template <typename nodeType, typename nodePtr>
 bool WorstTreeBase<nodeType, nodePtr>::contains(const nodeType &x) const
 {
-    return false;
+    return _contains(x, root);
 }
 
 template <typename nodeType, typename nodePtr>

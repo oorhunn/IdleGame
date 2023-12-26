@@ -2,7 +2,6 @@
 #include "../include/BinaryTree.h"
 #include "../include/LeafBase.h"  // You may need to adjust this include based on your project structure
 #include <iostream>
-#include "BinaryTree.h"
 
 
 template class BinaryTree<int>;
@@ -51,11 +50,6 @@ void BinaryTree<nodeElementType>::_flushTree(BinaryNode<nodeElementType> *curren
     currentNode = nullptr;
 }
 
-template <typename nodeElementType>
-void BinaryTree<nodeElementType>::print() const
-{
-    std::cout << "Binary tree print not implemented \n";
-}
 
 template<typename nodeElementType>
 BinaryNode<nodeElementType>* BinaryTree<nodeElementType>::_remove(const nodeElementType& value, 

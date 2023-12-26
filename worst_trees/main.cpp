@@ -11,8 +11,7 @@ int main() {
     myTree.insert(2);
 
     myTree.insert(9);
-    int a = myTree.findMin();
-    std::cout << a << "\n";
+    myTree.printTree();
 
 
 

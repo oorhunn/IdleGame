@@ -1,4 +1,9 @@
 #pragma once
+#ifndef TREEBASE_H
+#define TREEBASE_H
+
+#include<ostream>
+#include <iostream>
 
 template<typename nodeElementType, template<typename> class nodeType>
 class TreeBase {
@@ -11,9 +16,14 @@ public:
     bool search(const nodeElementType& value) const;
     nodeElementType findMin();
 
-    virtual void print() const = 0;
+    void printTree(std::ostream& out = std::cout) const;
+    std::ostringstream traversePreOrder() const;
+
+
 protected:
     nodeType<nodeElementType>* root;
+    virtual void traverseNodes(std::ostringstream& out_str, const std::string& padding, const std::string& pointer, nodeType<nodeElementType>* node, bool hasRightSibling) const;
+    
     virtual bool _search(const nodeElementType& value, 
                         const nodeType<nodeElementType>* currentNode) const;
 
@@ -23,5 +33,10 @@ protected:
         nodeType<nodeElementType>*& currentNode) = 0;
     virtual nodeType<nodeElementType>* _findMin(nodeType<nodeElementType>*& currentNode);
 
+
+
 };
 
+
+
+#endif

@@ -19,6 +19,12 @@ BinaryTree<nodeElementType>::~BinaryTree()
 }
 
 template <typename nodeElementType>
+BinaryTree<nodeElementType>::BinaryTree(const BinaryTree &rhs)
+{
+    this->root = nullptr;
+    this->root = _clone(rhs.root);
+}
+template <typename nodeElementType>
 void BinaryTree<nodeElementType>::flushTree()
 {
     _flushTree(this->root);
@@ -34,6 +40,15 @@ void BinaryTree<nodeElementType>::_insert(const nodeElementType &value, BinaryNo
     } else if (currentNode->element < value) {
         _insert(value, currentNode->right);
     }
+}
+
+template <typename nodeElementType>
+BinaryNode<nodeElementType> *BinaryTree<nodeElementType>::_clone(BinaryNode<nodeElementType> *currentNode) const
+{
+    if(currentNode == nullptr){
+        return nullptr;
+    }
+    return new BinaryNode(currentNode->element, _clone(currentNode->left), _clone(currentNode->right));
 }
 
 template <typename nodeElementType>

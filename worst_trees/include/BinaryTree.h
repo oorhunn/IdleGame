@@ -29,7 +29,7 @@ protected:
 
 
 private:
-
+    BinaryNode<nodeElementType>* _clone(BinaryNode<nodeElementType>* currentNode) const;
     void _flushTree(BinaryNode<nodeElementType>* currentNode);
 
     virtual BinaryNode<nodeElementType>* _remove(const nodeElementType& value, 

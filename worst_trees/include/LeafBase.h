@@ -1,3 +1,6 @@
+#pragma once
+#include <iostream>
+
 template<typename nodeType>
 struct BinaryNode{
     nodeType element;

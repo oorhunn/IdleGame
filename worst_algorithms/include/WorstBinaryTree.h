@@ -3,7 +3,6 @@
 #define WORST_BINARY_TREE_H
 #include <iostream>
 #include <vector>
-#include "WorstTreeBase.h"
 
 
 template <typename nodeElementType>

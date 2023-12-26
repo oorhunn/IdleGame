@@ -30,15 +30,6 @@ C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googletest/C
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googletest/CMakeFiles/install.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googletest/CMakeFiles/install/local.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/googletest/googletest/CMakeFiles/install/strip.dir
-C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms/CMakeFiles/worstAlgorithms.dir
-C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir
-C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms/CMakeFiles/test.dir
-C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms/CMakeFiles/edit_cache.dir
-C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms/CMakeFiles/rebuild_cache.dir
-C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms/CMakeFiles/list_install_components.dir
-C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms/CMakeFiles/install.dir
-C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms/CMakeFiles/install/local.dir
-C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms/CMakeFiles/install/strip.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_trees/CMakeFiles/worstTrees.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_trees/CMakeFiles/worstTreesinstance.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_trees/CMakeFiles/test.dir

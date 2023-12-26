@@ -1,12 +1,18 @@
 #include <iostream>
-#include "WorstTree.h"
+#include "BinaryTree.h"
+#include "TreeBase.h"
+#include "LeafBase.h"
 
 
-template class WorstTree<int, int>;
 int main() {
-    WorstTree<int, int> myTree;
-    myTree.printTree();
-    
+
+    BinaryTree<int> myTree;
+    myTree.insert(1);
+    myTree.insert(2);
+
+    myTree.insert(9);
+    int a = myTree.findMin();
+    std::cout << a << "\n";
 
 
 

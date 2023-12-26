@@ -14,7 +14,6 @@ public:
     virtual void print() const = 0;
 protected:
     nodeType<nodeElementType>* root;
-
     virtual bool _search(const nodeElementType& value, 
                         const nodeType<nodeElementType>* currentNode) const;
 

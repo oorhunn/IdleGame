@@ -30,6 +30,8 @@ protected:
 
 private:
 
+    void _flushTree(BinaryNode<nodeElementType>* currentNode);
+
     virtual void print() const override;
     virtual BinaryNode<nodeElementType>* _remove(const nodeElementType& value, 
         BinaryNode<nodeElementType>*& currentNode) override;

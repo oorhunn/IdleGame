@@ -2,6 +2,7 @@
 #include "../include/BinaryTree.h"
 #include "../include/LeafBase.h"  // You may need to adjust this include based on your project structure
 #include <iostream>
+#include "BinaryTree.h"
 
 
 template class BinaryTree<int>;
@@ -15,10 +16,14 @@ BinaryTree<nodeElementType>::BinaryTree()
 template <typename nodeElementType>
 BinaryTree<nodeElementType>::~BinaryTree()
 {
-    // makeEmpty();
-    std::cout << "binary tree dectuctor here \n ";
+    flushTree();
 }
 
+template <typename nodeElementType>
+void BinaryTree<nodeElementType>::flushTree()
+{
+    _flushTree(this->root);
+}
 template <typename nodeElementType>
 void BinaryTree<nodeElementType>::_insert(const nodeElementType &value, BinaryNode<nodeElementType>*& currentNode)
 {
@@ -32,6 +37,19 @@ void BinaryTree<nodeElementType>::_insert(const nodeElementType &value, BinaryNo
     }
 }
 
+template <typename nodeElementType>
+void BinaryTree<nodeElementType>::_flushTree(BinaryNode<nodeElementType> *currentNode)
+{
+    if (currentNode == nullptr) {
+        return;
+    }
+
+    _flushTree(currentNode->left);
+    _flushTree(currentNode->right);
+
+    delete currentNode;
+    currentNode = nullptr;
+}
 
 template <typename nodeElementType>
 void BinaryTree<nodeElementType>::print() const

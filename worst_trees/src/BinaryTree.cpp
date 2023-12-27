@@ -88,6 +88,7 @@ BinaryNode<nodeElementType>* BinaryTree<nodeElementType>::_remove(const nodeElem
         if (!left_exists && !right_exists)
         {
             delete currentNode;
+            currentNode = nullptr;
             return nullptr;
         }
         // Case 2: One child (right)
@@ -95,6 +96,7 @@ BinaryNode<nodeElementType>* BinaryTree<nodeElementType>::_remove(const nodeElem
         {
             BinaryNode<nodeElementType> *temp = currentNode->right;
             delete currentNode;
+            currentNode = nullptr;
             return temp;
         }
         // Case 2: One child (left)
@@ -102,13 +104,14 @@ BinaryNode<nodeElementType>* BinaryTree<nodeElementType>::_remove(const nodeElem
         {
             BinaryNode<nodeElementType> *temp = currentNode->left;
             delete currentNode;
+            currentNode = nullptr;
             return temp;
         }
         // Case 3: Two children
         else
         {
-            // BinaryNode<nodeElementType> *temp = _findMin(currentNode->right);
-            BinaryNode<nodeElementType> *temp = nullptr;
+            BinaryNode<nodeElementType> *temp = this->_findMin(currentNode->right);
+            // BinaryNode<nodeElementType> *temp = nullptr;
 
             currentNode->element = temp->element;
             currentNode->right = _remove(temp->element, currentNode->right);

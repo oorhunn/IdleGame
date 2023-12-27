@@ -5,13 +5,11 @@ template class WorstListBase<int>;
 template <typename nodeType>
 inline WorstListBase<nodeType>::WorstListBase()
 {
-    std::cout << "WorstListBase constructor here \n";
 }
 
 template <typename nodeType>
 WorstListBase<nodeType>::~WorstListBase()
 {   
-    std::cout << "WorstListBase destructor here \n";
 
 }
 

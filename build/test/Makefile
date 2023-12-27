@@ -184,6 +184,30 @@ IdlegameTests/fast:
 	cd /d C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/build
 .PHONY : IdlegameTests/fast
 
+BinaryTreeTest.obj: BinaryTreeTest.cpp.obj
+.PHONY : BinaryTreeTest.obj
+
+# target to build an object file
+BinaryTreeTest.cpp.obj:
+	cd /d C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/BinaryTreeTest.cpp.obj
+.PHONY : BinaryTreeTest.cpp.obj
+
+BinaryTreeTest.i: BinaryTreeTest.cpp.i
+.PHONY : BinaryTreeTest.i
+
+# target to preprocess a source file
+BinaryTreeTest.cpp.i:
+	cd /d C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/BinaryTreeTest.cpp.i
+.PHONY : BinaryTreeTest.cpp.i
+
+BinaryTreeTest.s: BinaryTreeTest.cpp.s
+.PHONY : BinaryTreeTest.s
+
+# target to generate assembly for a file
+BinaryTreeTest.cpp.s:
+	cd /d C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/BinaryTreeTest.cpp.s
+.PHONY : BinaryTreeTest.cpp.s
+
 WorstBasicDataStructuresTest.obj: WorstBasicDataStructuresTest.cpp.obj
 .PHONY : WorstBasicDataStructuresTest.obj
 
@@ -246,6 +270,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... test
 	@echo ... IdlegameTests
+	@echo ... BinaryTreeTest.obj
+	@echo ... BinaryTreeTest.i
+	@echo ... BinaryTreeTest.s
 	@echo ... WorstBasicDataStructuresTest.obj
 	@echo ... WorstBasicDataStructuresTest.i
 	@echo ... WorstBasicDataStructuresTest.s

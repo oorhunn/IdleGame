@@ -22,10 +22,10 @@ struct AVLNode{
     AVLNode* right;
     AVLNode(const nodeType& newElement,
             AVLNode* lt, AVLNode* rt,
-            int h) :
+            int h = 0) :
         element{newElement}, left{lt}, right{rt},
         height{h} {}
-    AVLNode(nodeType&& newElement, AVLNode* lt, AVLNode* rt,int h) :
+    AVLNode(nodeType&& newElement, AVLNode* lt, AVLNode* rt,int h = 0) :
         element{std::move(newElement)}, left{lt}, right{rt},
         height{h} {}
 };

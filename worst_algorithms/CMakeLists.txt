@@ -7,7 +7,6 @@ set(Sources
     src/WorstLinkedList.cpp
     src/WorstDoubleLinkedList.cpp
     src/WorstSearchAlgorithms.cpp
-    src/WorstBinaryTree.cpp
 
 )
 

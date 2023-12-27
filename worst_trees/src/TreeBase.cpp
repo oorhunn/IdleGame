@@ -29,8 +29,8 @@ template <typename nodeElementType, template <typename> class nodeType>
 void TreeBase<nodeElementType, nodeType>::traverseNodes(std::ostringstream &out_str, const std::string &padding, const std::string &pointer, nodeType<nodeElementType> *node, bool hasRightSibling) const
 {
     if (node != nullptr) {
-        out_str << "\n" << padding << pointer << node->element;
-
+        out_str << std::endl << padding << pointer << node->element;
+        // std::endl
         std::string paddingBuilder = padding;
         if (hasRightSibling) {
             paddingBuilder += "│  ";

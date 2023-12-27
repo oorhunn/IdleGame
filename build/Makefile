@@ -223,6 +223,32 @@ gtest_main/fast:
 .PHONY : gtest_main/fast
 
 #=============================================================================
+# Target rules for targets named worstAlgorithms
+
+# Build rule for target.
+worstAlgorithms: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worstAlgorithms
+.PHONY : worstAlgorithms
+
+# fast build rule for target.
+worstAlgorithms/fast:
+	$(MAKE) $(MAKESILENT) -f worst_algorithms\CMakeFiles\worstAlgorithms.dir\build.make worst_algorithms/CMakeFiles/worstAlgorithms.dir/build
+.PHONY : worstAlgorithms/fast
+
+#=============================================================================
+# Target rules for targets named worstAlgorithmsinstance
+
+# Build rule for target.
+worstAlgorithmsinstance: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worstAlgorithmsinstance
+.PHONY : worstAlgorithmsinstance
+
+# fast build rule for target.
+worstAlgorithmsinstance/fast:
+	$(MAKE) $(MAKESILENT) -f worst_algorithms\CMakeFiles\worstAlgorithmsinstance.dir\build.make worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/build
+.PHONY : worstAlgorithmsinstance/fast
+
+#=============================================================================
 # Target rules for targets named worstTrees
 
 # Build rule for target.
@@ -279,6 +305,8 @@ help:
 	@echo ... gmock_main
 	@echo ... gtest
 	@echo ... gtest_main
+	@echo ... worstAlgorithms
+	@echo ... worstAlgorithmsinstance
 	@echo ... worstTrees
 	@echo ... worstTreesinstance
 .PHONY : help

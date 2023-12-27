@@ -11,7 +11,7 @@ public:
     TreeBase() : root(nullptr) {};
     virtual ~TreeBase() {} // Virtual destructor for polymorphism
 
-    void insert(const nodeElementType& value);
+    virtual void insert(const nodeElementType& value);
     void remove(const nodeElementType& value);
     bool search(const nodeElementType& value) const;
     nodeElementType findMin();

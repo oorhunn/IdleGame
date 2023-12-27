@@ -3,9 +3,10 @@ set(This worstTrees)
 project(${This} CXX C)
 set(Sources
     main.cpp
-    src/TreeBase.cpp
     src/LeafBase.cpp
+    src/TreeBase.cpp
     src/BinaryTree.cpp
+    src/AVLTree.cpp
     
 
 )

@@ -110,6 +110,7 @@ test/IdlegameTests.exe: test/CMakeFiles/IdlegameTests.dir/WorstSearchAlgorithmsT
 test/IdlegameTests.exe: test/CMakeFiles/IdlegameTests.dir/WorstBasicDataStructuresTest.cpp.obj
 test/IdlegameTests.exe: test/CMakeFiles/IdlegameTests.dir/build.make
 test/IdlegameTests.exe: lib/libgtest_main.a
+test/IdlegameTests.exe: worst_algorithms/libworstAlgorithms.a
 test/IdlegameTests.exe: lib/libgtest.a
 test/IdlegameTests.exe: test/CMakeFiles/IdlegameTests.dir/linkLibs.rsp
 test/IdlegameTests.exe: test/CMakeFiles/IdlegameTests.dir/objects1.rsp

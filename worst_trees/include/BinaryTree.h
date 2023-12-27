@@ -14,9 +14,9 @@ public:
     BinaryTree();
     ~BinaryTree() override;
     BinaryTree(const BinaryTree& rhs);
-    BinaryTree(BinaryTree&& rhs);
+    BinaryTree(BinaryTree&& rhs) = delete;
     BinaryTree& operator=(const BinaryTree& rhs);
-    BinaryTree& operator=(BinaryTree&& rhs);
+    BinaryTree& operator=(BinaryTree&& rhs) = delete;
     
 
     void flushTree();

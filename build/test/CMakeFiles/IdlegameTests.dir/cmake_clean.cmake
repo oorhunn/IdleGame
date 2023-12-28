@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/IdlegameTests.dir/AVLTreeTest.cpp.obj"
+  "CMakeFiles/IdlegameTests.dir/AVLTreeTest.cpp.obj.d"
   "CMakeFiles/IdlegameTests.dir/BinaryTreeTest.cpp.obj"
   "CMakeFiles/IdlegameTests.dir/BinaryTreeTest.cpp.obj.d"
   "CMakeFiles/IdlegameTests.dir/WorstBasicDataStructuresTest.cpp.obj"

@@ -90,14 +90,14 @@ TYPED_TEST_P(BinaryTreeTest, FlushTest) {
 
     // Assert
     // Add your assertions based on the expected state of the tree after flushing
-    // ASSERT_FALSE(this->tree.search(5));
-    // ASSERT_FALSE(this->tree.search(3));
-    // ASSERT_FALSE(this->tree.search(7));
-    // ASSERT_FALSE(this->tree.search(2));
-    // ASSERT_FALSE(this->tree.search(4));
-    // ASSERT_FALSE(this->tree.search(6));
-    // ASSERT_FALSE(this->tree.search(8));
-    // ASSERT_FALSE(this->tree.search(13));
+    ASSERT_FALSE(this->tree.search(5));
+    ASSERT_FALSE(this->tree.search(3));
+    ASSERT_FALSE(this->tree.search(7));
+    ASSERT_FALSE(this->tree.search(2));
+    ASSERT_FALSE(this->tree.search(4));
+    ASSERT_FALSE(this->tree.search(6));
+    ASSERT_FALSE(this->tree.search(8));
+    ASSERT_FALSE(this->tree.search(13));
 }
 
 // Register the test cases

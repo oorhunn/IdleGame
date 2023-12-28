@@ -15,6 +15,7 @@ set(Sources
     WorstSearchAlgorithmsTest.cpp
     WorstBasicDataStructuresTest.cpp
     BinaryTreeTest.cpp
+    AVLTreeTest.cpp
 )
 
 add_executable(${This} ${Sources})

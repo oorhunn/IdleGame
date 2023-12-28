@@ -184,6 +184,30 @@ IdlegameTests/fast:
 	cd /d C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/build
 .PHONY : IdlegameTests/fast
 
+AVLTreeTest.obj: AVLTreeTest.cpp.obj
+.PHONY : AVLTreeTest.obj
+
+# target to build an object file
+AVLTreeTest.cpp.obj:
+	cd /d C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/AVLTreeTest.cpp.obj
+.PHONY : AVLTreeTest.cpp.obj
+
+AVLTreeTest.i: AVLTreeTest.cpp.i
+.PHONY : AVLTreeTest.i
+
+# target to preprocess a source file
+AVLTreeTest.cpp.i:
+	cd /d C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/AVLTreeTest.cpp.i
+.PHONY : AVLTreeTest.cpp.i
+
+AVLTreeTest.s: AVLTreeTest.cpp.s
+.PHONY : AVLTreeTest.s
+
+# target to generate assembly for a file
+AVLTreeTest.cpp.s:
+	cd /d C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/AVLTreeTest.cpp.s
+.PHONY : AVLTreeTest.cpp.s
+
 BinaryTreeTest.obj: BinaryTreeTest.cpp.obj
 .PHONY : BinaryTreeTest.obj
 
@@ -270,6 +294,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... test
 	@echo ... IdlegameTests
+	@echo ... AVLTreeTest.obj
+	@echo ... AVLTreeTest.i
+	@echo ... AVLTreeTest.s
 	@echo ... BinaryTreeTest.obj
 	@echo ... BinaryTreeTest.i
 	@echo ... BinaryTreeTest.s

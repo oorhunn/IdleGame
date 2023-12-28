@@ -69,6 +69,7 @@
         "csignal": "cpp",
         "forward_list": "cpp",
         "unordered_set": "cpp",
-        "fstream": "cpp"
+        "fstream": "cpp",
+        "future": "cpp"
     }
 }

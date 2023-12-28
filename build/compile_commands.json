@@ -160,5 +160,11 @@
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdlegameTests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\IdlegameTests.dir\\BinaryTreeTest.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\test\\BinaryTreeTest.cpp",
   "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/test/BinaryTreeTest.cpp",
   "output": "test/CMakeFiles/IdlegameTests.dir/BinaryTreeTest.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdlegameTests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\IdlegameTests.dir\\AVLTreeTest.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\test\\AVLTreeTest.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/test/AVLTreeTest.cpp",
+  "output": "test/CMakeFiles/IdlegameTests.dir/AVLTreeTest.cpp.obj"
 }
 ]

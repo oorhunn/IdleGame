@@ -15,6 +15,9 @@ BinaryTree<nodeElementType>::BinaryTree()
 template <typename nodeElementType>
 BinaryTree<nodeElementType>::~BinaryTree()
 {
+    if (this->root == nullptr) {
+        return;
+    }
     flushTree();
 }
 
@@ -27,7 +30,14 @@ BinaryTree<nodeElementType>::BinaryTree(const BinaryTree &rhs)
 template <typename nodeElementType>
 void BinaryTree<nodeElementType>::flushTree()
 {
-    _flushTree(this->root);
+    if (this->root == nullptr) {
+        return;
+    }
+    _flushTree(this->root->left);
+    _flushTree(this->root->right);
+    delete this->root;
+    this->root = nullptr;
+
 }
 template <typename nodeElementType>
 void BinaryTree<nodeElementType>::_insert(const nodeElementType &value, BinaryNode<nodeElementType>*& currentNode)

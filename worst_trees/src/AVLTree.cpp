@@ -15,6 +15,9 @@ AVLTree<nodeElementType>::AVLTree()
 template <typename nodeElementType>
 AVLTree<nodeElementType>::~AVLTree()
 {
+    if (this->root == nullptr) {
+        return;
+    }
     flushAVLTree();
 }
 

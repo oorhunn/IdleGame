@@ -275,6 +275,32 @@ worstTreesinstance/fast:
 .PHONY : worstTreesinstance/fast
 
 #=============================================================================
+# Target rules for targets named worstPriorityQueuesLib
+
+# Build rule for target.
+worstPriorityQueuesLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worstPriorityQueuesLib
+.PHONY : worstPriorityQueuesLib
+
+# fast build rule for target.
+worstPriorityQueuesLib/fast:
+	$(MAKE) $(MAKESILENT) -f worst_priority_queues\CMakeFiles\worstPriorityQueuesLib.dir\build.make worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/build
+.PHONY : worstPriorityQueuesLib/fast
+
+#=============================================================================
+# Target rules for targets named worstPriorityQueues
+
+# Build rule for target.
+worstPriorityQueues: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worstPriorityQueues
+.PHONY : worstPriorityQueues
+
+# fast build rule for target.
+worstPriorityQueues/fast:
+	$(MAKE) $(MAKESILENT) -f worst_priority_queues\CMakeFiles\worstPriorityQueues.dir\build.make worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/build
+.PHONY : worstPriorityQueues/fast
+
+#=============================================================================
 # Target rules for targets named IdlegameTests
 
 # Build rule for target.
@@ -307,6 +333,8 @@ help:
 	@echo ... gtest_main
 	@echo ... worstAlgorithms
 	@echo ... worstAlgorithmsinstance
+	@echo ... worstPriorityQueues
+	@echo ... worstPriorityQueuesLib
 	@echo ... worstTrees
 	@echo ... worstTreesinstance
 .PHONY : help

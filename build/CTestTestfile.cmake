@@ -7,4 +7,5 @@
 subdirs("googletest")
 subdirs("worst_algorithms")
 subdirs("worst_trees")
+subdirs("worst_priority_queues")
 subdirs("test")

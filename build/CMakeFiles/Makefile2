@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build
 all: googletest/all
 all: worst_algorithms/all
 all: worst_trees/all
+all: worst_priority_queues/all
 all: test/all
 .PHONY : all
 
@@ -72,6 +73,7 @@ all: test/all
 preinstall: googletest/preinstall
 preinstall: worst_algorithms/preinstall
 preinstall: worst_trees/preinstall
+preinstall: worst_priority_queues/preinstall
 preinstall: test/preinstall
 .PHONY : preinstall
 
@@ -79,6 +81,7 @@ preinstall: test/preinstall
 clean: googletest/clean
 clean: worst_algorithms/clean
 clean: worst_trees/clean
+clean: worst_priority_queues/clean
 clean: test/clean
 .PHONY : clean
 
@@ -164,6 +167,23 @@ worst_algorithms/preinstall:
 worst_algorithms/clean: worst_algorithms/CMakeFiles/worstAlgorithms.dir/clean
 worst_algorithms/clean: worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/clean
 .PHONY : worst_algorithms/clean
+
+#=============================================================================
+# Directory level rules for directory worst_priority_queues
+
+# Recursive "all" directory target.
+worst_priority_queues/all: worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/all
+worst_priority_queues/all: worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/all
+.PHONY : worst_priority_queues/all
+
+# Recursive "preinstall" directory target.
+worst_priority_queues/preinstall:
+.PHONY : worst_priority_queues/preinstall
+
+# Recursive "clean" directory target.
+worst_priority_queues/clean: worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/clean
+worst_priority_queues/clean: worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/clean
+.PHONY : worst_priority_queues/clean
 
 #=============================================================================
 # Directory level rules for directory worst_trees
@@ -346,7 +366,7 @@ worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/clean:
 worst_trees/CMakeFiles/worstTrees.dir/all:
 	$(MAKE) $(MAKESILENT) -f worst_trees\CMakeFiles\worstTrees.dir\build.make worst_trees/CMakeFiles/worstTrees.dir/depend
 	$(MAKE) $(MAKESILENT) -f worst_trees\CMakeFiles\worstTrees.dir\build.make worst_trees/CMakeFiles/worstTrees.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=26,27,28,29,30,31 "Built target worstTrees"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=30,31,32,33,34,35 "Built target worstTrees"
 .PHONY : worst_trees/CMakeFiles/worstTrees.dir/all
 
 # Build rule for subdir invocation for target.
@@ -372,7 +392,7 @@ worst_trees/CMakeFiles/worstTrees.dir/clean:
 worst_trees/CMakeFiles/worstTreesinstance.dir/all: worst_trees/CMakeFiles/worstTrees.dir/all
 	$(MAKE) $(MAKESILENT) -f worst_trees\CMakeFiles\worstTreesinstance.dir\build.make worst_trees/CMakeFiles/worstTreesinstance.dir/depend
 	$(MAKE) $(MAKESILENT) -f worst_trees\CMakeFiles\worstTreesinstance.dir\build.make worst_trees/CMakeFiles/worstTreesinstance.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=32,33,34,35,36,37 "Built target worstTreesinstance"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=36,37,38,39,40,41 "Built target worstTreesinstance"
 .PHONY : worst_trees/CMakeFiles/worstTreesinstance.dir/all
 
 # Build rule for subdir invocation for target.
@@ -392,13 +412,65 @@ worst_trees/CMakeFiles/worstTreesinstance.dir/clean:
 .PHONY : worst_trees/CMakeFiles/worstTreesinstance.dir/clean
 
 #=============================================================================
+# Target rules for target worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir
+
+# All Build rule for target.
+worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/all:
+	$(MAKE) $(MAKESILENT) -f worst_priority_queues\CMakeFiles\worstPriorityQueuesLib.dir\build.make worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/depend
+	$(MAKE) $(MAKESILENT) -f worst_priority_queues\CMakeFiles\worstPriorityQueuesLib.dir\build.make worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=28,29 "Built target worstPriorityQueuesLib"
+.PHONY : worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/all
+
+# Build rule for subdir invocation for target.
+worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 0
+.PHONY : worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/rule
+
+# Convenience name for target.
+worstPriorityQueuesLib: worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/rule
+.PHONY : worstPriorityQueuesLib
+
+# clean rule for target.
+worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f worst_priority_queues\CMakeFiles\worstPriorityQueuesLib.dir\build.make worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/clean
+.PHONY : worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/clean
+
+#=============================================================================
+# Target rules for target worst_priority_queues/CMakeFiles/worstPriorityQueues.dir
+
+# All Build rule for target.
+worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/all: worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/all
+	$(MAKE) $(MAKESILENT) -f worst_priority_queues\CMakeFiles\worstPriorityQueues.dir\build.make worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/depend
+	$(MAKE) $(MAKESILENT) -f worst_priority_queues\CMakeFiles\worstPriorityQueues.dir\build.make worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=26,27 "Built target worstPriorityQueues"
+.PHONY : worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/all
+
+# Build rule for subdir invocation for target.
+worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 0
+.PHONY : worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/rule
+
+# Convenience name for target.
+worstPriorityQueues: worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/rule
+.PHONY : worstPriorityQueues
+
+# clean rule for target.
+worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/clean:
+	$(MAKE) $(MAKESILENT) -f worst_priority_queues\CMakeFiles\worstPriorityQueues.dir\build.make worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/clean
+.PHONY : worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/clean
+
+#=============================================================================
 # Target rules for target test/CMakeFiles/IdlegameTests.dir
 
 # All Build rule for target.
-test/CMakeFiles/IdlegameTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 test/CMakeFiles/IdlegameTests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
-test/CMakeFiles/IdlegameTests.dir/all: worst_trees/CMakeFiles/worstTrees.dir/all
+test/CMakeFiles/IdlegameTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 test/CMakeFiles/IdlegameTests.dir/all: worst_algorithms/CMakeFiles/worstAlgorithms.dir/all
+test/CMakeFiles/IdlegameTests.dir/all: worst_trees/CMakeFiles/worstTrees.dir/all
 	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=1,2,3,4,5 "Built target IdlegameTests"

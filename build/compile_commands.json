@@ -144,6 +144,18 @@
   "output": "worst_trees/CMakeFiles/worstTreesinstance.dir/src/AVLTree.cpp.obj"
 },
 {
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_priority_queues",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/worstPriorityQueuesLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\worstPriorityQueuesLib.dir\\src\\BinaryHeap.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_priority_queues\\src\\BinaryHeap.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_priority_queues/src/BinaryHeap.cpp",
+  "output": "worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/src/BinaryHeap.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_priority_queues",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/worstPriorityQueues.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\worstPriorityQueues.dir\\main.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_priority_queues\\main.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_priority_queues/main.cpp",
+  "output": "worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/main.cpp.obj"
+},
+{
   "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdlegameTests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\IdlegameTests.dir\\WorstSearchAlgorithmsTest.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\test\\WorstSearchAlgorithmsTest.cpp",
   "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/test/WorstSearchAlgorithmsTest.cpp",

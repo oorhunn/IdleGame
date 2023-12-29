@@ -1,17 +1,19 @@
-
 set(This worstPriorityQueues)
 project(${This} CXX C)
-set(Sources
-    main.cpp
-    src/BinaryHeap.cpp
 
+set(LibSources
+    src/BinaryHeap.cpp
 )
 
-add_library(${This} STATIC ${Sources})
+add_library(${This}Lib STATIC ${LibSources})
 
-target_include_directories(${This} 
+target_include_directories(${This}Lib 
     PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-add_executable(${This}instance ${Sources})
+set(AppSources
+    main.cpp
+)
 
-target_link_libraries(${This}instance PRIVATE ${This})
+add_executable(${This} ${AppSources})
+
+target_link_libraries(${This} PRIVATE ${This}Lib)

@@ -16,4 +16,4 @@ add_subdirectory(googletest)
 add_subdirectory(worst_algorithms)
 add_subdirectory(worst_trees)
 add_subdirectory(test)
-
+add_subdirectory(worst_priority_queues)

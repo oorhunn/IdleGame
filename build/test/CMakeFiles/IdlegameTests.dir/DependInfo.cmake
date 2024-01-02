@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/test/AVLTreeTest.cpp" "test/CMakeFiles/IdlegameTests.dir/AVLTreeTest.cpp.obj" "gcc" "test/CMakeFiles/IdlegameTests.dir/AVLTreeTest.cpp.obj.d"
+  "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/test/BinaryHeapTest.cpp" "test/CMakeFiles/IdlegameTests.dir/BinaryHeapTest.cpp.obj" "gcc" "test/CMakeFiles/IdlegameTests.dir/BinaryHeapTest.cpp.obj.d"
   "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/test/BinaryTreeTest.cpp" "test/CMakeFiles/IdlegameTests.dir/BinaryTreeTest.cpp.obj" "gcc" "test/CMakeFiles/IdlegameTests.dir/BinaryTreeTest.cpp.obj.d"
   "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/test/WorstBasicDataStructuresTest.cpp" "test/CMakeFiles/IdlegameTests.dir/WorstBasicDataStructuresTest.cpp.obj" "gcc" "test/CMakeFiles/IdlegameTests.dir/WorstBasicDataStructuresTest.cpp.obj.d"
   "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/test/WorstSearchAlgorithmsTest.cpp" "test/CMakeFiles/IdlegameTests.dir/WorstSearchAlgorithmsTest.cpp.obj" "gcc" "test/CMakeFiles/IdlegameTests.dir/WorstSearchAlgorithmsTest.cpp.obj.d"

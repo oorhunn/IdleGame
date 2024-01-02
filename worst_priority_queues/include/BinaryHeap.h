@@ -23,9 +23,13 @@ public:
 
 private:
     int currentSize;
+    void heapify();
     std::vector<T> array;
     void buildHeap();
-    void percolateDown(int hole);
+    static int getLeftChild(int index);
+    static int getRightChild(int index);
+    static int getParent(int index);
+
 };
 
 

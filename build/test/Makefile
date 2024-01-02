@@ -208,6 +208,30 @@ AVLTreeTest.cpp.s:
 	cd /d C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/AVLTreeTest.cpp.s
 .PHONY : AVLTreeTest.cpp.s
 
+BinaryHeapTest.obj: BinaryHeapTest.cpp.obj
+.PHONY : BinaryHeapTest.obj
+
+# target to build an object file
+BinaryHeapTest.cpp.obj:
+	cd /d C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/BinaryHeapTest.cpp.obj
+.PHONY : BinaryHeapTest.cpp.obj
+
+BinaryHeapTest.i: BinaryHeapTest.cpp.i
+.PHONY : BinaryHeapTest.i
+
+# target to preprocess a source file
+BinaryHeapTest.cpp.i:
+	cd /d C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/BinaryHeapTest.cpp.i
+.PHONY : BinaryHeapTest.cpp.i
+
+BinaryHeapTest.s: BinaryHeapTest.cpp.s
+.PHONY : BinaryHeapTest.s
+
+# target to generate assembly for a file
+BinaryHeapTest.cpp.s:
+	cd /d C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/BinaryHeapTest.cpp.s
+.PHONY : BinaryHeapTest.cpp.s
+
 BinaryTreeTest.obj: BinaryTreeTest.cpp.obj
 .PHONY : BinaryTreeTest.obj
 
@@ -297,6 +321,9 @@ help:
 	@echo ... AVLTreeTest.obj
 	@echo ... AVLTreeTest.i
 	@echo ... AVLTreeTest.s
+	@echo ... BinaryHeapTest.obj
+	@echo ... BinaryHeapTest.i
+	@echo ... BinaryHeapTest.s
 	@echo ... BinaryTreeTest.obj
 	@echo ... BinaryTreeTest.i
 	@echo ... BinaryTreeTest.s

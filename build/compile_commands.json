@@ -178,5 +178,11 @@
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdlegameTests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\IdlegameTests.dir\\AVLTreeTest.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\test\\AVLTreeTest.cpp",
   "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/test/AVLTreeTest.cpp",
   "output": "test/CMakeFiles/IdlegameTests.dir/AVLTreeTest.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdlegameTests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\IdlegameTests.dir\\BinaryHeapTest.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\test\\BinaryHeapTest.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/test/BinaryHeapTest.cpp",
+  "output": "test/CMakeFiles/IdlegameTests.dir/BinaryHeapTest.cpp.obj"
 }
 ]

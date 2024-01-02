@@ -1,27 +1,52 @@
-#include "../worst_algorithms/include/WorstSearchAlgorithms.h"
-
 #include <gtest/gtest.h>
-#include <vector>
+#include "../include/WorstSearchAlgorithms.h"  // Update the path as needed
 
-
-TEST(IdlegameTests, worst_binary_search) {
-    std::vector<int> test_arr;
-    for (int i = 0; i < 100; ++i) {
-        test_arr.push_back(i);
+class WorstAlgorithmsTest : public ::testing::Test {
+protected:
+    // Helper function to check if a vector is sorted
+    template <typename T>
+    bool isSorted(const std::vector<T>& array) {
+        for (size_t i = 1; i < array.size(); ++i) {
+            if (array[i] < array[i - 1]) {
+                return false;
+            }
+        }
+        return true;
     }
-    EXPECT_EQ(
-        worst_binary_search(test_arr, 3),
-        3);
-    EXPECT_EQ(
-        worst_binary_search(test_arr, 98),
-        98);
+};
+
+TEST_F(WorstAlgorithmsTest, BinarySearch) {
+    std::vector<int> arr = {1, 2, 3, 4, 5};
+    EXPECT_EQ(worst_binary_search(arr, 3), 2);
+    EXPECT_EQ(worst_binary_search(arr, 6), -1);
 }
 
+TEST_F(WorstAlgorithmsTest, GCD) {
+    EXPECT_EQ(worst_gcd(6, 3), 3);
+    EXPECT_EQ(worst_gcd(15, 25), 5);
+}
 
-TEST(IdlegameTests, worst_gcd) {
+TEST_F(WorstAlgorithmsTest, InsertionSortInt) {
+    std::vector<int> arr = {5, 2, 7, 1, 3};
+    insertionSort(arr);
+    EXPECT_TRUE(isSorted(arr));
+}
 
-    EXPECT_EQ(
-        worst_gcd(6, 3),
-        3);
+TEST_F(WorstAlgorithmsTest, InsertionSortDouble) {
+    std::vector<double> arr = {5.5, 2.2, 7.7, 1.1, 3.3};
+    insertionSort(arr);
+    EXPECT_TRUE(isSorted(arr));
+}
 
+TEST_F(WorstAlgorithmsTest, ShellSortInt){
+    std::vector<int> arr = {5, 2, 7, 1, 3};
+    shellSort(arr);
+    EXPECT_TRUE(isSorted(arr));
+}
+
+// Add more tests as needed
+
+int main(int argc, char** argv) {
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
 }

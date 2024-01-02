@@ -20,10 +20,12 @@ public:
     void deleteMin(T& minItem);
     void makeEmpty();
 
+    std::vector<T> heapSort();
 
 private:
     int currentSize;
     void heapify();
+    void heapify(int index);
     std::vector<T> array;
     void buildHeap();
     static int getLeftChild(int index);

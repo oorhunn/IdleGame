@@ -11,3 +11,9 @@ int worst_gcd(int a, int b);
 // template<typename MyType>
 // MyType worst_pow(const MyType& num, int power);
 
+
+template <typename T>
+void insertionSort(std::vector<T> &array);
+
+template <typename T>
+void shellSort(std::vector<T> &array);

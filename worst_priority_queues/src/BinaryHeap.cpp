@@ -1,6 +1,5 @@
 #include "../include/BinaryHeap.h"
 #include <stdexcept>
-#include "BinaryHeap.h"
 
 
 
@@ -27,10 +26,12 @@ bool BinaryHeap<T>::isEmpty() const {
 template <typename T>
 const T &BinaryHeap<T>::findMin() const
 {
-    if (currentSize == 0){
-        return NULL;
+    if (currentSize != 0){
+        return array[0];
     }
-    return array[0];
+    else {
+        return T();
+    }
 }
 template <typename T>
 void BinaryHeap<T>::insert(const T &x)
@@ -53,12 +54,28 @@ template <typename T>
 void BinaryHeap<T>::deleteMin()
 {
     array.erase(array.begin());
-    heapify();
+    --currentSize;
+    for (int i = currentSize / 2 - 1; i >= 0; --i) {
+        heapify(i);
+    }
 }
 template <typename T>
 void BinaryHeap<T>::makeEmpty() {
     array.clear();
     currentSize = 0;
+}
+template <typename T>
+std::vector<T> BinaryHeap<T>::heapSort()
+{
+    int swapPos = currentSize;
+    for (int i = currentSize; i > 0; --i){
+        array.resize(array.size() + 1 );
+        std::swap(array[0], array[swapPos]);
+        deleteMin();
+    }
+
+    
+    return array;
 }
 template <typename T>
 void BinaryHeap<T>::heapify()
@@ -67,13 +84,25 @@ void BinaryHeap<T>::heapify()
         std::swap(array[getParent(i)], array[i]);
         i = getParent(i);
     }
+}
+
+template <typename T>
+void BinaryHeap<T>::heapify(int index)
+{
+    for (; array[getParent(index)] > array[index]; index!=0){
+        std::swap(array[getParent(index)], array[index]);
+        index = getParent(index);
+    }
 
 }
+
 template <typename T>
 void BinaryHeap<T>::buildHeap()
 {
     currentSize = array.size();
-    heapify();
+    for (int i = currentSize / 2 - 1; i >= 0; --i) {
+        heapify(i);
+    }
 }
 
 

@@ -11,6 +11,8 @@ template void shellSort(std::vector<int> &array);
 template void mergeSort(std::vector<int> &firstArr);
 template void mergeSort(std::vector<int> &firstArr, std::vector<int> &tempArr, int left, int right);
 template void merge(std::vector<int> &firstArr, std::vector<int> &tempArr, int left, int right, int rightEnd);
+template class WorstQuickSort<int>;
+
 
 template <typename MyType>
 int worst_binary_search(const std::vector<MyType>& in_arr, const MyType& x){
@@ -111,4 +113,59 @@ void merge(std::vector<T> &firstArr, std::vector<T> &tempArr, int left, int righ
 	for (int i = 0; i < elemCount; ++i, --rightEnd) {
 		firstArr[rightEnd] = std::move(tempArr[rightEnd]);
 	}
+}
+
+
+template <typename T>
+inline void WorstQuickSort<T>::quickSort(std::vector<T> &arr) // driver func
+{
+	quickSort(arr, 0, arr.size() - 1);
+}
+template <typename T>
+void WorstQuickSort<T>::quickSort(std::vector<T> &arr, int left, int right)
+{
+	if (left + 10 <= right){
+		const T & pivot = median3( arr, left, right );
+        int i = left, j = right - 1;
+		for( ; ; ) {
+			while( arr[ ++i ] < pivot ) { }
+			while( pivot < arr[ --j ] ) { }
+			if( i < j )
+				std::swap( arr[ i ], arr[ j ] );
+			else
+				break;
+    	}
+		std::swap( arr[ i ], arr[ right - 1 ] );
+		quickSort( arr, left, i - 1 ); 
+		quickSort( arr, i + 1, right ); 
+    }
+    else {
+		for (int p = left + 1; p <= right; ++p) {
+            T temp = std::move(arr[p]);
+            int j;
+            for (j = p; j > left && temp < arr[j - 1]; --j) {
+                arr[j] = std::move(arr[j - 1]);
+            }
+            arr[j] = std::move(temp);
+        }
+	}
+}
+
+template <typename T>
+const T &WorstQuickSort<T>::median3(std::vector<T> &arr, int left, int right)
+{
+    int center = (left + right) / 2;
+    if (arr[center] < arr[left]) {
+        std::swap(arr[left], arr[center]);
+    }
+    if (arr[right] < arr[left]) {
+        std::swap(arr[left], arr[right]);
+    }
+    if (arr[right] < arr[center]) {
+        std::swap(arr[center], arr[right]);
+    }
+
+    std::swap(arr[center], arr[right - 1]);
+
+    return arr[right - 1];
 }

@@ -15,6 +15,22 @@ protected:
     }
 };
 
+class WorstQuickSortTest : public testing::Test {
+protected:
+    WorstQuickSort<int> sorter;
+};
+
+// Test case for quickSort driver function
+TEST_F(WorstQuickSortTest, QuickSortDriver) {
+    // Test with an unsorted vector of integers
+    std::vector<int> unsortedVector = {9, 5, 11, 14, 4, 18, 7, 21, 33, 1};
+    this->sorter.quickSort(unsortedVector);
+    // Verify that the vector is sorted
+    std::vector<int> expectedSortedVector = {1, 4, 5, 7, 9, 11, 14, 18, 21, 33};
+    EXPECT_EQ(unsortedVector, expectedSortedVector);
+
+}
+
 TEST_F(WorstAlgorithmsTest, BinarySearch) {
     std::vector<int> arr = {1, 2, 3, 4, 5};
     EXPECT_EQ(worst_binary_search(arr, 3), 2);

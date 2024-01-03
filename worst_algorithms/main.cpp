@@ -7,7 +7,7 @@
 #include "../include/WorstSearchAlgorithms.h"
 std::vector<int> generateRandomVector(int length);
 
-
+using namespace WorstSortLibrary;
 int main()
 {
     std::vector<int> tobeosrtted = generateRandomVector(10000);

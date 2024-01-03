@@ -1,6 +1,9 @@
 #include <gtest/gtest.h>
 #include "../include/WorstSearchAlgorithms.h"  // Update the path as needed
 
+
+using namespace WorstSortLibrary;
+
 class WorstAlgorithmsTest : public ::testing::Test {
 protected:
     // Helper function to check if a vector is sorted

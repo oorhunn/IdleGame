@@ -26,6 +26,7 @@ private:
     int currentSize;
     void heapify();
     void heapify(int index);
+    void percolateDown(int index);
     std::vector<T> array;
     void buildHeap();
     static int getLeftChild(int index);

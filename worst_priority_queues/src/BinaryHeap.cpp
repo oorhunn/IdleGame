@@ -55,9 +55,7 @@ void BinaryHeap<T>::deleteMin()
 {
     array.erase(array.begin());
     --currentSize;
-    for (int i = currentSize / 2 - 1; i >= 0; --i) {
-        heapify(i);
-    }
+    percolateDown(0);
 }
 template <typename T>
 void BinaryHeap<T>::makeEmpty() {
@@ -101,10 +99,9 @@ void BinaryHeap<T>::buildHeap()
 {
     currentSize = array.size();
     for (int i = currentSize / 2 - 1; i >= 0; --i) {
-        heapify(i);
+        percolateDown(i);
     }
 }
-
 
 
 template <typename T>
@@ -122,4 +119,26 @@ template <typename T>
 int BinaryHeap<T>::getParent(int index)
 {
     return (index - 1) / 2;
+}
+
+
+template <typename T>
+void BinaryHeap<T>::percolateDown(int index) {
+    int child;
+    T tmp = std::move(array[index]);
+
+    for (; getLeftChild(index) < currentSize; index = child) {
+        child = getLeftChild(index);
+        if (child != currentSize - 1 && array[child] > array[child + 1]) {
+            ++child;
+        }
+
+        if (array[child] < tmp) {
+            array[index] = std::move(array[child]);
+        } else {
+            break;
+        }
+    }
+
+    array[index] = std::move(tmp);
 }

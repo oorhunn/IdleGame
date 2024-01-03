@@ -13,6 +13,15 @@ protected:
             heap.insert(value);
         }
     }
+
+    bool isSorted(const std::vector<T>& array) {
+        for (size_t i = 1; i < array.size(); ++i) {
+            if (array[i] < array[i - 1]) {
+                return false;
+            }
+        }
+        return true;
+    }
 };
 
 // Test case for inserting values into the heap
@@ -55,8 +64,19 @@ TYPED_TEST_P(BinaryHeapTest, MakeEmptyTest) {
     ASSERT_TRUE(this->heap.isEmpty());
 }
 
+TYPED_TEST_P(BinaryHeapTest, HeapSortTest) {
+    // Arrange
+    std::vector<TypeParam> values = {5, 3, 7, 2, 4, 6, 8};
+    // this->insertValues(values);
+    this->insertValues(values);
+
+    std::vector<TypeParam> modifiedList = this->heap.heapSort();
+    // Assert
+    ASSERT_TRUE(this->isSorted(modifiedList));
+}
+
 // Register the test cases
-REGISTER_TYPED_TEST_SUITE_P(BinaryHeapTest, InsertTest, DeleteMinTest, MakeEmptyTest);
+REGISTER_TYPED_TEST_SUITE_P(BinaryHeapTest, InsertTest, DeleteMinTest, MakeEmptyTest, HeapSortTest);
 
 // Specify the types you want to test with
 typedef ::testing::Types<int> MyTypes;

@@ -11,7 +11,7 @@ int main()
         baban.push_back(i);
     }
     BinaryHeap<int> hell(baban);
-    // hell.heapSort();
+    hell.heapSort();
     // hell.insert(9);
     // hell.insert(10);
 

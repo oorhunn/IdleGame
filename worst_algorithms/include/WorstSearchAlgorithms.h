@@ -17,3 +17,13 @@ void insertionSort(std::vector<T> &array);
 
 template <typename T>
 void shellSort(std::vector<T> &array);
+
+template <typename T>
+void mergeSort(std::vector<T> &firstArr);
+
+template <typename T>
+void mergeSort(std::vector<T> &firstArr, std::vector<T> &tempArr, int left, int right);
+
+
+template <typename T>
+void merge(std::vector<T> &firstArr, std::vector<T> &tempArr, int left, int right, int rightEnd);

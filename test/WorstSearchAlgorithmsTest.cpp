@@ -44,6 +44,13 @@ TEST_F(WorstAlgorithmsTest, ShellSortInt){
     EXPECT_TRUE(isSorted(arr));
 }
 
+TEST_F(WorstAlgorithmsTest, MergeSortInt){
+    std::vector<int> arr = {5, 2, 7, 1, 3};
+    mergeSort(arr);
+    EXPECT_TRUE(isSorted(arr));
+}
+
+
 // Add more tests as needed
 
 int main(int argc, char** argv) {

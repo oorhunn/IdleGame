@@ -6,7 +6,7 @@ namespace WorstSortLibrary{
 
     template <typename MyType>
     int worst_binary_search(const std::vector<MyType>& in_arr, const MyType& x);
-    
+
     // euclids algorithm for calculating greatest common divisor
     int worst_gcd(int a, int b);
 
@@ -27,7 +27,7 @@ namespace WorstSortLibrary{
     void merge(std::vector<T> &firstArr, std::vector<T> &tempArr, int left, int right, int rightEnd);
 
     template <typename T>
-    class WorstQuickSort{
+    class QuickSort{
     public:
         void quickSort(std::vector<T> &arr); // driver
 

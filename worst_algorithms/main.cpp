@@ -12,7 +12,7 @@ int main()
 {
     std::vector<int> tobeosrtted = generateRandomVector(10000);
 
-    WorstQuickSort<int> sorter;
+    QuickSort<int> sorter;
 
     auto start_time = std::chrono::high_resolution_clock::now();
 

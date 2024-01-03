@@ -20,7 +20,7 @@ protected:
 
 class WorstQuickSortTest : public testing::Test {
 protected:
-    WorstQuickSort<int> sorter;
+    QuickSort<int> sorter;
 };
 
 // Test case for quickSort driver function

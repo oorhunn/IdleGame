@@ -11,7 +11,7 @@ template void WorstSortLibrary::shellSort(std::vector<int> &array);
 template void WorstSortLibrary::mergeSort(std::vector<int> &firstArr);
 template void WorstSortLibrary::mergeSort(std::vector<int> &firstArr, std::vector<int> &tempArr, int left, int right);
 template void WorstSortLibrary::merge(std::vector<int> &firstArr, std::vector<int> &tempArr, int left, int right, int rightEnd);
-template class WorstSortLibrary::WorstQuickSort<int>;
+template class WorstSortLibrary::QuickSort<int>;
 
 namespace WorstSortLibrary {
 	// needs a input that already sorted
@@ -119,12 +119,12 @@ namespace WorstSortLibrary {
 
 
 	template <typename T>
-	inline void WorstQuickSort<T>::quickSort(std::vector<T> &arr) // driver func
+	inline void QuickSort<T>::quickSort(std::vector<T> &arr) // driver func
 	{
 		quickSort(arr, 0, arr.size() - 1);
 	}
 	template <typename T>
-	void WorstQuickSort<T>::quickSort(std::vector<T> &arr, int left, int right)
+	void QuickSort<T>::quickSort(std::vector<T> &arr, int left, int right)
 	{
 		if (left + 10 <= right){
 			const T & pivot = median3( arr, left, right );
@@ -154,7 +154,7 @@ namespace WorstSortLibrary {
 	}
 
 	template <typename T>
-	const T &WorstQuickSort<T>::median3(std::vector<T> &arr, int left, int right)
+	const T &QuickSort<T>::median3(std::vector<T> &arr, int left, int right)
 	{
 		int center = (left + right) / 2;
 		if (arr[center] < arr[left]) {

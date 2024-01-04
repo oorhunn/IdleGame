@@ -204,6 +204,30 @@
   "output": "worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/src/SamePairHashmap.cpp.obj"
 },
 {
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_graph",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/worstGraph.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\worstGraph.dir\\main.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_graph\\main.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_graph/main.cpp",
+  "output": "worst_graph/CMakeFiles/worstGraph.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_graph",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/worstGraph.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\worstGraph.dir\\src\\Graph.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_graph\\src\\Graph.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_graph/src/Graph.cpp",
+  "output": "worst_graph/CMakeFiles/worstGraph.dir/src/Graph.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_graph",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/worstGraphinstance.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\worstGraphinstance.dir\\main.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_graph\\main.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_graph/main.cpp",
+  "output": "worst_graph/CMakeFiles/worstGraphinstance.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_graph",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/worstGraphinstance.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\worstGraphinstance.dir\\src\\Graph.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\worst_graph\\src\\Graph.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_graph/src/Graph.cpp",
+  "output": "worst_graph/CMakeFiles/worstGraphinstance.dir/src/Graph.cpp.obj"
+},
+{
   "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdlegameTests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\IdlegameTests.dir\\WorstSearchAlgorithmsTest.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\test\\WorstSearchAlgorithmsTest.cpp",
   "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/test/WorstSearchAlgorithmsTest.cpp",

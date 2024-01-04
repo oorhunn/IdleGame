@@ -353,6 +353,32 @@ worstHashmapsinstance/fast:
 .PHONY : worstHashmapsinstance/fast
 
 #=============================================================================
+# Target rules for targets named worstGraph
+
+# Build rule for target.
+worstGraph: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worstGraph
+.PHONY : worstGraph
+
+# fast build rule for target.
+worstGraph/fast:
+	$(MAKE) $(MAKESILENT) -f worst_graph\CMakeFiles\worstGraph.dir\build.make worst_graph/CMakeFiles/worstGraph.dir/build
+.PHONY : worstGraph/fast
+
+#=============================================================================
+# Target rules for targets named worstGraphinstance
+
+# Build rule for target.
+worstGraphinstance: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worstGraphinstance
+.PHONY : worstGraphinstance
+
+# fast build rule for target.
+worstGraphinstance/fast:
+	$(MAKE) $(MAKESILENT) -f worst_graph\CMakeFiles\worstGraphinstance.dir\build.make worst_graph/CMakeFiles/worstGraphinstance.dir/build
+.PHONY : worstGraphinstance/fast
+
+#=============================================================================
 # Target rules for targets named IdlegameTests
 
 # Build rule for target.
@@ -387,6 +413,8 @@ help:
 	@echo ... worstAlgorithmsinstance
 	@echo ... worstDisjointTrees
 	@echo ... worstDisjointTreesinstance
+	@echo ... worstGraph
+	@echo ... worstGraphinstance
 	@echo ... worstHashmaps
 	@echo ... worstHashmapsinstance
 	@echo ... worstPriorityQueues

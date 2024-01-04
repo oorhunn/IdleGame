@@ -75,6 +75,15 @@ C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_hashmaps/CMakeFil
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_hashmaps/CMakeFiles/install.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_hashmaps/CMakeFiles/install/local.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_hashmaps/CMakeFiles/install/strip.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_graph/CMakeFiles/worstGraph.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_graph/CMakeFiles/worstGraphinstance.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_graph/CMakeFiles/test.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_graph/CMakeFiles/edit_cache.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_graph/CMakeFiles/rebuild_cache.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_graph/CMakeFiles/list_install_components.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_graph/CMakeFiles/install.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_graph/CMakeFiles/install/local.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_graph/CMakeFiles/install/strip.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test/CMakeFiles/IdlegameTests.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test/CMakeFiles/test.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test/CMakeFiles/edit_cache.dir

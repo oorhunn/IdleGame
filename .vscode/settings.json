@@ -70,6 +70,7 @@
         "forward_list": "cpp",
         "unordered_set": "cpp",
         "fstream": "cpp",
-        "future": "cpp"
+        "future": "cpp",
+        "queue": "cpp"
     }
 }

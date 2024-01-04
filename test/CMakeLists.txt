@@ -17,6 +17,7 @@ set(Sources
     BinaryTreeTest.cpp
     AVLTreeTest.cpp
     BinaryHeapTest.cpp
+    HashmapsTest.cpp
 )
 
 add_executable(${This} ${Sources})
@@ -25,6 +26,7 @@ target_link_libraries(${This} PUBLIC
     worstAlgorithms
     worstTrees
     worstPriorityQueuesLib
+    worstHashmaps
 )
 
 

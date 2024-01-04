@@ -256,6 +256,30 @@ BinaryTreeTest.cpp.s:
 	cd /d C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/BinaryTreeTest.cpp.s
 .PHONY : BinaryTreeTest.cpp.s
 
+HashmapsTest.obj: HashmapsTest.cpp.obj
+.PHONY : HashmapsTest.obj
+
+# target to build an object file
+HashmapsTest.cpp.obj:
+	cd /d C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/HashmapsTest.cpp.obj
+.PHONY : HashmapsTest.cpp.obj
+
+HashmapsTest.i: HashmapsTest.cpp.i
+.PHONY : HashmapsTest.i
+
+# target to preprocess a source file
+HashmapsTest.cpp.i:
+	cd /d C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/HashmapsTest.cpp.i
+.PHONY : HashmapsTest.cpp.i
+
+HashmapsTest.s: HashmapsTest.cpp.s
+.PHONY : HashmapsTest.s
+
+# target to generate assembly for a file
+HashmapsTest.cpp.s:
+	cd /d C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/HashmapsTest.cpp.s
+.PHONY : HashmapsTest.cpp.s
+
 WorstBasicDataStructuresTest.obj: WorstBasicDataStructuresTest.cpp.obj
 .PHONY : WorstBasicDataStructuresTest.obj
 
@@ -327,6 +351,9 @@ help:
 	@echo ... BinaryTreeTest.obj
 	@echo ... BinaryTreeTest.i
 	@echo ... BinaryTreeTest.s
+	@echo ... HashmapsTest.obj
+	@echo ... HashmapsTest.i
+	@echo ... HashmapsTest.s
 	@echo ... WorstBasicDataStructuresTest.obj
 	@echo ... WorstBasicDataStructuresTest.i
 	@echo ... WorstBasicDataStructuresTest.s

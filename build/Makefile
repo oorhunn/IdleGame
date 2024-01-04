@@ -301,6 +301,58 @@ worstPriorityQueues/fast:
 .PHONY : worstPriorityQueues/fast
 
 #=============================================================================
+# Target rules for targets named worstDisjointTrees
+
+# Build rule for target.
+worstDisjointTrees: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worstDisjointTrees
+.PHONY : worstDisjointTrees
+
+# fast build rule for target.
+worstDisjointTrees/fast:
+	$(MAKE) $(MAKESILENT) -f worst_disjoint_sets\CMakeFiles\worstDisjointTrees.dir\build.make worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/build
+.PHONY : worstDisjointTrees/fast
+
+#=============================================================================
+# Target rules for targets named worstDisjointTreesinstance
+
+# Build rule for target.
+worstDisjointTreesinstance: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worstDisjointTreesinstance
+.PHONY : worstDisjointTreesinstance
+
+# fast build rule for target.
+worstDisjointTreesinstance/fast:
+	$(MAKE) $(MAKESILENT) -f worst_disjoint_sets\CMakeFiles\worstDisjointTreesinstance.dir\build.make worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/build
+.PHONY : worstDisjointTreesinstance/fast
+
+#=============================================================================
+# Target rules for targets named worstHashmaps
+
+# Build rule for target.
+worstHashmaps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worstHashmaps
+.PHONY : worstHashmaps
+
+# fast build rule for target.
+worstHashmaps/fast:
+	$(MAKE) $(MAKESILENT) -f worst_hashmaps\CMakeFiles\worstHashmaps.dir\build.make worst_hashmaps/CMakeFiles/worstHashmaps.dir/build
+.PHONY : worstHashmaps/fast
+
+#=============================================================================
+# Target rules for targets named worstHashmapsinstance
+
+# Build rule for target.
+worstHashmapsinstance: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worstHashmapsinstance
+.PHONY : worstHashmapsinstance
+
+# fast build rule for target.
+worstHashmapsinstance/fast:
+	$(MAKE) $(MAKESILENT) -f worst_hashmaps\CMakeFiles\worstHashmapsinstance.dir\build.make worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/build
+.PHONY : worstHashmapsinstance/fast
+
+#=============================================================================
 # Target rules for targets named IdlegameTests
 
 # Build rule for target.
@@ -333,6 +385,10 @@ help:
 	@echo ... gtest_main
 	@echo ... worstAlgorithms
 	@echo ... worstAlgorithmsinstance
+	@echo ... worstDisjointTrees
+	@echo ... worstDisjointTreesinstance
+	@echo ... worstHashmaps
+	@echo ... worstHashmapsinstance
 	@echo ... worstPriorityQueues
 	@echo ... worstPriorityQueuesLib
 	@echo ... worstTrees

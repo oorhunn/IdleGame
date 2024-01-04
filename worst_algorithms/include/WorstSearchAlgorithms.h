@@ -2,7 +2,7 @@
 
 
 namespace WorstSortLibrary{
-
+    
 
     template <typename MyType>
     int worst_binary_search(const std::vector<MyType>& in_arr, const MyType& x);

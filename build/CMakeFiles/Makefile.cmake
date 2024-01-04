@@ -50,6 +50,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/googletest/googletest/cmake/internal_utils.cmake"
   "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/test/CMakeLists.txt"
   "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_algorithms/CMakeLists.txt"
+  "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_disjoint_sets/CMakeLists.txt"
+  "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_hashmaps/CMakeLists.txt"
   "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_priority_queues/CMakeLists.txt"
   "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_trees/CMakeLists.txt"
   )
@@ -75,6 +77,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "worst_algorithms/CMakeFiles/CMakeDirectoryInformation.cmake"
   "worst_trees/CMakeFiles/CMakeDirectoryInformation.cmake"
   "worst_priority_queues/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "worst_disjoint_sets/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "worst_hashmaps/CMakeFiles/CMakeDirectoryInformation.cmake"
   "test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -90,5 +94,9 @@ set(CMAKE_DEPEND_INFO_FILES
   "worst_trees/CMakeFiles/worstTreesinstance.dir/DependInfo.cmake"
   "worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/DependInfo.cmake"
   "worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/DependInfo.cmake"
+  "worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/DependInfo.cmake"
+  "worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/DependInfo.cmake"
+  "worst_hashmaps/CMakeFiles/worstHashmaps.dir/DependInfo.cmake"
+  "worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/DependInfo.cmake"
   "test/CMakeFiles/IdlegameTests.dir/DependInfo.cmake"
   )

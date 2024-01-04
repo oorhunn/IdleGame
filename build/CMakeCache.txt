@@ -389,6 +389,24 @@ worstAlgorithms_IS_TOP_LEVEL:STATIC=OFF
 worstAlgorithms_SOURCE_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_algorithms
 
 //Value Computed by CMake
+worstDisjointTrees_BINARY_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_disjoint_sets
+
+//Value Computed by CMake
+worstDisjointTrees_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+worstDisjointTrees_SOURCE_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_disjoint_sets
+
+//Value Computed by CMake
+worstHashmaps_BINARY_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_hashmaps
+
+//Value Computed by CMake
+worstHashmaps_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+worstHashmaps_SOURCE_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_hashmaps
+
+//Value Computed by CMake
 worstPriorityQueues_BINARY_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_priority_queues
 
 //Value Computed by CMake
@@ -545,7 +563,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

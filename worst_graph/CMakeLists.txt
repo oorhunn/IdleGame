@@ -6,6 +6,7 @@ project(${This} CXX C)
 set (Sources 
     main.cpp
     src/Graph.cpp
+    src/LocalLinkedList.cpp
 )
 
 add_library(${This} STATIC ${Sources})

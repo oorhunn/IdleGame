@@ -1,16 +1,28 @@
+#ifndef GRAPH_H
+#define GRAPH_H
 
-#include <list>
-
+#include <vector>
+#include <unordered_map>
+#include <string>
 
 class Graph {
-  int numVertices;
-  std::list<int> *adjLists;
-  bool *visited;
 
-   public:
-  Graph(int V);
-  void addEdge(int src, int dest);
-  void DFS(int vertex);
+
+public:
+    Graph(int size = 5);
+    ~Graph();
+
+    void addVertex(std::string source);
+    void addEdge(std::string source, std::string target);
+
+
+private:
+    int matrixSize;
+    int columnCount;
+    std::unordered_map<std::string, int> columnNames;
+    std::vector<std::vector<int>> adjacencyMatrix; 
+
+
 };
 
-// Initialize graph
+#endif

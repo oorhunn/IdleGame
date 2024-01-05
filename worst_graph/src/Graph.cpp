@@ -2,25 +2,30 @@
 #include "../include/Graph.h"
 #include <list>
 #include <iostream>
+#include <vector>
 
-Graph::Graph(int vertices) {
-  numVertices = vertices;
-  adjLists = new std::list<int>[vertices];
-  visited = new bool[vertices];
-}
-// Add edges
-void Graph::addEdge(int src, int dest) {
-  adjLists[src].push_front(dest);
+
+
+Graph::Graph(int size) : matrixSize(size), columnCount(0)
+{
+    adjacencyMatrix.resize(size, std::vector<int>(size, -1));
 }
 
-void Graph::DFS(int vertex) {
-  visited[vertex] = true;
-  std::list<int> adjList = adjLists[vertex];
+Graph::~Graph()
+{
 
-  std::cout << vertex << " ";
+}
 
-  std::list<int>::iterator i;
-  for (i = adjList.begin(); i != adjList.end(); ++i)
-    if (!visited[*i])
-      DFS(*i);
+void Graph::addVertex(std::string source){
+    if (columnCount >= matrixSize){
+        return;
+    } 
+    columnNames.insert(std::make_pair(source, columnCount));
+    ++columnCount;
+}
+
+void Graph::addEdge(std::string source, std::string target){
+    int i = columnNames[source];
+    int j = columnNames[target];
+    adjacencyMatrix[i][j] = 1;
 }

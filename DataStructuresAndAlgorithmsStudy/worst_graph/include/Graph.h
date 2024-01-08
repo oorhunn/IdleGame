@@ -23,7 +23,6 @@ private:
 
 };
 
-template <typename nodeType>
 class GraphList {
 public:
     GraphList(int size = 5);
@@ -33,7 +32,9 @@ public:
     void addEdge(int source, int target);
 
 private:
-    std::vector<LocalLinkedList<nodeType>> adjacencyList;
+    int listSize;
+    int indexCount;
+    std::vector<LocalLinkedList<int>> adjacencyList;
 
 };
 

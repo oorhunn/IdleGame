@@ -178,10 +178,10 @@ test/IdlegameTests.exe: test/CMakeFiles/IdlegameTests.dir/BinaryHeapTest.cpp.obj
 test/IdlegameTests.exe: test/CMakeFiles/IdlegameTests.dir/HashmapsTest.cpp.obj
 test/IdlegameTests.exe: test/CMakeFiles/IdlegameTests.dir/build.make
 test/IdlegameTests.exe: lib/libgtest_main.a
-test/IdlegameTests.exe: worst_algorithms/libworstAlgorithms.a
-test/IdlegameTests.exe: worst_trees/libworstTrees.a
-test/IdlegameTests.exe: worst_priority_queues/libworstPriorityQueuesLib.a
-test/IdlegameTests.exe: worst_hashmaps/libworstHashmaps.a
+test/IdlegameTests.exe: DataStructuresAndAlgorithmsStudy/worst_algorithms/libworstAlgorithms.a
+test/IdlegameTests.exe: DataStructuresAndAlgorithmsStudy/worst_trees/libworstTrees.a
+test/IdlegameTests.exe: DataStructuresAndAlgorithmsStudy/worst_priority_queues/libworstPriorityQueuesLib.a
+test/IdlegameTests.exe: DataStructuresAndAlgorithmsStudy/worst_hashmaps/libworstHashmaps.a
 test/IdlegameTests.exe: lib/libgtest.a
 test/IdlegameTests.exe: test/CMakeFiles/IdlegameTests.dir/linkLibs.rsp
 test/IdlegameTests.exe: test/CMakeFiles/IdlegameTests.dir/objects1.rsp

@@ -3,7 +3,6 @@
 #include <list>
 #include <iostream>
 #include <vector>
-template class GraphList<int>;
 
 GraphMatr::GraphMatr(int size) : matrixSize(size), columnCount(0)
 {
@@ -28,7 +27,24 @@ void GraphMatr::addEdge(std::string source, std::string target){
     int j = columnNames[target];
     adjacencyMatrix[i][j] = 1;
 }
-template <typename nodeType>
-GraphList<nodeType>::GraphList(int size){
-    adjacencyList.resize(size, LocalLinkedList<nodeType>);
+GraphList::GraphList(int size){
+    adjacencyList.resize(size, LocalLinkedList<int>());
+    listSize = size;
+    indexCount = 0;
 }
+
+GraphList::~GraphList(){
+
+}
+
+void GraphList::addVertex(int source){
+    LocalLinkedList<int> temp;
+    adjacencyList[indexCount];
+    ++indexCount;
+}
+
+void GraphList::addEdge(int source, int target){
+    adjacencyList[source].append(target);
+}
+
+

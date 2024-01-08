@@ -63,36 +63,173 @@ CMAKE_BINARY_DIR = C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build
 
 # The main recursive "all" target.
 all: googletest/all
-all: worst_algorithms/all
-all: worst_trees/all
-all: worst_priority_queues/all
-all: worst_disjoint_sets/all
-all: worst_hashmaps/all
-all: worst_graph/all
+all: DataStructuresAndAlgorithmsStudy/all
+all: Chess/all
 all: test/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: googletest/preinstall
-preinstall: worst_algorithms/preinstall
-preinstall: worst_trees/preinstall
-preinstall: worst_priority_queues/preinstall
-preinstall: worst_disjoint_sets/preinstall
-preinstall: worst_hashmaps/preinstall
-preinstall: worst_graph/preinstall
+preinstall: DataStructuresAndAlgorithmsStudy/preinstall
+preinstall: Chess/preinstall
 preinstall: test/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: googletest/clean
-clean: worst_algorithms/clean
-clean: worst_trees/clean
-clean: worst_priority_queues/clean
-clean: worst_disjoint_sets/clean
-clean: worst_hashmaps/clean
-clean: worst_graph/clean
+clean: DataStructuresAndAlgorithmsStudy/clean
+clean: Chess/clean
 clean: test/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory Chess
+
+# Recursive "all" directory target.
+Chess/all: Chess/CMakeFiles/Chess.dir/all
+Chess/all: Chess/CMakeFiles/Chessinstance.dir/all
+.PHONY : Chess/all
+
+# Recursive "preinstall" directory target.
+Chess/preinstall:
+.PHONY : Chess/preinstall
+
+# Recursive "clean" directory target.
+Chess/clean: Chess/CMakeFiles/Chess.dir/clean
+Chess/clean: Chess/CMakeFiles/Chessinstance.dir/clean
+.PHONY : Chess/clean
+
+#=============================================================================
+# Directory level rules for directory DataStructuresAndAlgorithmsStudy
+
+# Recursive "all" directory target.
+DataStructuresAndAlgorithmsStudy/all: DataStructuresAndAlgorithmsStudy/worst_algorithms/all
+DataStructuresAndAlgorithmsStudy/all: DataStructuresAndAlgorithmsStudy/worst_trees/all
+DataStructuresAndAlgorithmsStudy/all: DataStructuresAndAlgorithmsStudy/worst_priority_queues/all
+DataStructuresAndAlgorithmsStudy/all: DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/all
+DataStructuresAndAlgorithmsStudy/all: DataStructuresAndAlgorithmsStudy/worst_hashmaps/all
+DataStructuresAndAlgorithmsStudy/all: DataStructuresAndAlgorithmsStudy/worst_graph/all
+.PHONY : DataStructuresAndAlgorithmsStudy/all
+
+# Recursive "preinstall" directory target.
+DataStructuresAndAlgorithmsStudy/preinstall: DataStructuresAndAlgorithmsStudy/worst_algorithms/preinstall
+DataStructuresAndAlgorithmsStudy/preinstall: DataStructuresAndAlgorithmsStudy/worst_trees/preinstall
+DataStructuresAndAlgorithmsStudy/preinstall: DataStructuresAndAlgorithmsStudy/worst_priority_queues/preinstall
+DataStructuresAndAlgorithmsStudy/preinstall: DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/preinstall
+DataStructuresAndAlgorithmsStudy/preinstall: DataStructuresAndAlgorithmsStudy/worst_hashmaps/preinstall
+DataStructuresAndAlgorithmsStudy/preinstall: DataStructuresAndAlgorithmsStudy/worst_graph/preinstall
+.PHONY : DataStructuresAndAlgorithmsStudy/preinstall
+
+# Recursive "clean" directory target.
+DataStructuresAndAlgorithmsStudy/clean: DataStructuresAndAlgorithmsStudy/worst_algorithms/clean
+DataStructuresAndAlgorithmsStudy/clean: DataStructuresAndAlgorithmsStudy/worst_trees/clean
+DataStructuresAndAlgorithmsStudy/clean: DataStructuresAndAlgorithmsStudy/worst_priority_queues/clean
+DataStructuresAndAlgorithmsStudy/clean: DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/clean
+DataStructuresAndAlgorithmsStudy/clean: DataStructuresAndAlgorithmsStudy/worst_hashmaps/clean
+DataStructuresAndAlgorithmsStudy/clean: DataStructuresAndAlgorithmsStudy/worst_graph/clean
+.PHONY : DataStructuresAndAlgorithmsStudy/clean
+
+#=============================================================================
+# Directory level rules for directory DataStructuresAndAlgorithmsStudy/worst_algorithms
+
+# Recursive "all" directory target.
+DataStructuresAndAlgorithmsStudy/worst_algorithms/all: DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithms.dir/all
+DataStructuresAndAlgorithmsStudy/worst_algorithms/all: DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/all
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_algorithms/all
+
+# Recursive "preinstall" directory target.
+DataStructuresAndAlgorithmsStudy/worst_algorithms/preinstall:
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_algorithms/preinstall
+
+# Recursive "clean" directory target.
+DataStructuresAndAlgorithmsStudy/worst_algorithms/clean: DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithms.dir/clean
+DataStructuresAndAlgorithmsStudy/worst_algorithms/clean: DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/clean
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_algorithms/clean
+
+#=============================================================================
+# Directory level rules for directory DataStructuresAndAlgorithmsStudy/worst_disjoint_sets
+
+# Recursive "all" directory target.
+DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/all: DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/all
+DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/all: DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/all
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/all
+
+# Recursive "preinstall" directory target.
+DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/preinstall:
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/preinstall
+
+# Recursive "clean" directory target.
+DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/clean: DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/clean
+DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/clean: DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/clean
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/clean
+
+#=============================================================================
+# Directory level rules for directory DataStructuresAndAlgorithmsStudy/worst_graph
+
+# Recursive "all" directory target.
+DataStructuresAndAlgorithmsStudy/worst_graph/all: DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraph.dir/all
+DataStructuresAndAlgorithmsStudy/worst_graph/all: DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraphinstance.dir/all
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_graph/all
+
+# Recursive "preinstall" directory target.
+DataStructuresAndAlgorithmsStudy/worst_graph/preinstall:
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_graph/preinstall
+
+# Recursive "clean" directory target.
+DataStructuresAndAlgorithmsStudy/worst_graph/clean: DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraph.dir/clean
+DataStructuresAndAlgorithmsStudy/worst_graph/clean: DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraphinstance.dir/clean
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_graph/clean
+
+#=============================================================================
+# Directory level rules for directory DataStructuresAndAlgorithmsStudy/worst_hashmaps
+
+# Recursive "all" directory target.
+DataStructuresAndAlgorithmsStudy/worst_hashmaps/all: DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmaps.dir/all
+DataStructuresAndAlgorithmsStudy/worst_hashmaps/all: DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/all
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_hashmaps/all
+
+# Recursive "preinstall" directory target.
+DataStructuresAndAlgorithmsStudy/worst_hashmaps/preinstall:
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_hashmaps/preinstall
+
+# Recursive "clean" directory target.
+DataStructuresAndAlgorithmsStudy/worst_hashmaps/clean: DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmaps.dir/clean
+DataStructuresAndAlgorithmsStudy/worst_hashmaps/clean: DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/clean
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_hashmaps/clean
+
+#=============================================================================
+# Directory level rules for directory DataStructuresAndAlgorithmsStudy/worst_priority_queues
+
+# Recursive "all" directory target.
+DataStructuresAndAlgorithmsStudy/worst_priority_queues/all: DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/all
+DataStructuresAndAlgorithmsStudy/worst_priority_queues/all: DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/all
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_priority_queues/all
+
+# Recursive "preinstall" directory target.
+DataStructuresAndAlgorithmsStudy/worst_priority_queues/preinstall:
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_priority_queues/preinstall
+
+# Recursive "clean" directory target.
+DataStructuresAndAlgorithmsStudy/worst_priority_queues/clean: DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/clean
+DataStructuresAndAlgorithmsStudy/worst_priority_queues/clean: DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/clean
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_priority_queues/clean
+
+#=============================================================================
+# Directory level rules for directory DataStructuresAndAlgorithmsStudy/worst_trees
+
+# Recursive "all" directory target.
+DataStructuresAndAlgorithmsStudy/worst_trees/all: DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTrees.dir/all
+DataStructuresAndAlgorithmsStudy/worst_trees/all: DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTreesinstance.dir/all
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_trees/all
+
+# Recursive "preinstall" directory target.
+DataStructuresAndAlgorithmsStudy/worst_trees/preinstall:
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_trees/preinstall
+
+# Recursive "clean" directory target.
+DataStructuresAndAlgorithmsStudy/worst_trees/clean: DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTrees.dir/clean
+DataStructuresAndAlgorithmsStudy/worst_trees/clean: DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTreesinstance.dir/clean
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_trees/clean
 
 #=============================================================================
 # Directory level rules for directory googletest
@@ -161,115 +298,13 @@ test/clean: test/CMakeFiles/IdlegameTests.dir/clean
 .PHONY : test/clean
 
 #=============================================================================
-# Directory level rules for directory worst_algorithms
-
-# Recursive "all" directory target.
-worst_algorithms/all: worst_algorithms/CMakeFiles/worstAlgorithms.dir/all
-worst_algorithms/all: worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/all
-.PHONY : worst_algorithms/all
-
-# Recursive "preinstall" directory target.
-worst_algorithms/preinstall:
-.PHONY : worst_algorithms/preinstall
-
-# Recursive "clean" directory target.
-worst_algorithms/clean: worst_algorithms/CMakeFiles/worstAlgorithms.dir/clean
-worst_algorithms/clean: worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/clean
-.PHONY : worst_algorithms/clean
-
-#=============================================================================
-# Directory level rules for directory worst_disjoint_sets
-
-# Recursive "all" directory target.
-worst_disjoint_sets/all: worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/all
-worst_disjoint_sets/all: worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/all
-.PHONY : worst_disjoint_sets/all
-
-# Recursive "preinstall" directory target.
-worst_disjoint_sets/preinstall:
-.PHONY : worst_disjoint_sets/preinstall
-
-# Recursive "clean" directory target.
-worst_disjoint_sets/clean: worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/clean
-worst_disjoint_sets/clean: worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/clean
-.PHONY : worst_disjoint_sets/clean
-
-#=============================================================================
-# Directory level rules for directory worst_graph
-
-# Recursive "all" directory target.
-worst_graph/all: worst_graph/CMakeFiles/worstGraph.dir/all
-worst_graph/all: worst_graph/CMakeFiles/worstGraphinstance.dir/all
-.PHONY : worst_graph/all
-
-# Recursive "preinstall" directory target.
-worst_graph/preinstall:
-.PHONY : worst_graph/preinstall
-
-# Recursive "clean" directory target.
-worst_graph/clean: worst_graph/CMakeFiles/worstGraph.dir/clean
-worst_graph/clean: worst_graph/CMakeFiles/worstGraphinstance.dir/clean
-.PHONY : worst_graph/clean
-
-#=============================================================================
-# Directory level rules for directory worst_hashmaps
-
-# Recursive "all" directory target.
-worst_hashmaps/all: worst_hashmaps/CMakeFiles/worstHashmaps.dir/all
-worst_hashmaps/all: worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/all
-.PHONY : worst_hashmaps/all
-
-# Recursive "preinstall" directory target.
-worst_hashmaps/preinstall:
-.PHONY : worst_hashmaps/preinstall
-
-# Recursive "clean" directory target.
-worst_hashmaps/clean: worst_hashmaps/CMakeFiles/worstHashmaps.dir/clean
-worst_hashmaps/clean: worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/clean
-.PHONY : worst_hashmaps/clean
-
-#=============================================================================
-# Directory level rules for directory worst_priority_queues
-
-# Recursive "all" directory target.
-worst_priority_queues/all: worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/all
-worst_priority_queues/all: worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/all
-.PHONY : worst_priority_queues/all
-
-# Recursive "preinstall" directory target.
-worst_priority_queues/preinstall:
-.PHONY : worst_priority_queues/preinstall
-
-# Recursive "clean" directory target.
-worst_priority_queues/clean: worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/clean
-worst_priority_queues/clean: worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/clean
-.PHONY : worst_priority_queues/clean
-
-#=============================================================================
-# Directory level rules for directory worst_trees
-
-# Recursive "all" directory target.
-worst_trees/all: worst_trees/CMakeFiles/worstTrees.dir/all
-worst_trees/all: worst_trees/CMakeFiles/worstTreesinstance.dir/all
-.PHONY : worst_trees/all
-
-# Recursive "preinstall" directory target.
-worst_trees/preinstall:
-.PHONY : worst_trees/preinstall
-
-# Recursive "clean" directory target.
-worst_trees/clean: worst_trees/CMakeFiles/worstTrees.dir/clean
-worst_trees/clean: worst_trees/CMakeFiles/worstTreesinstance.dir/clean
-.PHONY : worst_trees/clean
-
-#=============================================================================
 # Target rules for target googletest/googlemock/CMakeFiles/gmock.dir
 
 # All Build rule for target.
 googletest/googlemock/CMakeFiles/gmock.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock.dir\build.make googletest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock.dir\build.make googletest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=8,9 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=12,13 "Built target gmock"
 .PHONY : googletest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -296,7 +331,7 @@ googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googlemock/CMake
 googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock_main.dir\build.make googletest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock_main.dir\build.make googletest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=10,11 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=14,15 "Built target gmock_main"
 .PHONY : googletest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -322,7 +357,7 @@ googletest/googlemock/CMakeFiles/gmock_main.dir/clean:
 googletest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest.dir\build.make googletest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest.dir\build.make googletest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=12,13 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=16,17 "Built target gtest"
 .PHONY : googletest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -348,7 +383,7 @@ googletest/googletest/CMakeFiles/gtest.dir/clean:
 googletest/googletest/CMakeFiles/gtest_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest_main.dir\build.make googletest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest_main.dir\build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=14,15 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=18,19 "Built target gtest_main"
 .PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -368,316 +403,368 @@ googletest/googletest/CMakeFiles/gtest_main.dir/clean:
 .PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/clean
 
 #=============================================================================
-# Target rules for target worst_algorithms/CMakeFiles/worstAlgorithms.dir
+# Target rules for target DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithms.dir
 
 # All Build rule for target.
-worst_algorithms/CMakeFiles/worstAlgorithms.dir/all:
-	$(MAKE) $(MAKESILENT) -f worst_algorithms\CMakeFiles\worstAlgorithms.dir\build.make worst_algorithms/CMakeFiles/worstAlgorithms.dir/depend
-	$(MAKE) $(MAKESILENT) -f worst_algorithms\CMakeFiles\worstAlgorithms.dir\build.make worst_algorithms/CMakeFiles/worstAlgorithms.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=16,17,18,19,20,21 "Built target worstAlgorithms"
-.PHONY : worst_algorithms/CMakeFiles/worstAlgorithms.dir/all
+DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithms.dir/all:
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_algorithms\CMakeFiles\worstAlgorithms.dir\build.make DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithms.dir/depend
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_algorithms\CMakeFiles\worstAlgorithms.dir\build.make DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithms.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=20,21,22,23,24,25 "Built target worstAlgorithms"
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithms.dir/all
 
 # Build rule for subdir invocation for target.
-worst_algorithms/CMakeFiles/worstAlgorithms.dir/rule: cmake_check_build_system
+DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithms.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worst_algorithms/CMakeFiles/worstAlgorithms.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithms.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 0
-.PHONY : worst_algorithms/CMakeFiles/worstAlgorithms.dir/rule
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithms.dir/rule
 
 # Convenience name for target.
-worstAlgorithms: worst_algorithms/CMakeFiles/worstAlgorithms.dir/rule
+worstAlgorithms: DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithms.dir/rule
 .PHONY : worstAlgorithms
 
 # clean rule for target.
-worst_algorithms/CMakeFiles/worstAlgorithms.dir/clean:
-	$(MAKE) $(MAKESILENT) -f worst_algorithms\CMakeFiles\worstAlgorithms.dir\build.make worst_algorithms/CMakeFiles/worstAlgorithms.dir/clean
-.PHONY : worst_algorithms/CMakeFiles/worstAlgorithms.dir/clean
+DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithms.dir/clean:
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_algorithms\CMakeFiles\worstAlgorithms.dir\build.make DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithms.dir/clean
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithms.dir/clean
 
 #=============================================================================
-# Target rules for target worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir
+# Target rules for target DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir
 
 # All Build rule for target.
-worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/all: worst_algorithms/CMakeFiles/worstAlgorithms.dir/all
-	$(MAKE) $(MAKESILENT) -f worst_algorithms\CMakeFiles\worstAlgorithmsinstance.dir\build.make worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/depend
-	$(MAKE) $(MAKESILENT) -f worst_algorithms\CMakeFiles\worstAlgorithmsinstance.dir\build.make worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=22,23,24,25,26,27 "Built target worstAlgorithmsinstance"
-.PHONY : worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/all
+DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/all: DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithms.dir/all
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_algorithms\CMakeFiles\worstAlgorithmsinstance.dir\build.make DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/depend
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_algorithms\CMakeFiles\worstAlgorithmsinstance.dir\build.make DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=26,27,28,29,30,31 "Built target worstAlgorithmsinstance"
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/all
 
 # Build rule for subdir invocation for target.
-worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/rule: cmake_check_build_system
+DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 12
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 0
-.PHONY : worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/rule
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/rule
 
 # Convenience name for target.
-worstAlgorithmsinstance: worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/rule
+worstAlgorithmsinstance: DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/rule
 .PHONY : worstAlgorithmsinstance
 
 # clean rule for target.
-worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/clean:
-	$(MAKE) $(MAKESILENT) -f worst_algorithms\CMakeFiles\worstAlgorithmsinstance.dir\build.make worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/clean
-.PHONY : worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/clean
+DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/clean:
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_algorithms\CMakeFiles\worstAlgorithmsinstance.dir\build.make DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/clean
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/clean
 
 #=============================================================================
-# Target rules for target worst_trees/CMakeFiles/worstTrees.dir
+# Target rules for target DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTrees.dir
 
 # All Build rule for target.
-worst_trees/CMakeFiles/worstTrees.dir/all:
-	$(MAKE) $(MAKESILENT) -f worst_trees\CMakeFiles\worstTrees.dir\build.make worst_trees/CMakeFiles/worstTrees.dir/depend
-	$(MAKE) $(MAKESILENT) -f worst_trees\CMakeFiles\worstTrees.dir\build.make worst_trees/CMakeFiles/worstTrees.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=52,53,54,55,56,57 "Built target worstTrees"
-.PHONY : worst_trees/CMakeFiles/worstTrees.dir/all
+DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTrees.dir/all:
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_trees\CMakeFiles\worstTrees.dir\build.make DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTrees.dir/depend
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_trees\CMakeFiles\worstTrees.dir\build.make DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTrees.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=56,57,58,59,60,61 "Built target worstTrees"
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTrees.dir/all
 
 # Build rule for subdir invocation for target.
-worst_trees/CMakeFiles/worstTrees.dir/rule: cmake_check_build_system
+DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTrees.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worst_trees/CMakeFiles/worstTrees.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTrees.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 0
-.PHONY : worst_trees/CMakeFiles/worstTrees.dir/rule
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTrees.dir/rule
 
 # Convenience name for target.
-worstTrees: worst_trees/CMakeFiles/worstTrees.dir/rule
+worstTrees: DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTrees.dir/rule
 .PHONY : worstTrees
 
 # clean rule for target.
-worst_trees/CMakeFiles/worstTrees.dir/clean:
-	$(MAKE) $(MAKESILENT) -f worst_trees\CMakeFiles\worstTrees.dir\build.make worst_trees/CMakeFiles/worstTrees.dir/clean
-.PHONY : worst_trees/CMakeFiles/worstTrees.dir/clean
+DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTrees.dir/clean:
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_trees\CMakeFiles\worstTrees.dir\build.make DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTrees.dir/clean
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTrees.dir/clean
 
 #=============================================================================
-# Target rules for target worst_trees/CMakeFiles/worstTreesinstance.dir
+# Target rules for target DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTreesinstance.dir
 
 # All Build rule for target.
-worst_trees/CMakeFiles/worstTreesinstance.dir/all: worst_trees/CMakeFiles/worstTrees.dir/all
-	$(MAKE) $(MAKESILENT) -f worst_trees\CMakeFiles\worstTreesinstance.dir\build.make worst_trees/CMakeFiles/worstTreesinstance.dir/depend
-	$(MAKE) $(MAKESILENT) -f worst_trees\CMakeFiles\worstTreesinstance.dir\build.make worst_trees/CMakeFiles/worstTreesinstance.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=58,59,60,61,62,63 "Built target worstTreesinstance"
-.PHONY : worst_trees/CMakeFiles/worstTreesinstance.dir/all
+DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTreesinstance.dir/all: DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTrees.dir/all
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_trees\CMakeFiles\worstTreesinstance.dir\build.make DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTreesinstance.dir/depend
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_trees\CMakeFiles\worstTreesinstance.dir\build.make DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTreesinstance.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=62,63,64,65,66,67 "Built target worstTreesinstance"
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTreesinstance.dir/all
 
 # Build rule for subdir invocation for target.
-worst_trees/CMakeFiles/worstTreesinstance.dir/rule: cmake_check_build_system
+DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTreesinstance.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 12
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worst_trees/CMakeFiles/worstTreesinstance.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTreesinstance.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 0
-.PHONY : worst_trees/CMakeFiles/worstTreesinstance.dir/rule
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTreesinstance.dir/rule
 
 # Convenience name for target.
-worstTreesinstance: worst_trees/CMakeFiles/worstTreesinstance.dir/rule
+worstTreesinstance: DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTreesinstance.dir/rule
 .PHONY : worstTreesinstance
 
 # clean rule for target.
-worst_trees/CMakeFiles/worstTreesinstance.dir/clean:
-	$(MAKE) $(MAKESILENT) -f worst_trees\CMakeFiles\worstTreesinstance.dir\build.make worst_trees/CMakeFiles/worstTreesinstance.dir/clean
-.PHONY : worst_trees/CMakeFiles/worstTreesinstance.dir/clean
+DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTreesinstance.dir/clean:
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_trees\CMakeFiles\worstTreesinstance.dir\build.make DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTreesinstance.dir/clean
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTreesinstance.dir/clean
 
 #=============================================================================
-# Target rules for target worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir
+# Target rules for target DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir
 
 # All Build rule for target.
-worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/all:
-	$(MAKE) $(MAKESILENT) -f worst_priority_queues\CMakeFiles\worstPriorityQueuesLib.dir\build.make worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/depend
-	$(MAKE) $(MAKESILENT) -f worst_priority_queues\CMakeFiles\worstPriorityQueuesLib.dir\build.make worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=50,51 "Built target worstPriorityQueuesLib"
-.PHONY : worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/all
+DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/all:
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_priority_queues\CMakeFiles\worstPriorityQueuesLib.dir\build.make DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/depend
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_priority_queues\CMakeFiles\worstPriorityQueuesLib.dir\build.make DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=54,55 "Built target worstPriorityQueuesLib"
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/all
 
 # Build rule for subdir invocation for target.
-worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/rule: cmake_check_build_system
+DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 0
-.PHONY : worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/rule
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/rule
 
 # Convenience name for target.
-worstPriorityQueuesLib: worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/rule
+worstPriorityQueuesLib: DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/rule
 .PHONY : worstPriorityQueuesLib
 
 # clean rule for target.
-worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f worst_priority_queues\CMakeFiles\worstPriorityQueuesLib.dir\build.make worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/clean
-.PHONY : worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/clean
+DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_priority_queues\CMakeFiles\worstPriorityQueuesLib.dir\build.make DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/clean
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/clean
 
 #=============================================================================
-# Target rules for target worst_priority_queues/CMakeFiles/worstPriorityQueues.dir
+# Target rules for target DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueues.dir
 
 # All Build rule for target.
-worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/all: worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/all
-	$(MAKE) $(MAKESILENT) -f worst_priority_queues\CMakeFiles\worstPriorityQueues.dir\build.make worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/depend
-	$(MAKE) $(MAKESILENT) -f worst_priority_queues\CMakeFiles\worstPriorityQueues.dir\build.make worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=48,49 "Built target worstPriorityQueues"
-.PHONY : worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/all
+DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/all: DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/all
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_priority_queues\CMakeFiles\worstPriorityQueues.dir\build.make DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/depend
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_priority_queues\CMakeFiles\worstPriorityQueues.dir\build.make DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=52,53 "Built target worstPriorityQueues"
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/all
 
 # Build rule for subdir invocation for target.
-worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/rule: cmake_check_build_system
+DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 0
-.PHONY : worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/rule
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/rule
 
 # Convenience name for target.
-worstPriorityQueues: worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/rule
+worstPriorityQueues: DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/rule
 .PHONY : worstPriorityQueues
 
 # clean rule for target.
-worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/clean:
-	$(MAKE) $(MAKESILENT) -f worst_priority_queues\CMakeFiles\worstPriorityQueues.dir\build.make worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/clean
-.PHONY : worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/clean
+DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/clean:
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_priority_queues\CMakeFiles\worstPriorityQueues.dir\build.make DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/clean
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/clean
 
 #=============================================================================
-# Target rules for target worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir
+# Target rules for target DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir
 
 # All Build rule for target.
-worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/all:
-	$(MAKE) $(MAKESILENT) -f worst_disjoint_sets\CMakeFiles\worstDisjointTrees.dir\build.make worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/depend
-	$(MAKE) $(MAKESILENT) -f worst_disjoint_sets\CMakeFiles\worstDisjointTrees.dir\build.make worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=28,29,30 "Built target worstDisjointTrees"
-.PHONY : worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/all
+DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/all:
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_disjoint_sets\CMakeFiles\worstDisjointTrees.dir\build.make DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/depend
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_disjoint_sets\CMakeFiles\worstDisjointTrees.dir\build.make DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=32,33,34 "Built target worstDisjointTrees"
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/all
 
 # Build rule for subdir invocation for target.
-worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/rule: cmake_check_build_system
+DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 0
-.PHONY : worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/rule
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/rule
 
 # Convenience name for target.
-worstDisjointTrees: worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/rule
+worstDisjointTrees: DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/rule
 .PHONY : worstDisjointTrees
 
 # clean rule for target.
-worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/clean:
-	$(MAKE) $(MAKESILENT) -f worst_disjoint_sets\CMakeFiles\worstDisjointTrees.dir\build.make worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/clean
-.PHONY : worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/clean
+DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/clean:
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_disjoint_sets\CMakeFiles\worstDisjointTrees.dir\build.make DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/clean
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/clean
 
 #=============================================================================
-# Target rules for target worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir
+# Target rules for target DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir
 
 # All Build rule for target.
-worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/all: worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/all
-	$(MAKE) $(MAKESILENT) -f worst_disjoint_sets\CMakeFiles\worstDisjointTreesinstance.dir\build.make worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/depend
-	$(MAKE) $(MAKESILENT) -f worst_disjoint_sets\CMakeFiles\worstDisjointTreesinstance.dir\build.make worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=31,32,33 "Built target worstDisjointTreesinstance"
-.PHONY : worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/all
+DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/all: DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/all
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_disjoint_sets\CMakeFiles\worstDisjointTreesinstance.dir\build.make DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/depend
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_disjoint_sets\CMakeFiles\worstDisjointTreesinstance.dir\build.make DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=35,36,37 "Built target worstDisjointTreesinstance"
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/all
 
 # Build rule for subdir invocation for target.
-worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/rule: cmake_check_build_system
+DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 0
-.PHONY : worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/rule
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/rule
 
 # Convenience name for target.
-worstDisjointTreesinstance: worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/rule
+worstDisjointTreesinstance: DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/rule
 .PHONY : worstDisjointTreesinstance
 
 # clean rule for target.
-worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/clean:
-	$(MAKE) $(MAKESILENT) -f worst_disjoint_sets\CMakeFiles\worstDisjointTreesinstance.dir\build.make worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/clean
-.PHONY : worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/clean
+DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/clean:
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_disjoint_sets\CMakeFiles\worstDisjointTreesinstance.dir\build.make DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/clean
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/clean
 
 #=============================================================================
-# Target rules for target worst_hashmaps/CMakeFiles/worstHashmaps.dir
+# Target rules for target DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmaps.dir
 
 # All Build rule for target.
-worst_hashmaps/CMakeFiles/worstHashmaps.dir/all:
-	$(MAKE) $(MAKESILENT) -f worst_hashmaps\CMakeFiles\worstHashmaps.dir\build.make worst_hashmaps/CMakeFiles/worstHashmaps.dir/depend
-	$(MAKE) $(MAKESILENT) -f worst_hashmaps\CMakeFiles\worstHashmaps.dir\build.make worst_hashmaps/CMakeFiles/worstHashmaps.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=42,43,44 "Built target worstHashmaps"
-.PHONY : worst_hashmaps/CMakeFiles/worstHashmaps.dir/all
+DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmaps.dir/all:
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_hashmaps\CMakeFiles\worstHashmaps.dir\build.make DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmaps.dir/depend
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_hashmaps\CMakeFiles\worstHashmaps.dir\build.make DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmaps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=46,47,48 "Built target worstHashmaps"
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmaps.dir/all
 
 # Build rule for subdir invocation for target.
-worst_hashmaps/CMakeFiles/worstHashmaps.dir/rule: cmake_check_build_system
+DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmaps.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worst_hashmaps/CMakeFiles/worstHashmaps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmaps.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 0
-.PHONY : worst_hashmaps/CMakeFiles/worstHashmaps.dir/rule
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmaps.dir/rule
 
 # Convenience name for target.
-worstHashmaps: worst_hashmaps/CMakeFiles/worstHashmaps.dir/rule
+worstHashmaps: DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmaps.dir/rule
 .PHONY : worstHashmaps
 
 # clean rule for target.
-worst_hashmaps/CMakeFiles/worstHashmaps.dir/clean:
-	$(MAKE) $(MAKESILENT) -f worst_hashmaps\CMakeFiles\worstHashmaps.dir\build.make worst_hashmaps/CMakeFiles/worstHashmaps.dir/clean
-.PHONY : worst_hashmaps/CMakeFiles/worstHashmaps.dir/clean
+DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmaps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_hashmaps\CMakeFiles\worstHashmaps.dir\build.make DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmaps.dir/clean
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmaps.dir/clean
 
 #=============================================================================
-# Target rules for target worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir
+# Target rules for target DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir
 
 # All Build rule for target.
-worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/all: worst_hashmaps/CMakeFiles/worstHashmaps.dir/all
-	$(MAKE) $(MAKESILENT) -f worst_hashmaps\CMakeFiles\worstHashmapsinstance.dir\build.make worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/depend
-	$(MAKE) $(MAKESILENT) -f worst_hashmaps\CMakeFiles\worstHashmapsinstance.dir\build.make worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=45,46,47 "Built target worstHashmapsinstance"
-.PHONY : worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/all
+DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/all: DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmaps.dir/all
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_hashmaps\CMakeFiles\worstHashmapsinstance.dir\build.make DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/depend
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_hashmaps\CMakeFiles\worstHashmapsinstance.dir\build.make DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=49,50,51 "Built target worstHashmapsinstance"
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/all
 
 # Build rule for subdir invocation for target.
-worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/rule: cmake_check_build_system
+DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 0
-.PHONY : worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/rule
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/rule
 
 # Convenience name for target.
-worstHashmapsinstance: worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/rule
+worstHashmapsinstance: DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/rule
 .PHONY : worstHashmapsinstance
 
 # clean rule for target.
-worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/clean:
-	$(MAKE) $(MAKESILENT) -f worst_hashmaps\CMakeFiles\worstHashmapsinstance.dir\build.make worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/clean
-.PHONY : worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/clean
+DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/clean:
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_hashmaps\CMakeFiles\worstHashmapsinstance.dir\build.make DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/clean
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/clean
 
 #=============================================================================
-# Target rules for target worst_graph/CMakeFiles/worstGraph.dir
+# Target rules for target DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraph.dir
 
 # All Build rule for target.
-worst_graph/CMakeFiles/worstGraph.dir/all:
-	$(MAKE) $(MAKESILENT) -f worst_graph\CMakeFiles\worstGraph.dir\build.make worst_graph/CMakeFiles/worstGraph.dir/depend
-	$(MAKE) $(MAKESILENT) -f worst_graph\CMakeFiles\worstGraph.dir\build.make worst_graph/CMakeFiles/worstGraph.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=34,35,36,37 "Built target worstGraph"
-.PHONY : worst_graph/CMakeFiles/worstGraph.dir/all
+DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraph.dir/all:
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_graph\CMakeFiles\worstGraph.dir\build.make DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraph.dir/depend
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_graph\CMakeFiles\worstGraph.dir\build.make DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraph.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=38,39,40,41 "Built target worstGraph"
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraph.dir/all
 
 # Build rule for subdir invocation for target.
-worst_graph/CMakeFiles/worstGraph.dir/rule: cmake_check_build_system
+DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraph.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worst_graph/CMakeFiles/worstGraph.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraph.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 0
-.PHONY : worst_graph/CMakeFiles/worstGraph.dir/rule
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraph.dir/rule
 
 # Convenience name for target.
-worstGraph: worst_graph/CMakeFiles/worstGraph.dir/rule
+worstGraph: DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraph.dir/rule
 .PHONY : worstGraph
 
 # clean rule for target.
-worst_graph/CMakeFiles/worstGraph.dir/clean:
-	$(MAKE) $(MAKESILENT) -f worst_graph\CMakeFiles\worstGraph.dir\build.make worst_graph/CMakeFiles/worstGraph.dir/clean
-.PHONY : worst_graph/CMakeFiles/worstGraph.dir/clean
+DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraph.dir/clean:
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_graph\CMakeFiles\worstGraph.dir\build.make DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraph.dir/clean
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraph.dir/clean
 
 #=============================================================================
-# Target rules for target worst_graph/CMakeFiles/worstGraphinstance.dir
+# Target rules for target DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraphinstance.dir
 
 # All Build rule for target.
-worst_graph/CMakeFiles/worstGraphinstance.dir/all: worst_graph/CMakeFiles/worstGraph.dir/all
-	$(MAKE) $(MAKESILENT) -f worst_graph\CMakeFiles\worstGraphinstance.dir\build.make worst_graph/CMakeFiles/worstGraphinstance.dir/depend
-	$(MAKE) $(MAKESILENT) -f worst_graph\CMakeFiles\worstGraphinstance.dir\build.make worst_graph/CMakeFiles/worstGraphinstance.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=38,39,40,41 "Built target worstGraphinstance"
-.PHONY : worst_graph/CMakeFiles/worstGraphinstance.dir/all
+DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraphinstance.dir/all: DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraph.dir/all
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_graph\CMakeFiles\worstGraphinstance.dir\build.make DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraphinstance.dir/depend
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_graph\CMakeFiles\worstGraphinstance.dir\build.make DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraphinstance.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=42,43,44,45 "Built target worstGraphinstance"
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraphinstance.dir/all
 
 # Build rule for subdir invocation for target.
-worst_graph/CMakeFiles/worstGraphinstance.dir/rule: cmake_check_build_system
+DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraphinstance.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worst_graph/CMakeFiles/worstGraphinstance.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraphinstance.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 0
-.PHONY : worst_graph/CMakeFiles/worstGraphinstance.dir/rule
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraphinstance.dir/rule
 
 # Convenience name for target.
-worstGraphinstance: worst_graph/CMakeFiles/worstGraphinstance.dir/rule
+worstGraphinstance: DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraphinstance.dir/rule
 .PHONY : worstGraphinstance
 
 # clean rule for target.
-worst_graph/CMakeFiles/worstGraphinstance.dir/clean:
-	$(MAKE) $(MAKESILENT) -f worst_graph\CMakeFiles\worstGraphinstance.dir\build.make worst_graph/CMakeFiles/worstGraphinstance.dir/clean
-.PHONY : worst_graph/CMakeFiles/worstGraphinstance.dir/clean
+DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraphinstance.dir/clean:
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_graph\CMakeFiles\worstGraphinstance.dir\build.make DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraphinstance.dir/clean
+.PHONY : DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraphinstance.dir/clean
+
+#=============================================================================
+# Target rules for target Chess/CMakeFiles/Chess.dir
+
+# All Build rule for target.
+Chess/CMakeFiles/Chess.dir/all:
+	$(MAKE) $(MAKESILENT) -f Chess\CMakeFiles\Chess.dir\build.make Chess/CMakeFiles/Chess.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chess\CMakeFiles\Chess.dir\build.make Chess/CMakeFiles/Chess.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=1,2 "Built target Chess"
+.PHONY : Chess/CMakeFiles/Chess.dir/all
+
+# Build rule for subdir invocation for target.
+Chess/CMakeFiles/Chess.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Chess/CMakeFiles/Chess.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 0
+.PHONY : Chess/CMakeFiles/Chess.dir/rule
+
+# Convenience name for target.
+Chess: Chess/CMakeFiles/Chess.dir/rule
+.PHONY : Chess
+
+# clean rule for target.
+Chess/CMakeFiles/Chess.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chess\CMakeFiles\Chess.dir\build.make Chess/CMakeFiles/Chess.dir/clean
+.PHONY : Chess/CMakeFiles/Chess.dir/clean
+
+#=============================================================================
+# Target rules for target Chess/CMakeFiles/Chessinstance.dir
+
+# All Build rule for target.
+Chess/CMakeFiles/Chessinstance.dir/all: Chess/CMakeFiles/Chess.dir/all
+	$(MAKE) $(MAKESILENT) -f Chess\CMakeFiles\Chessinstance.dir\build.make Chess/CMakeFiles/Chessinstance.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chess\CMakeFiles\Chessinstance.dir\build.make Chess/CMakeFiles/Chessinstance.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=3,4 "Built target Chessinstance"
+.PHONY : Chess/CMakeFiles/Chessinstance.dir/all
+
+# Build rule for subdir invocation for target.
+Chess/CMakeFiles/Chessinstance.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Chess/CMakeFiles/Chessinstance.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles 0
+.PHONY : Chess/CMakeFiles/Chessinstance.dir/rule
+
+# Convenience name for target.
+Chessinstance: Chess/CMakeFiles/Chessinstance.dir/rule
+.PHONY : Chessinstance
+
+# clean rule for target.
+Chess/CMakeFiles/Chessinstance.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chess\CMakeFiles\Chessinstance.dir\build.make Chess/CMakeFiles/Chessinstance.dir/clean
+.PHONY : Chess/CMakeFiles/Chessinstance.dir/clean
 
 #=============================================================================
 # Target rules for target test/CMakeFiles/IdlegameTests.dir
@@ -685,13 +772,13 @@ worst_graph/CMakeFiles/worstGraphinstance.dir/clean:
 # All Build rule for target.
 test/CMakeFiles/IdlegameTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 test/CMakeFiles/IdlegameTests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
-test/CMakeFiles/IdlegameTests.dir/all: worst_algorithms/CMakeFiles/worstAlgorithms.dir/all
-test/CMakeFiles/IdlegameTests.dir/all: worst_trees/CMakeFiles/worstTrees.dir/all
-test/CMakeFiles/IdlegameTests.dir/all: worst_hashmaps/CMakeFiles/worstHashmaps.dir/all
-test/CMakeFiles/IdlegameTests.dir/all: worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/all
+test/CMakeFiles/IdlegameTests.dir/all: DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithms.dir/all
+test/CMakeFiles/IdlegameTests.dir/all: DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/all
+test/CMakeFiles/IdlegameTests.dir/all: DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTrees.dir/all
+test/CMakeFiles/IdlegameTests.dir/all: DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmaps.dir/all
 	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target IdlegameTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aorhun.demiroglu\workspace\codes\IdleGame\build\CMakeFiles --progress-num=5,6,7,8,9,10,11 "Built target IdlegameTests"
 .PHONY : test/CMakeFiles/IdlegameTests.dir/all
 
 # Build rule for subdir invocation for target.

@@ -307,6 +307,24 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Value Computed by CMake
+Chess_BINARY_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/Chess
+
+//Value Computed by CMake
+Chess_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Chess_SOURCE_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/Chess
+
+//Value Computed by CMake
+DataStructuresAndAlgorithmsStudy_BINARY_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/DataStructuresAndAlgorithmsStudy
+
+//Value Computed by CMake
+DataStructuresAndAlgorithmsStudy_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+DataStructuresAndAlgorithmsStudy_SOURCE_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/DataStructuresAndAlgorithmsStudy
+
 //Use Abseil and RE2. Requires Abseil and RE2 to be separately
 // added to the build.
 GTEST_HAS_ABSL:BOOL=OFF
@@ -380,58 +398,58 @@ gtest_force_shared_crt:BOOL=OFF
 gtest_hide_internal_symbols:BOOL=OFF
 
 //Value Computed by CMake
-worstAlgorithms_BINARY_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_algorithms
+worstAlgorithms_BINARY_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/DataStructuresAndAlgorithmsStudy/worst_algorithms
 
 //Value Computed by CMake
 worstAlgorithms_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-worstAlgorithms_SOURCE_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_algorithms
+worstAlgorithms_SOURCE_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/DataStructuresAndAlgorithmsStudy/worst_algorithms
 
 //Value Computed by CMake
-worstDisjointTrees_BINARY_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_disjoint_sets
+worstDisjointTrees_BINARY_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/DataStructuresAndAlgorithmsStudy/worst_disjoint_sets
 
 //Value Computed by CMake
 worstDisjointTrees_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-worstDisjointTrees_SOURCE_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_disjoint_sets
+worstDisjointTrees_SOURCE_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/DataStructuresAndAlgorithmsStudy/worst_disjoint_sets
 
 //Value Computed by CMake
-worstGraph_BINARY_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_graph
+worstGraph_BINARY_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/DataStructuresAndAlgorithmsStudy/worst_graph
 
 //Value Computed by CMake
 worstGraph_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-worstGraph_SOURCE_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_graph
+worstGraph_SOURCE_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/DataStructuresAndAlgorithmsStudy/worst_graph
 
 //Value Computed by CMake
-worstHashmaps_BINARY_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_hashmaps
+worstHashmaps_BINARY_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/DataStructuresAndAlgorithmsStudy/worst_hashmaps
 
 //Value Computed by CMake
 worstHashmaps_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-worstHashmaps_SOURCE_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_hashmaps
+worstHashmaps_SOURCE_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/DataStructuresAndAlgorithmsStudy/worst_hashmaps
 
 //Value Computed by CMake
-worstPriorityQueues_BINARY_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_priority_queues
+worstPriorityQueues_BINARY_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/DataStructuresAndAlgorithmsStudy/worst_priority_queues
 
 //Value Computed by CMake
 worstPriorityQueues_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-worstPriorityQueues_SOURCE_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_priority_queues
+worstPriorityQueues_SOURCE_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/DataStructuresAndAlgorithmsStudy/worst_priority_queues
 
 //Value Computed by CMake
-worstTrees_BINARY_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/worst_trees
+worstTrees_BINARY_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/DataStructuresAndAlgorithmsStudy/worst_trees
 
 //Value Computed by CMake
 worstTrees_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-worstTrees_SOURCE_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/worst_trees
+worstTrees_SOURCE_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/DataStructuresAndAlgorithmsStudy/worst_trees
 
 
 ########################
@@ -572,7 +590,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=13
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

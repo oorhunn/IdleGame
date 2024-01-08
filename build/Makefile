@@ -232,7 +232,7 @@ worstAlgorithms: cmake_check_build_system
 
 # fast build rule for target.
 worstAlgorithms/fast:
-	$(MAKE) $(MAKESILENT) -f worst_algorithms\CMakeFiles\worstAlgorithms.dir\build.make worst_algorithms/CMakeFiles/worstAlgorithms.dir/build
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_algorithms\CMakeFiles\worstAlgorithms.dir\build.make DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithms.dir/build
 .PHONY : worstAlgorithms/fast
 
 #=============================================================================
@@ -245,7 +245,7 @@ worstAlgorithmsinstance: cmake_check_build_system
 
 # fast build rule for target.
 worstAlgorithmsinstance/fast:
-	$(MAKE) $(MAKESILENT) -f worst_algorithms\CMakeFiles\worstAlgorithmsinstance.dir\build.make worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/build
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_algorithms\CMakeFiles\worstAlgorithmsinstance.dir\build.make DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithmsinstance.dir/build
 .PHONY : worstAlgorithmsinstance/fast
 
 #=============================================================================
@@ -258,7 +258,7 @@ worstTrees: cmake_check_build_system
 
 # fast build rule for target.
 worstTrees/fast:
-	$(MAKE) $(MAKESILENT) -f worst_trees\CMakeFiles\worstTrees.dir\build.make worst_trees/CMakeFiles/worstTrees.dir/build
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_trees\CMakeFiles\worstTrees.dir\build.make DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTrees.dir/build
 .PHONY : worstTrees/fast
 
 #=============================================================================
@@ -271,7 +271,7 @@ worstTreesinstance: cmake_check_build_system
 
 # fast build rule for target.
 worstTreesinstance/fast:
-	$(MAKE) $(MAKESILENT) -f worst_trees\CMakeFiles\worstTreesinstance.dir\build.make worst_trees/CMakeFiles/worstTreesinstance.dir/build
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_trees\CMakeFiles\worstTreesinstance.dir\build.make DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTreesinstance.dir/build
 .PHONY : worstTreesinstance/fast
 
 #=============================================================================
@@ -284,7 +284,7 @@ worstPriorityQueuesLib: cmake_check_build_system
 
 # fast build rule for target.
 worstPriorityQueuesLib/fast:
-	$(MAKE) $(MAKESILENT) -f worst_priority_queues\CMakeFiles\worstPriorityQueuesLib.dir\build.make worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/build
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_priority_queues\CMakeFiles\worstPriorityQueuesLib.dir\build.make DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/build
 .PHONY : worstPriorityQueuesLib/fast
 
 #=============================================================================
@@ -297,7 +297,7 @@ worstPriorityQueues: cmake_check_build_system
 
 # fast build rule for target.
 worstPriorityQueues/fast:
-	$(MAKE) $(MAKESILENT) -f worst_priority_queues\CMakeFiles\worstPriorityQueues.dir\build.make worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/build
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_priority_queues\CMakeFiles\worstPriorityQueues.dir\build.make DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueues.dir/build
 .PHONY : worstPriorityQueues/fast
 
 #=============================================================================
@@ -310,7 +310,7 @@ worstDisjointTrees: cmake_check_build_system
 
 # fast build rule for target.
 worstDisjointTrees/fast:
-	$(MAKE) $(MAKESILENT) -f worst_disjoint_sets\CMakeFiles\worstDisjointTrees.dir\build.make worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/build
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_disjoint_sets\CMakeFiles\worstDisjointTrees.dir\build.make DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTrees.dir/build
 .PHONY : worstDisjointTrees/fast
 
 #=============================================================================
@@ -323,7 +323,7 @@ worstDisjointTreesinstance: cmake_check_build_system
 
 # fast build rule for target.
 worstDisjointTreesinstance/fast:
-	$(MAKE) $(MAKESILENT) -f worst_disjoint_sets\CMakeFiles\worstDisjointTreesinstance.dir\build.make worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/build
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_disjoint_sets\CMakeFiles\worstDisjointTreesinstance.dir\build.make DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/worstDisjointTreesinstance.dir/build
 .PHONY : worstDisjointTreesinstance/fast
 
 #=============================================================================
@@ -336,7 +336,7 @@ worstHashmaps: cmake_check_build_system
 
 # fast build rule for target.
 worstHashmaps/fast:
-	$(MAKE) $(MAKESILENT) -f worst_hashmaps\CMakeFiles\worstHashmaps.dir\build.make worst_hashmaps/CMakeFiles/worstHashmaps.dir/build
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_hashmaps\CMakeFiles\worstHashmaps.dir\build.make DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmaps.dir/build
 .PHONY : worstHashmaps/fast
 
 #=============================================================================
@@ -349,7 +349,7 @@ worstHashmapsinstance: cmake_check_build_system
 
 # fast build rule for target.
 worstHashmapsinstance/fast:
-	$(MAKE) $(MAKESILENT) -f worst_hashmaps\CMakeFiles\worstHashmapsinstance.dir\build.make worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/build
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_hashmaps\CMakeFiles\worstHashmapsinstance.dir\build.make DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/build
 .PHONY : worstHashmapsinstance/fast
 
 #=============================================================================
@@ -362,7 +362,7 @@ worstGraph: cmake_check_build_system
 
 # fast build rule for target.
 worstGraph/fast:
-	$(MAKE) $(MAKESILENT) -f worst_graph\CMakeFiles\worstGraph.dir\build.make worst_graph/CMakeFiles/worstGraph.dir/build
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_graph\CMakeFiles\worstGraph.dir\build.make DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraph.dir/build
 .PHONY : worstGraph/fast
 
 #=============================================================================
@@ -375,8 +375,34 @@ worstGraphinstance: cmake_check_build_system
 
 # fast build rule for target.
 worstGraphinstance/fast:
-	$(MAKE) $(MAKESILENT) -f worst_graph\CMakeFiles\worstGraphinstance.dir\build.make worst_graph/CMakeFiles/worstGraphinstance.dir/build
+	$(MAKE) $(MAKESILENT) -f DataStructuresAndAlgorithmsStudy\worst_graph\CMakeFiles\worstGraphinstance.dir\build.make DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraphinstance.dir/build
 .PHONY : worstGraphinstance/fast
+
+#=============================================================================
+# Target rules for targets named Chess
+
+# Build rule for target.
+Chess: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Chess
+.PHONY : Chess
+
+# fast build rule for target.
+Chess/fast:
+	$(MAKE) $(MAKESILENT) -f Chess\CMakeFiles\Chess.dir\build.make Chess/CMakeFiles/Chess.dir/build
+.PHONY : Chess/fast
+
+#=============================================================================
+# Target rules for targets named Chessinstance
+
+# Build rule for target.
+Chessinstance: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Chessinstance
+.PHONY : Chessinstance
+
+# fast build rule for target.
+Chessinstance/fast:
+	$(MAKE) $(MAKESILENT) -f Chess\CMakeFiles\Chessinstance.dir\build.make Chess/CMakeFiles/Chessinstance.dir/build
+.PHONY : Chessinstance/fast
 
 #=============================================================================
 # Target rules for targets named IdlegameTests
@@ -404,6 +430,8 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... test
+	@echo ... Chess
+	@echo ... Chessinstance
 	@echo ... IdlegameTests
 	@echo ... gmock
 	@echo ... gmock_main

@@ -33,6 +33,7 @@ public:
 
     void appendComponent(Component& comp);
     void deleteComponent(Component& comp);
+    std::shared_ptr<Component> getHead() const;
 
 private:
     std::shared_ptr<Component> head;

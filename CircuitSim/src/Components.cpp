@@ -55,3 +55,7 @@ void ComponentLinkedList::deleteComponent(Component& comp){
     }
 
 }
+
+std::shared_ptr<Component> ComponentLinkedList::getHead() const {
+    return head;
+}

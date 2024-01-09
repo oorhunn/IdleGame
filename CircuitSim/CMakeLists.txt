@@ -1,8 +1,10 @@
 
-set(This Chess)
+set(This CircuitSim)
 project(${This} CXX C)
 set(Sources
     main.cpp
+    src/Components.cpp
+    src/Circuit.cpp
 )
 
 add_library(${This} STATIC ${Sources})

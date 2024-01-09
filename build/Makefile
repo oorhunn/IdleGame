@@ -379,30 +379,30 @@ worstGraphinstance/fast:
 .PHONY : worstGraphinstance/fast
 
 #=============================================================================
-# Target rules for targets named Chess
+# Target rules for targets named CircuitSim
 
 # Build rule for target.
-Chess: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Chess
-.PHONY : Chess
+CircuitSim: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CircuitSim
+.PHONY : CircuitSim
 
 # fast build rule for target.
-Chess/fast:
-	$(MAKE) $(MAKESILENT) -f Chess\CMakeFiles\Chess.dir\build.make Chess/CMakeFiles/Chess.dir/build
-.PHONY : Chess/fast
+CircuitSim/fast:
+	$(MAKE) $(MAKESILENT) -f CircuitSim\CMakeFiles\CircuitSim.dir\build.make CircuitSim/CMakeFiles/CircuitSim.dir/build
+.PHONY : CircuitSim/fast
 
 #=============================================================================
-# Target rules for targets named Chessinstance
+# Target rules for targets named CircuitSiminstance
 
 # Build rule for target.
-Chessinstance: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Chessinstance
-.PHONY : Chessinstance
+CircuitSiminstance: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CircuitSiminstance
+.PHONY : CircuitSiminstance
 
 # fast build rule for target.
-Chessinstance/fast:
-	$(MAKE) $(MAKESILENT) -f Chess\CMakeFiles\Chessinstance.dir\build.make Chess/CMakeFiles/Chessinstance.dir/build
-.PHONY : Chessinstance/fast
+CircuitSiminstance/fast:
+	$(MAKE) $(MAKESILENT) -f CircuitSim\CMakeFiles\CircuitSiminstance.dir\build.make CircuitSim/CMakeFiles/CircuitSiminstance.dir/build
+.PHONY : CircuitSiminstance/fast
 
 #=============================================================================
 # Target rules for targets named IdlegameTests
@@ -430,8 +430,8 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... test
-	@echo ... Chess
-	@echo ... Chessinstance
+	@echo ... CircuitSim
+	@echo ... CircuitSiminstance
 	@echo ... IdlegameTests
 	@echo ... gmock
 	@echo ... gmock_main

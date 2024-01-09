@@ -240,16 +240,40 @@
   "output": "DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraphinstance.dir/src/LocalLinkedList.cpp.obj"
 },
 {
-  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/Chess",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Chess.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Chess.dir\\main.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\Chess\\main.cpp",
-  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/Chess/main.cpp",
-  "output": "Chess/CMakeFiles/Chess.dir/main.cpp.obj"
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/CircuitSim",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/CircuitSim.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CircuitSim.dir\\main.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\CircuitSim\\main.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/CircuitSim/main.cpp",
+  "output": "CircuitSim/CMakeFiles/CircuitSim.dir/main.cpp.obj"
 },
 {
-  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/Chess",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Chessinstance.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Chessinstance.dir\\main.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\Chess\\main.cpp",
-  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/Chess/main.cpp",
-  "output": "Chess/CMakeFiles/Chessinstance.dir/main.cpp.obj"
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/CircuitSim",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/CircuitSim.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CircuitSim.dir\\src\\Components.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\CircuitSim\\src\\Components.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/CircuitSim/src/Components.cpp",
+  "output": "CircuitSim/CMakeFiles/CircuitSim.dir/src/Components.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/CircuitSim",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/CircuitSim.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CircuitSim.dir\\src\\Circuit.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\CircuitSim\\src\\Circuit.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/CircuitSim/src/Circuit.cpp",
+  "output": "CircuitSim/CMakeFiles/CircuitSim.dir/src/Circuit.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/CircuitSim",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/CircuitSiminstance.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CircuitSiminstance.dir\\main.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\CircuitSim\\main.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/CircuitSim/main.cpp",
+  "output": "CircuitSim/CMakeFiles/CircuitSiminstance.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/CircuitSim",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/CircuitSiminstance.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CircuitSiminstance.dir\\src\\Components.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\CircuitSim\\src\\Components.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/CircuitSim/src/Components.cpp",
+  "output": "CircuitSim/CMakeFiles/CircuitSiminstance.dir/src/Components.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/CircuitSim",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/CircuitSiminstance.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CircuitSiminstance.dir\\src\\Circuit.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\CircuitSim\\src\\Circuit.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/CircuitSim/src/Circuit.cpp",
+  "output": "CircuitSim/CMakeFiles/CircuitSiminstance.dir/src/Circuit.cpp.obj"
 },
 {
   "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test",

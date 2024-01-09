@@ -35,7 +35,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Users/aorhun.demiroglu/CMake/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake"
   "C:/Users/aorhun.demiroglu/CMake/share/cmake-3.28/Modules/WriteBasicConfigVersionFile.cmake"
   "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/CMakeLists.txt"
-  "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/Chess/CMakeLists.txt"
+  "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/CircuitSim/CMakeLists.txt"
   "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/DataStructuresAndAlgorithmsStudy/CMakeLists.txt"
   "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeLists.txt"
   "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeLists.txt"
@@ -84,7 +84,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "DataStructuresAndAlgorithmsStudy/worst_disjoint_sets/CMakeFiles/CMakeDirectoryInformation.cmake"
   "DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/CMakeDirectoryInformation.cmake"
   "DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "Chess/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "CircuitSim/CMakeFiles/CMakeDirectoryInformation.cmake"
   "test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -106,7 +106,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmapsinstance.dir/DependInfo.cmake"
   "DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraph.dir/DependInfo.cmake"
   "DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/worstGraphinstance.dir/DependInfo.cmake"
-  "Chess/CMakeFiles/Chess.dir/DependInfo.cmake"
-  "Chess/CMakeFiles/Chessinstance.dir/DependInfo.cmake"
+  "CircuitSim/CMakeFiles/CircuitSim.dir/DependInfo.cmake"
+  "CircuitSim/CMakeFiles/CircuitSiminstance.dir/DependInfo.cmake"
   "test/CMakeFiles/IdlegameTests.dir/DependInfo.cmake"
   )

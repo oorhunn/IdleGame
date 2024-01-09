@@ -14,7 +14,7 @@ enable_testing()
 
 add_subdirectory(googletest)
 add_subdirectory(DataStructuresAndAlgorithmsStudy)
-add_subdirectory(Chess)
+add_subdirectory(CircuitSim)
 
 
 add_subdirectory(test)

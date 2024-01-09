@@ -21,7 +21,7 @@ int main() {
 
 
     Component v1("V1", ComponentType::VOLTAGE_SOURCE);
-
+// https://github.com/IrfanJames/CircuitSimulator_SFML/tree/main/Study%20Papers
 
     Circuit myCir;
     myCir.addComponent(r1);

@@ -22,7 +22,7 @@ int main() {
 
     Component v1("V1", ComponentType::VOLTAGE_SOURCE);
 // https://github.com/IrfanJames/CircuitSimulator_SFML/tree/main/Study%20Papers
-
+// https://www-h.eng.cam.ac.uk/help/tpl/talks/C++graphs.html#GraphTraversal
     Circuit myCir;
     myCir.addComponent(r1);
     myCir.addComponent(r2);
@@ -33,10 +33,10 @@ int main() {
     myCir.addComponent(r4);
 
     myCir.addWire(v1, r1);
-    // myCir.addWire(r1, r2);
-    // myCir.addWire(r2, r3);
-    // myCir.addWire(r3, v1);
+    myCir.addWire(r1, r2);
+    myCir.addWire(r2, r3);
+    myCir.addWire(r3, v1);
 
-    myCir.hasCycle();
+    myCir.identifyParallelSeriesResistors();
     return 0;
 }

@@ -15,14 +15,15 @@ public:
     
     void addComponent(Component& comp); // addVertex in graphs
     void addWire(Component& comp1, Component& comp2); // addEdge in graphs
-    bool hasCycle();
+
+    void identifyParallelSeriesResistors();
+
+
 private:
     int circuitSize;
     // adjacecny list graph for representing circuit 
     std::unordered_map<std::string, int> componentsHashMap;
     std::vector<ComponentLinkedList> components;
-    bool hasCycleUtil(int componentID, std::unordered_set<int>& visited, std::unordered_set<int>& recursionStack);
 };
 
 #endif    
-// bool isCyclicUtil(int vertex, std::unordered_set<int>& visited, std::unordered_set<int>& recursionStack);

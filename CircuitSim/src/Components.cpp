@@ -2,60 +2,28 @@
 #include "../include/Components.h"
 
 
-Component::Component(std::string name, ComponentType type) :
-    name(name), type(type), next(nullptr)
-{
-    //
-}
 
-Component::Component() :
-    next(nullptr)
+Component::Component(std::string componentName, float val, ComponentType type) : 
+type(type), voltage(0), current(0), value(val), componentName(componentName), componentID(0)
+
+
 {
 
 }
 
-ComponentLinkedList::ComponentLinkedList() :
-    head(nullptr)
+Component::~Component()
 {
 
 }
 
-ComponentLinkedList::~ComponentLinkedList(){
-
+int Component::getComponentID(){
+    return componentID;
 }
 
-void ComponentLinkedList::appendComponent(Component& comp){
-    if (!head){
-        head = std::make_shared<Component>(comp);
-    } else {
-        std::shared_ptr<Component> current = head;
-        while (current->next) {
-            current = current->next;
-        }
-        current->next = std::make_shared<Component>(comp);
-    }
+std::string Component::getComponentName(){
+    return componentName;
 }
 
-void ComponentLinkedList::deleteComponent(Component& comp){
-    if (!head) {
-        return;
-    }
-    if (head->name == comp.name) {
-        head = head->next; 
-        return;
-    }
-
-    std::shared_ptr<Component> current = head;
-    while (current->next && current->next->name != comp.name) {
-        current = current->next;
-    }
-
-    if (current->next) {
-        current->next = current->next->next;
-    }
-
-}
-
-std::shared_ptr<Component> ComponentLinkedList::getHead() const {
-    return head;
+void Component::setComponentID(int compID){
+    componentID = compID;
 }

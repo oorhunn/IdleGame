@@ -9,33 +9,22 @@ enum class ComponentType{
     VOLTAGE_SOURCE
 };
 
+
 class Component {
 public:
-    Component();
-    Component(std::string name, ComponentType type);
+    Component(std::string componentName, float val, ComponentType type);
+    ~Component();
 
-    std::string name;
+    int getComponentID();
+    std::string getComponentName();
+    void setComponentID(int compID);
+
+private:
+    int componentID;
+    ComponentType type;
+    std::string componentName;
     float voltage;
     float current;
-    float resistance;
-    ComponentType type;
-    int componentID;
-    std::shared_ptr<Component> next;
-
-private:
-
-};
-
-class ComponentLinkedList {
-public:
-    ComponentLinkedList();
-    ~ComponentLinkedList();
-
-    void appendComponent(Component& comp);
-    void deleteComponent(Component& comp);
-    std::shared_ptr<Component> getHead() const;
-
-private:
-    std::shared_ptr<Component> head;
+    float value; // will be different if resistor or not 
 };
 #endif

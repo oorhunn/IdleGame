@@ -20,6 +20,9 @@ int main() {
     myCirc.addComponent(res3);
 
     myCirc.addWire(res1, res2);
+    myCirc.addWire(res2, res3);
+    myCirc.addWire(res3, res1);
 
+    myCirc.findAllPaths(0, 1);
     return 0;
 }

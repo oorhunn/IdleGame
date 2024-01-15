@@ -17,17 +17,18 @@ public:
     ~Circuit();
 
     void addWire(Component target1, Component target2);
-
     void addComponent(Component comp);
 
+    void findAllPaths(int src, int dest);
+
 private:
-    std::vector<std::list<Component>> components;
-    
-    std::unordered_map<std::string, int> componentIDHashMap;
 
     int circuitSize;
+    std::vector<std::list<Component>> components;
+    std::unordered_map<std::string, int> componentIDHashMap;
 
-
+    void _findAllPaths(int u, int dest, std::vector<bool>& visited, std::vector<int>& path);
+    void printPath(const std::vector<int>& path);
 
 };
 

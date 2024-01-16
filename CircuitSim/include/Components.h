@@ -15,8 +15,8 @@ public:
     Component(std::string componentName, float val, ComponentType type);
     ~Component();
 
-    int getComponentID();
-    std::string getComponentName();
+    int getComponentID() const;
+    std::string getComponentName() const;
     void setComponentID(int compID);
 
 private:

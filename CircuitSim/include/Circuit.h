@@ -16,10 +16,10 @@ public:
     Circuit();
     ~Circuit();
 
-    void addWire(Component target1, Component target2);
-    void addComponent(Component comp);
+    void addWire(Component& target1, Component& target2);
+    void addComponent(Component& comp);
 
-    void findAllPaths(int src, int dest);
+    void findAllPaths(Component src, Component dest);
 
 private:
 

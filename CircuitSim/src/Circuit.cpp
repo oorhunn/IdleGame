@@ -13,7 +13,7 @@ Circuit::~Circuit(){
 
 
 
-void Circuit::addComponent(Component comp){
+void Circuit::addComponent(Component& comp){
     // set component id
     components.resize(circuitSize + 1);
     componentIDHashMap.insert(std::make_pair(comp.getComponentName(), circuitSize));
@@ -22,16 +22,16 @@ void Circuit::addComponent(Component comp){
 }
 
 
-void Circuit::addWire(Component target1, Component target2) {
+void Circuit::addWire(Component& target1, Component& target2) {
     components[target1.getComponentID()].push_back(target2);
 }
 
-void Circuit::findAllPaths(int src, int dest) {
+
+void Circuit::findAllPaths(Component src, Component dest) {
     std::vector<bool> visited(circuitSize, false);
     std::vector<int> path;
-    _findAllPaths(src, dest, visited, path);
+    _findAllPaths(src.getComponentID(), dest.getComponentID(), visited, path);
 }
-
 
 void Circuit::_findAllPaths(int u, int dest, std::vector<bool>& visited, std::vector<int>& path) {
     visited[u] = true;
@@ -52,6 +52,8 @@ void Circuit::_findAllPaths(int u, int dest, std::vector<bool>& visited, std::ve
     visited[u] = false;
     path.pop_back();
 }
+
+
 
 void Circuit::printPath(const std::vector<int>& path) {
     std::cout << "Path: ";

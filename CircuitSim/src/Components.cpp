@@ -16,11 +16,11 @@ Component::~Component()
 
 }
 
-int Component::getComponentID(){
+int Component::getComponentID() const{
     return componentID;
 }
 
-std::string Component::getComponentName(){
+std::string Component::getComponentName() const {
     return componentName;
 }
 

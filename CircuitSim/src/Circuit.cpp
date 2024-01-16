@@ -38,8 +38,7 @@ void Circuit::_findAllPaths(int u, int dest, std::vector<bool>& visited, std::ve
     path.push_back(u);
 
     if (u == dest) {
-        // Print or process the path
-        printPath(path);
+        savePath(path);
     } else {
         for (const Component& v : components[u]) {
             if (!visited[v.getComponentID()]) {
@@ -48,17 +47,56 @@ void Circuit::_findAllPaths(int u, int dest, std::vector<bool>& visited, std::ve
         }
     }
 
-    // Backtrack
+    // backtrack
     visited[u] = false;
     path.pop_back();
 }
 
 
 
-void Circuit::printPath(const std::vector<int>& path) {
-    std::cout << "Path: ";
-    for (int vertex : path) {
-        std::cout << vertex << " ";
+void Circuit::savePath(const std::vector<int>& path) {
+    allPaths.push_back(path);
+}
+
+
+void Circuit::isParallel(std::vector<int>& path1, std::vector<int>& path2) const {
+
+    std::unordered_set<int> set1(path1.begin(), path1.end());
+    std::unordered_set<int> set2(path2.begin(), path2.end());
+
+    std::vector<int> result;
+    std::vector<int> result2;
+
+
+    for (int element : set1) {
+        if (set2.find(element) == set2.end()) {
+            result.push_back(element);
+        }
     }
-    std::cout << std::endl;
+
+    for (int element : set2) {
+        if (set1.find(element) == set1.end()) {
+            result2.push_back(element);
+        }
+    }
+    // need for delete element will come back 
+
+}
+
+
+void Circuit::parallelstuff() {
+    isParallel(allPaths[0], allPaths[1]);
+}
+
+float Circuit::calculateSeriesResistor(int CompIDS...){
+    float sum = 0;
+    va_list args;
+    va_start(args, CompIDS);
+
+    for (int i = CompIDS; i != -1; i = va_arg(args, int)) {
+        sum += i;
+    }
+
+    va_end(args);
+    return sum;
 }

@@ -3,12 +3,11 @@
 
 
 
-Component::Component(std::string componentName, float val, ComponentType type) : 
-type(type), voltage(0), current(0), value(val), componentName(componentName), componentID(0)
-
+Component::Component(std::string componentName, ComponentType type) : 
+type(type), componentName(componentName), componentID(0)
 
 {
-
+std::cout << "ia m here \n";
 }
 
 Component::~Component()
@@ -26,4 +25,22 @@ std::string Component::getComponentName() const {
 
 void Component::setComponentID(int compID){
     componentID = compID;
+}
+
+float Resistor::getResistorValue(int compID) const {
+    return resistorValue;
+}
+
+
+Resistor::Resistor(std::string componentName, int resistorValue) :
+    Component(componentName, ComponentType::RESISTOR), 
+    resistorValue(resistorValue),
+    voltage(0),
+    current(0)
+{
+
+}
+
+Resistor::~Resistor(){
+
 }

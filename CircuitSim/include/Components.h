@@ -2,7 +2,8 @@
 #define COMPONENTS_H
 #include <string>
 #include <memory>
-
+#include <iostream>
+class Resistor;
 
 enum class ComponentType{
     RESISTOR,
@@ -10,21 +11,36 @@ enum class ComponentType{
 };
 
 
-class Component {
+class Component{
 public:
-    Component(std::string componentName, float val, ComponentType type);
-    ~Component();
+    Component(std::string componentName, ComponentType type);
+    virtual ~Component();
 
     int getComponentID() const;
-    std::string getComponentName() const;
     void setComponentID(int compID);
 
+    std::string getComponentName() const;
+    // virtual float getVoltage() = 0;
+    // virtual float getCurrent() = 0;
+    // virtual void temp () = 0;
 private:
     int componentID;
     ComponentType type;
     std::string componentName;
+
+};
+
+class Resistor : Component{
+
+public:
+    Resistor(std::string componentName, int resistorValue);
+    ~Resistor();
+
+    float getResistorValue(int compID) const;
+    // void temp() override { };
+private:
+    float resistorValue;
     float voltage;
     float current;
-    float value; // will be different if resistor or not 
 };
 #endif

@@ -6,6 +6,7 @@ set(Sources
     src/Components.cpp
     src/Circuit.cpp
     src/AdjacentList.cpp
+    src/CircuitResolver.cpp
 )
 
 add_library(${This} STATIC ${Sources})

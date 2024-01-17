@@ -7,7 +7,8 @@ template class AdjacentList<Component>;
 template <typename T>
 AdjacentList<T>::AdjacentList() :
     listSize(0),
-    adjComponentsList()
+    adjComponentsList(),
+    allPathsPtr(std::make_shared<std::vector<std::vector<int>>>(allPaths))
 {
     
 }
@@ -72,6 +73,6 @@ std::vector<std::vector<int>> AdjacentList<T>::getAllPaths(){
 }
 
 template <typename T>
-int AdjacentList<T>::getListSize() {
+int AdjacentList<T>::getListSize() const{
     return listSize;
 }

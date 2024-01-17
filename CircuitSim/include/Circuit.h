@@ -13,6 +13,7 @@
 
 #include "Components.h"
 #include "AdjacentList.h"
+#include "CircuitResolver.h"
 
 class Circuit {
 public:
@@ -32,6 +33,7 @@ private:
     // variables and containers start
     int circuitSize;
     std::shared_ptr<AdjacentList<Component>> components;
+    std::shared_ptr<CircuitResolver> circuitResolverInsantce;
 
     // variables and containers end
 

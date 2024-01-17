@@ -3,14 +3,15 @@
 
 Circuit::Circuit() : 
     circuitSize(0),
-    components(std::make_shared<AdjacentList<Component>>())
-     
+    components(std::make_shared<AdjacentList<Component>>()),
+    circuitResolverInsantce(std::make_shared<CircuitResolver>())
 {
 
 }
 
 
-Circuit::~Circuit(){
+Circuit::~Circuit()
+{
 
 }
 

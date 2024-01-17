@@ -3,47 +3,44 @@
 
 #include <string>
 #include <vector>
-#include "Components.h"
 #include <unordered_map>
 #include <unordered_set>
 #include <iostream>
 #include <list>
 #include <map>
 #include <cstdarg>
+#include <memory>
 
-
+#include "Components.h"
+#include "AdjacentList.h"
 
 class Circuit {
 public:
     Circuit();
     ~Circuit();
 
-    void addWire(Component& target1, Component& target2);
-    void addComponent(Component& comp);
-    void removeComponent(Component& comp);
-    void removeWires(Component& target1, Component& target2);
+    void addWire(std::shared_ptr<Component> target1, std::shared_ptr<Component> target2);
+    void addComponent(std::shared_ptr<Component> comp);
+    void removeComponent(std::shared_ptr<Component> comp);
+    void removeWires(std::shared_ptr<Component> target1, std::shared_ptr<Component> target2);
 
+    int getCircuitSize();
 
-    void findAllPaths(Component src, Component dest); // driver
-
-    void parallelstuff();// driver
+    std::vector<std::vector<int>> getCircuitLoops(std::shared_ptr<Component> src, std::shared_ptr<Component> dest);
 
 private:
     // variables and containers start
     int circuitSize;
-    std::vector<std::list<Component>> components;
-    std::unordered_map<std::string, int> componentIDHashMap;
-    std::vector<std::vector<int>> allPaths;
+    std::shared_ptr<AdjacentList<Component>> components;
+
     // variables and containers end
 
-    float calculateSeriesResistor(int compIDS...);
+    float calculateSeriesResistor(int compIDS...) = delete;
     
     
-    void isParallel(std::vector<int>& path1, std::vector<int>& path2) const;
-    
-    void _findAllPaths(int u, int dest, std::vector<bool>& visited, std::vector<int>& path);
-    void savePath(const std::vector<int>& path);
 
 };
+
+
 
 #endif // CIRCUIT_H

@@ -30,13 +30,14 @@ private:
 
 };
 
-class Resistor : Component{
+class Resistor : public Component{
 
 public:
     Resistor(std::string componentName, int resistorValue);
-    ~Resistor();
+    ~Resistor() override;
 
-    float getResistorValue(int compID) const;
+    float getResistorValue() const;
+    
     // void temp() override { };
 private:
     float resistorValue;

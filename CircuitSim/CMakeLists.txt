@@ -5,6 +5,7 @@ set(Sources
     main.cpp
     src/Components.cpp
     src/Circuit.cpp
+    src/AdjacentList.cpp
 )
 
 add_library(${This} STATIC ${Sources})

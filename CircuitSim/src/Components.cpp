@@ -27,7 +27,7 @@ void Component::setComponentID(int compID){
     componentID = compID;
 }
 
-float Resistor::getResistorValue(int compID) const {
+float Resistor::getResistorValue() const {
     return resistorValue;
 }
 

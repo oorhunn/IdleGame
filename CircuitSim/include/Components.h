@@ -20,9 +20,7 @@ public:
     void setComponentID(int compID);
 
     std::string getComponentName() const;
-    // virtual float getVoltage() = 0;
-    // virtual float getCurrent() = 0;
-    // virtual void temp () = 0;
+
 private:
     int componentID;
     ComponentType type;
@@ -37,8 +35,7 @@ public:
     ~Resistor() override;
 
     float getResistorValue() const;
-    
-    // void temp() override { };
+
 private:
     float resistorValue;
     float voltage;

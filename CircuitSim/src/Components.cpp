@@ -7,7 +7,7 @@ Component::Component(std::string componentName, ComponentType type) :
 type(type), componentName(componentName), componentID(0)
 
 {
-std::cout << "ia m here \n";
+
 }
 
 Component::~Component()

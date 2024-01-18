@@ -29,6 +29,8 @@ public:
 
     std::vector<std::vector<int>> getCircuitLoops(std::shared_ptr<Component> src, std::shared_ptr<Component> dest);
 
+
+    void circuitResolverCaller();
 private:
     // variables and containers start
     int circuitSize;
@@ -36,13 +38,6 @@ private:
     std::shared_ptr<CircuitResolver> circuitResolverInsantce;
 
     // variables and containers end
-
     float calculateSeriesResistor(int compIDS...) = delete;
-    
-    
-
 };
-
-
-
 #endif // CIRCUIT_H

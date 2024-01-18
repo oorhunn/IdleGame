@@ -4,7 +4,7 @@
 Circuit::Circuit() : 
     circuitSize(0),
     components(std::make_shared<AdjacentList<Component>>()),
-    circuitResolverInsantce(std::make_shared<CircuitResolver>())
+    circuitResolverInsantce(std::make_shared<CircuitResolver>(components->getAllPathsPtr()))
 {
 
 }
@@ -30,13 +30,17 @@ void Circuit::addWire(std::shared_ptr<Component> target1, std::shared_ptr<Compon
 std::vector<std::vector<int>> Circuit::getCircuitLoops(std::shared_ptr<Component> src, std::shared_ptr<Component> dest){
     components->findAllPaths(src, dest);
     return components->getAllPaths();
-
-
 }
 
 int Circuit::getCircuitSize() {
     circuitSize = components->getListSize();
     return circuitSize;
+}
+
+void Circuit::circuitResolverCaller(){
+    circuitResolverInsantce->updateCircuitLoopsPtr(components->getAllPathsPtr());
+    circuitResolverInsantce->updateComponentAdjacentList(components->getAdjacentListPtr());
+    circuitResolverInsantce->simplfyTwoLinesLaterChangeName();
 }
 
 // float Circuit::calculateSeriesResistor(int CompIDS...){

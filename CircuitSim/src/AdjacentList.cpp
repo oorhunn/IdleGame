@@ -1,17 +1,19 @@
 #include "../include/AdjacentList.h"
 
 template class AdjacentList<Component>;
+template class AdjacentList<Resistor>;
 
 
 
 template <typename T>
 AdjacentList<T>::AdjacentList() :
     listSize(0),
-    adjComponentsList(),
-    allPathsPtr(std::make_shared<std::vector<std::vector<int>>>(allPaths))
+    adjComponentsList()
 {
     
 }
+
+
 template <typename T>
 AdjacentList<T>::~AdjacentList() {
 
@@ -75,4 +77,15 @@ std::vector<std::vector<int>> AdjacentList<T>::getAllPaths(){
 template <typename T>
 int AdjacentList<T>::getListSize() const{
     return listSize;
+}
+
+template <typename T>
+std::shared_ptr<std::vector<std::vector<int>>> AdjacentList<T>::getAllPathsPtr(){
+    return std::make_shared<std::vector<std::vector<int>>>(allPaths);
+}
+
+template <typename T>
+std::shared_ptr<AdjacentComponentList<T>> AdjacentList<T>::getAdjacentListPtr()
+{
+    return std::make_shared<AdjacentComponentList<T>>(adjComponentsList);
 }

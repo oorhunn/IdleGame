@@ -7,6 +7,8 @@ set(Sources
     src/Circuit.cpp
     src/AdjacentList.cpp
     src/CircuitResolver.cpp
+    # src/GraphObserver.cpp
+
 )
 
 add_library(${This} STATIC ${Sources})

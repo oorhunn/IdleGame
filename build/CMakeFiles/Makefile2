@@ -773,8 +773,8 @@ CircuitSim/CMakeFiles/CircuitSiminstance.dir/clean:
 test/CMakeFiles/IdlegameTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 test/CMakeFiles/IdlegameTests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
 test/CMakeFiles/IdlegameTests.dir/all: DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithms.dir/all
-test/CMakeFiles/IdlegameTests.dir/all: DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTrees.dir/all
 test/CMakeFiles/IdlegameTests.dir/all: DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/all
+test/CMakeFiles/IdlegameTests.dir/all: DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTrees.dir/all
 test/CMakeFiles/IdlegameTests.dir/all: DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeFiles/worstHashmaps.dir/all
 	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\IdlegameTests.dir\build.make test/CMakeFiles/IdlegameTests.dir/build

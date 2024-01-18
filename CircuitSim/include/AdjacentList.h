@@ -4,8 +4,12 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <list>
+#include <memory>
 #include "Components.h"
 
+using ComponentHashMap = std::unordered_map<std::string, int>;
+template <typename T>
+using AdjacentComponentList = std::vector<std::list<std::shared_ptr<T>>>;
 
 template <typename T>
 class AdjacentList{
@@ -20,16 +24,17 @@ public:
     void addEdge(std::shared_ptr<T> target1, std::shared_ptr<T> target2);
 
     int getListSize() const;
-    
 
+    std::shared_ptr<std::vector<std::vector<int>>> getAllPathsPtr();
+    std::shared_ptr<std::vector<std::list<std::shared_ptr<T>>>> getAdjacentListPtr();
 protected:
 
 private:
     int listSize;
-    std::vector<std::list<std::shared_ptr<T>>> adjComponentsList;
-    std::unordered_map<std::string, int> componentIDHashMap;
     std::vector<std::vector<int>> allPaths;
-    std::shared_ptr<std::vector<std::vector<int>>> allPathsPtr; // to be continued 
+
+    AdjacentComponentList<T> adjComponentsList;
+    ComponentHashMap componentIDHashMap;
 
     void _findAllPaths(int u, int dest, std::vector<bool>& visited, std::vector<int>& path);
     void savePath(const std::vector<int>& path);

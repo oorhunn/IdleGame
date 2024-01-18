@@ -30,6 +30,6 @@ int main() {
 
 
     std::vector<std::vector<int>> temp = myCirc.getCircuitLoops(res1, res4);
-
+    myCirc.circuitResolverCaller();
     return 0;
 }

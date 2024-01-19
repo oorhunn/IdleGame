@@ -4,7 +4,8 @@
 Circuit::Circuit() : 
     circuitSize(0),
     components(std::make_shared<AdjacentList<Component>>()),
-    circuitResolverInsantce(std::make_shared<CircuitResolver>(components->getAllPathsPtr()))
+    circuitResolverInsantce(std::make_shared<CircuitResolver>(components->getAllPathsPtr())),
+    componentCatalogInstance(std::make_shared<ComponentCatalog>())
 {
 
 }
@@ -19,6 +20,7 @@ Circuit::~Circuit()
 
 void Circuit::addComponent(std::shared_ptr<Component> comp){
     components->addVertex(comp);
+    componentCatalogInstance->addNewComponent(comp);
 }
 
 

@@ -50,16 +50,21 @@ void CircuitResolver::reduceSeriesResistors(int CompIDS...){
 
 void CircuitResolver::reduceParallelResistors(int compID1, int compID2){
 
-    for (const auto& list : *adjComponentsListPtr) {
-        for (const auto& item : list) {
+    AdjacentComponentList<Component> temp = (*adjComponentsListPtr);
+    std::list<std::shared_ptr<Component>> hel = temp[0];
 
-            auto resistorPtr = std::static_pointer_cast<Resistor>(item);
-            if (resistorPtr) {
-                std::cout << resistorPtr->getResistorValue() << std::endl;
-            }
-        }
-    }
-    // adjComponentsListPtr->data()[compID1];
+    // std::shared_ptr<Component> hello = hel.begin();
+    // for (const auto& list : *adjComponentsListPtr) {
+    //     for (const auto& item : list) {
+
+    //         auto resistorPtr = std::static_pointer_cast<Resistor>(item);
+    //         if (resistorPtr) {
+    //             std::cout << resistorPtr->getResistorValue() << std::endl;
+    //         }
+    //     }
+    //     float a = list.data()[compID1]->getResistorValue();
+    // }
+
 }
 
 

@@ -14,6 +14,7 @@
 #include "Components.h"
 #include "AdjacentList.h"
 #include "CircuitResolver.h"
+#include "GraphObserver.h"
 
 class Circuit {
 public:
@@ -36,6 +37,7 @@ private:
     int circuitSize;
     std::shared_ptr<AdjacentList<Component>> components;
     std::shared_ptr<CircuitResolver> circuitResolverInsantce;
+    std::shared_ptr<ComponentCatalog> componentCatalogInstance;
 
     // variables and containers end
     float calculateSeriesResistor(int compIDS...) = delete;

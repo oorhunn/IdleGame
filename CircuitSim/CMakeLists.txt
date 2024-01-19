@@ -7,7 +7,7 @@ set(Sources
     src/Circuit.cpp
     src/AdjacentList.cpp
     src/CircuitResolver.cpp
-    # src/GraphObserver.cpp
+    src/GraphObserver.cpp
 
 )
 

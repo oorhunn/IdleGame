@@ -1,4 +1,4 @@
-#include "../include/GraphObserver.h"
+#include "../include/ComponentHashMapObserver.h"
 
 
 ComponentCatalog::ComponentCatalog() : 
@@ -20,7 +20,7 @@ void ComponentCatalog::notifyObservers(){
 }
 
 void ComponentCatalog::registerObserver(std::shared_ptr<ComponentCatalogObserver> observer){
-    observers.resize(observers.size() + 1);
+    // observers.resize(observers.size() + 1);
     observers.push_back(observer);
 }
 

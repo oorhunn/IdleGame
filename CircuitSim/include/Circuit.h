@@ -14,7 +14,7 @@
 #include "Components.h"
 #include "AdjacentList.h"
 #include "CircuitResolver.h"
-#include "GraphObserver.h"
+#include "ComponentHashMapObserver.h"
 
 class Circuit {
 public:

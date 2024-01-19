@@ -5,6 +5,8 @@
 #include <unordered_set>
 #include <list>
 #include <memory>
+
+#include "CircuitPaths.h"
 #include "Components.h"
 
 using ComponentHashMap = std::unordered_map<std::string, int>;
@@ -27,14 +29,17 @@ public:
 
     std::shared_ptr<std::vector<std::vector<int>>> getAllPathsPtr();
     std::shared_ptr<std::vector<std::list<std::shared_ptr<T>>>> getAdjacentListPtr();
+
 protected:
 
 private:
     int listSize;
     std::vector<std::vector<int>> allPaths;
-
     AdjacentComponentList<T> adjComponentsList;
     ComponentHashMap componentIDHashMap;
+    std::shared_ptr<CircuitPath> circuitPathSubjectInstance;
+
+
 
     void _findAllPaths(int u, int dest, std::vector<bool>& visited, std::vector<int>& path);
     void savePath(const std::vector<int>& path);

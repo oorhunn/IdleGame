@@ -75,3 +75,7 @@ void CircuitResolver::updateCircuitLoopsPtr(std::shared_ptr<std::vector<std::vec
 void CircuitResolver::updateComponentAdjacentList(std::shared_ptr<AdjacentComponentList<Component>> adjComponentsList){
     adjComponentsListPtr = adjComponentsList;
 }
+
+void CircuitResolver::update(std::shared_ptr<std::vector<std::vector<int>>> newPtr) {
+    circuitLoops = newPtr;
+}

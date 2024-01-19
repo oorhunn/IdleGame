@@ -8,6 +8,7 @@ template class AdjacentList<Resistor>;
 template <typename T>
 AdjacentList<T>::AdjacentList() :
     listSize(0),
+    circuitPathSubjectInstance(nullptr),    
     adjComponentsList()
 {
     
@@ -65,7 +66,11 @@ void AdjacentList<T>::_findAllPaths(int u, int dest, std::vector<bool>& visited,
 
 template <typename T>
 void AdjacentList<T>::savePath(const std::vector<int>& path) {
+    if (!circuitPathSubjectInstance) {
+        circuitPathSubjectInstance = std::make_shared<CircuitPath>();
+    }
     allPaths.push_back(path);
+    circuitPathSubjectInstance->updatePath(std::make_shared<std::vector<std::vector<int>>>(allPaths));
 }
 
 

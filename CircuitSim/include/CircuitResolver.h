@@ -6,18 +6,22 @@
 #include <cstdarg>
 
 #include "AdjacentList.h"
+#include "ComponentHashMapObserver.h"
 
 
-class CircuitResolver {
+class CircuitResolver : public CircuitPathObserver {
 
 public:
     CircuitResolver(std::shared_ptr<std::vector<std::vector<int>>> listPtr);
-    ~CircuitResolver();
+    ~CircuitResolver() override;
 
     void simplfyTwoLinesLaterChangeName(); // driver
 
     void updateCircuitLoopsPtr(std::shared_ptr<std::vector<std::vector<int>>> loopPtr);
     void updateComponentAdjacentList(std::shared_ptr<AdjacentComponentList<Component>> adjComponentsList);
+
+    void update(std::shared_ptr<std::vector<std::vector<int>>> newPtr) override;  // Adding the missing update function
+
     void tempStuff() = delete;
 
 private:

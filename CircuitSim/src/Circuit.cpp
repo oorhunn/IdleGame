@@ -7,7 +7,6 @@ Circuit::Circuit() :
     circuitResolverInsantce(std::make_shared<CircuitResolver>(components->getAllPathsPtr())),
     componentCatalogInstance(std::make_shared<ComponentCatalog>())
 {
-
 }
 
 
@@ -31,6 +30,7 @@ void Circuit::addWire(std::shared_ptr<Component> target1, std::shared_ptr<Compon
 
 std::vector<std::vector<int>> Circuit::getCircuitLoops(std::shared_ptr<Component> src, std::shared_ptr<Component> dest){
     components->findAllPaths(src, dest);
+    
     return components->getAllPaths();
 }
 

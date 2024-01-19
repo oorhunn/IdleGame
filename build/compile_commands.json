@@ -271,9 +271,15 @@
 },
 {
   "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/CircuitSim",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/CircuitSim.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CircuitSim.dir\\src\\GraphObserver.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\CircuitSim\\src\\GraphObserver.cpp",
-  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/CircuitSim/src/GraphObserver.cpp",
-  "output": "CircuitSim/CMakeFiles/CircuitSim.dir/src/GraphObserver.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/CircuitSim.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CircuitSim.dir\\src\\ComponentHashMapObserver.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\CircuitSim\\src\\ComponentHashMapObserver.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/CircuitSim/src/ComponentHashMapObserver.cpp",
+  "output": "CircuitSim/CMakeFiles/CircuitSim.dir/src/ComponentHashMapObserver.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/CircuitSim",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/CircuitSim.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CircuitSim.dir\\src\\CircuitPaths.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\CircuitSim\\src\\CircuitPaths.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/CircuitSim/src/CircuitPaths.cpp",
+  "output": "CircuitSim/CMakeFiles/CircuitSim.dir/src/CircuitPaths.cpp.obj"
 },
 {
   "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/CircuitSim",
@@ -307,9 +313,15 @@
 },
 {
   "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/CircuitSim",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/CircuitSiminstance.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CircuitSiminstance.dir\\src\\GraphObserver.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\CircuitSim\\src\\GraphObserver.cpp",
-  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/CircuitSim/src/GraphObserver.cpp",
-  "output": "CircuitSim/CMakeFiles/CircuitSiminstance.dir/src/GraphObserver.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/CircuitSiminstance.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CircuitSiminstance.dir\\src\\ComponentHashMapObserver.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\CircuitSim\\src\\ComponentHashMapObserver.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/CircuitSim/src/ComponentHashMapObserver.cpp",
+  "output": "CircuitSim/CMakeFiles/CircuitSiminstance.dir/src/ComponentHashMapObserver.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/CircuitSim",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/CircuitSiminstance.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CircuitSiminstance.dir\\src\\CircuitPaths.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\CircuitSim\\src\\CircuitPaths.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/CircuitSim/src/CircuitPaths.cpp",
+  "output": "CircuitSim/CMakeFiles/CircuitSiminstance.dir/src/CircuitPaths.cpp.obj"
 },
 {
   "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test",

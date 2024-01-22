@@ -1,12 +1,15 @@
+
 #include "../include/Circuit.h"
 
 
 Circuit::Circuit() : 
     circuitSize(0),
     components(std::make_shared<AdjacentList<Component>>()),
-    circuitResolverInsantce(std::make_shared<CircuitResolver>(components->getAllPathsPtr())),
-    componentCatalogInstance(std::make_shared<ComponentCatalog>())
+    circuitResolverInstance(std::make_shared<CircuitResolver>())
 {
+    components->registerPathObserver(circuitResolverInstance);
+    components->registerCatalogObserver(circuitResolverInstance);
+
 }
 
 
@@ -18,8 +21,8 @@ Circuit::~Circuit()
 
 
 void Circuit::addComponent(std::shared_ptr<Component> comp){
+    
     components->addVertex(comp);
-    componentCatalogInstance->addNewComponent(comp);
 }
 
 
@@ -40,9 +43,8 @@ int Circuit::getCircuitSize() {
 }
 
 void Circuit::circuitResolverCaller(){
-    circuitResolverInsantce->updateCircuitLoopsPtr(components->getAllPathsPtr());
-    circuitResolverInsantce->updateComponentAdjacentList(components->getAdjacentListPtr());
-    circuitResolverInsantce->simplfyTwoLinesLaterChangeName();
+
+    circuitResolverInstance->simplfyTwoLinesLaterChangeName();
 }
 
 // float Circuit::calculateSeriesResistor(int CompIDS...){

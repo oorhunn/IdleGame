@@ -35,7 +35,7 @@ public:
     ~Resistor() override;
 
     float getResistorValue() const;
-
+    void setResistorValue(float newResistorVal);
 private:
     float resistorValue;
     float voltage;

@@ -7,9 +7,12 @@ template class AdjacentList<Resistor>;
 
 template <typename T>
 AdjacentList<T>::AdjacentList() :
-    listSize(0),
-    circuitPathSubjectInstance(nullptr),    
-    adjComponentsList()
+    listSize(),   
+    adjComponentsList(),
+    allPaths(),
+    componentIDHashMap(),
+    circuitPathObservers(),
+    circuitLoopsPtr(nullptr)
 {
     
 }
@@ -26,7 +29,7 @@ void AdjacentList<T>::addVertex(std::shared_ptr<T> comp) {
     componentIDHashMap.insert(std::make_pair(comp->getComponentName(), listSize));
     int newCompID = componentIDHashMap[comp->getComponentName()];
     comp->setComponentID(newCompID);
-    
+    addNewComponent(comp);
 }
 
 template <typename T>
@@ -46,7 +49,6 @@ template <typename T>
 void AdjacentList<T>::_findAllPaths(int u, int dest, std::vector<bool>& visited, std::vector<int>& path) {
     visited[u] = true;
     path.push_back(u);
-
     if (u == dest) {
         savePath(path);
     } else {
@@ -56,7 +58,6 @@ void AdjacentList<T>::_findAllPaths(int u, int dest, std::vector<bool>& visited,
             }
         }
     }
-
     // backtrack
     visited[u] = false;
     path.pop_back();
@@ -66,11 +67,8 @@ void AdjacentList<T>::_findAllPaths(int u, int dest, std::vector<bool>& visited,
 
 template <typename T>
 void AdjacentList<T>::savePath(const std::vector<int>& path) {
-    if (!circuitPathSubjectInstance) {
-        circuitPathSubjectInstance = std::make_shared<CircuitPath>();
-    }
     allPaths.push_back(path);
-    circuitPathSubjectInstance->updatePath(std::make_shared<std::vector<std::vector<int>>>(allPaths));
+    updatePath(std::make_shared<std::vector<std::vector<int>>>(allPaths));
 }
 
 
@@ -84,13 +82,78 @@ int AdjacentList<T>::getListSize() const{
     return listSize;
 }
 
+
 template <typename T>
-std::shared_ptr<std::vector<std::vector<int>>> AdjacentList<T>::getAllPathsPtr(){
-    return std::make_shared<std::vector<std::vector<int>>>(allPaths);
+void AdjacentList<T>::registerPathObserver(std::shared_ptr<CircuitPathObserver> observer){    
+    circuitPathObservers.push_back(observer);
+}
+
+
+template <typename T>
+void AdjacentList<T>::removeObserver(std::shared_ptr<CircuitPathObserver> observer){
+    for (auto it = circuitPathObservers.begin(); it != circuitPathObservers.end(); ) {
+        if (*it == observer) {
+            it = circuitPathObservers.erase(it);
+            circuitPathObservers.resize(circuitPathObservers.size() - 1);
+        } else {
+            ++it;
+        }
+    }
+}
+
+
+
+template <typename T>
+void AdjacentList<T>::notifyPathObservers() {
+    for (const auto& observer : circuitPathObservers){
+        observer->update(circuitLoopsPtr);
+    }
 }
 
 template <typename T>
-std::shared_ptr<AdjacentComponentList<T>> AdjacentList<T>::getAdjacentListPtr()
-{
-    return std::make_shared<AdjacentComponentList<T>>(adjComponentsList);
+void AdjacentList<T>::updatePath(std::shared_ptr<std::vector<std::vector<int>>> loopPtr){
+    if(!circuitLoopsPtr){
+        circuitLoopsPtr = std::make_shared<std::vector<std::vector<int>>>();
+    }
+    circuitLoopsPtr = loopPtr;
+    notifyPathObservers();
 }
+
+
+
+template <typename T>
+void AdjacentList<T>::notifyCatalogObservers(){
+    for (const auto& observer : componentCatalogObservers){
+        observer->update(componentCatalogPtr);
+    }
+}
+
+template <typename T>
+void AdjacentList<T>::registerCatalogObserver(std::shared_ptr<ComponentCatalogObserver> observer){
+    componentCatalogObservers.push_back(observer);
+}
+
+
+template <typename T>
+void AdjacentList<T>::removeObserver(std::shared_ptr<ComponentCatalogObserver> observer){
+    for (auto it = componentCatalogObservers.begin(); it != componentCatalogObservers.end(); ) {
+        if (*it == observer) {
+            it = componentCatalogObservers.erase(it);
+            componentCatalogObservers.resize(componentCatalogObservers.size() - 1);
+        } else {
+            ++it;
+        }
+    }
+}
+
+
+template <typename T>
+void AdjacentList<T>::addNewComponent(std::shared_ptr<Component> newComp){
+    if (!componentCatalogPtr){
+        componentCatalogPtr = std::make_shared<ComponentsCatalogHashMap>();
+    }
+    componentCatalogPtr->insert(std::make_pair(newComp->getComponentID(), newComp));
+    notifyCatalogObservers();
+
+}
+

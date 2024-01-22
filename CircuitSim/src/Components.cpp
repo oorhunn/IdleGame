@@ -44,3 +44,7 @@ Resistor::Resistor(std::string componentName, int resistorValue) :
 Resistor::~Resistor(){
 
 }
+
+void Resistor::setResistorValue(float newResistorVal) {
+    resistorValue = newResistorVal;
+}

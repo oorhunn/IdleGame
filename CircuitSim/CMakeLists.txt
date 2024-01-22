@@ -7,9 +7,6 @@ set(Sources
     src/Circuit.cpp
     src/AdjacentList.cpp
     src/CircuitResolver.cpp
-    src/ComponentHashMapObserver.cpp
-    src/CircuitPaths.cpp
-
 )
 
 add_library(${This} STATIC ${Sources})

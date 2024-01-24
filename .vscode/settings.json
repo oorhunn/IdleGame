@@ -71,6 +71,7 @@
         "unordered_set": "cpp",
         "fstream": "cpp",
         "future": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "stdio.h": "c"
     }
 }

@@ -10,11 +10,16 @@ set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_CXX_STANDARD 17)
 
+
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/eigen-3.x.x)
+
+
 enable_testing()
 
 add_subdirectory(googletest)
+
 add_subdirectory(DataStructuresAndAlgorithmsStudy)
 add_subdirectory(CircuitSim)
-
+add_subdirectory(EigenStuff)
 
 add_subdirectory(test)

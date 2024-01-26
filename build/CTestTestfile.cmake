@@ -7,4 +7,5 @@
 subdirs("googletest")
 subdirs("DataStructuresAndAlgorithmsStudy")
 subdirs("CircuitSim")
+subdirs("EigenStuff")
 subdirs("test")

@@ -405,6 +405,32 @@ CircuitSiminstance/fast:
 .PHONY : CircuitSiminstance/fast
 
 #=============================================================================
+# Target rules for targets named EigenStuff
+
+# Build rule for target.
+EigenStuff: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 EigenStuff
+.PHONY : EigenStuff
+
+# fast build rule for target.
+EigenStuff/fast:
+	$(MAKE) $(MAKESILENT) -f EigenStuff\CMakeFiles\EigenStuff.dir\build.make EigenStuff/CMakeFiles/EigenStuff.dir/build
+.PHONY : EigenStuff/fast
+
+#=============================================================================
+# Target rules for targets named EigenStuffinstance
+
+# Build rule for target.
+EigenStuffinstance: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 EigenStuffinstance
+.PHONY : EigenStuffinstance
+
+# fast build rule for target.
+EigenStuffinstance/fast:
+	$(MAKE) $(MAKESILENT) -f EigenStuff\CMakeFiles\EigenStuffinstance.dir\build.make EigenStuff/CMakeFiles/EigenStuffinstance.dir/build
+.PHONY : EigenStuffinstance/fast
+
+#=============================================================================
 # Target rules for targets named IdlegameTests
 
 # Build rule for target.
@@ -432,6 +458,8 @@ help:
 	@echo ... test
 	@echo ... CircuitSim
 	@echo ... CircuitSiminstance
+	@echo ... EigenStuff
+	@echo ... EigenStuffinstance
 	@echo ... IdlegameTests
 	@echo ... gmock
 	@echo ... gmock_main

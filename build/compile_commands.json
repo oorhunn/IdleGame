@@ -300,6 +300,18 @@
   "output": "CircuitSim/CMakeFiles/CircuitSiminstance.dir/src/CircuitResolver.cpp.obj"
 },
 {
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/EigenStuff",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/EigenStuff.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\EigenStuff.dir\\main.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\EigenStuff\\main.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/EigenStuff/main.cpp",
+  "output": "EigenStuff/CMakeFiles/EigenStuff.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/EigenStuff",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/EigenStuffinstance.dir/includes_CXX.rsp -g -std=gnu++17 -fopenmp -o CMakeFiles\\EigenStuffinstance.dir\\main.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\EigenStuff\\main.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/EigenStuff/main.cpp",
+  "output": "EigenStuff/CMakeFiles/EigenStuffinstance.dir/main.cpp.obj"
+},
+{
   "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/IdlegameTests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\IdlegameTests.dir\\WorstSearchAlgorithmsTest.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\test\\WorstSearchAlgorithmsTest.cpp",
   "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/test/WorstSearchAlgorithmsTest.cpp",

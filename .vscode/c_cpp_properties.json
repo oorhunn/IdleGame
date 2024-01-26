@@ -5,6 +5,7 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}",
+                "${workspaceFolder}/eigen-3.4.0/",
                 "${workspaceFolder}"
             ],
             "defines": [

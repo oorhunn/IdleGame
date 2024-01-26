@@ -72,6 +72,8 @@
         "fstream": "cpp",
         "future": "cpp",
         "queue": "cpp",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "omp.h": "c",
+        "stdlib.h": "c"
     }
 }

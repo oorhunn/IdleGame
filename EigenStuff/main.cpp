@@ -64,11 +64,6 @@ int main() {
     std::cout << "Time to multiply matrices in parallel:    " << parallel_av / num_trials << " seconds" << std::endl;
     d = Eigen::nbThreads();
     std::cout << d << std::endl;
-    #pragma omp parallel
-    {
-    int far = OpenMP::omp_get_thread_num();
-    std::cout << far << std::endl;
 
-    }
     return 0;
 }

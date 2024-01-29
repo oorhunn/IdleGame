@@ -1,0 +1,10 @@
+
+class TraderBase {
+
+public:
+
+
+private:
+
+
+};

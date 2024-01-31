@@ -325,6 +325,15 @@ DataStructuresAndAlgorithmsStudy_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 DataStructuresAndAlgorithmsStudy_SOURCE_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/DataStructuresAndAlgorithmsStudy
 
+//Value Computed by CMake
+DesignPatterns_BINARY_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/DesignPatterns
+
+//Value Computed by CMake
+DesignPatterns_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+DesignPatterns_SOURCE_DIR:STATIC=C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/DesignPatterns
+
 //The directory containing a CMake configuration file for Eigen3.
 Eigen3_DIR:PATH=Eigen3_DIR-NOTFOUND
 
@@ -620,7 +629,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=15
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

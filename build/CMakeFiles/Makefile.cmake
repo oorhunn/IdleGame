@@ -47,6 +47,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/DataStructuresAndAlgorithmsStudy/worst_hashmaps/CMakeLists.txt"
   "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeLists.txt"
   "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/DataStructuresAndAlgorithmsStudy/worst_trees/CMakeLists.txt"
+  "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/DesignPatterns/CMakeLists.txt"
   "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/EigenStuff/CMakeLists.txt"
   "CMakeFiles/3.28.0/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.0/CMakeCXXCompiler.cmake"
@@ -91,6 +92,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "DataStructuresAndAlgorithmsStudy/worst_graph/CMakeFiles/CMakeDirectoryInformation.cmake"
   "CircuitSim/CMakeFiles/CMakeDirectoryInformation.cmake"
   "EigenStuff/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "DesignPatterns/CMakeFiles/CMakeDirectoryInformation.cmake"
   "test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -116,5 +118,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CircuitSim/CMakeFiles/CircuitSiminstance.dir/DependInfo.cmake"
   "EigenStuff/CMakeFiles/EigenStuff.dir/DependInfo.cmake"
   "EigenStuff/CMakeFiles/EigenStuffinstance.dir/DependInfo.cmake"
+  "DesignPatterns/CMakeFiles/DesignPatterns.dir/DependInfo.cmake"
+  "DesignPatterns/CMakeFiles/DesignPatternsinstance.dir/DependInfo.cmake"
   "test/CMakeFiles/IdlegameTests.dir/DependInfo.cmake"
   )

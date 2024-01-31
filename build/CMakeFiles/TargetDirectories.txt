@@ -109,6 +109,15 @@ C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/EigenStuff/CMakeFiles/l
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/EigenStuff/CMakeFiles/install.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/EigenStuff/CMakeFiles/install/local.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/EigenStuff/CMakeFiles/install/strip.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/DesignPatterns/CMakeFiles/DesignPatterns.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/DesignPatterns/CMakeFiles/DesignPatternsinstance.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/DesignPatterns/CMakeFiles/test.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/DesignPatterns/CMakeFiles/edit_cache.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/DesignPatterns/CMakeFiles/rebuild_cache.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/DesignPatterns/CMakeFiles/list_install_components.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/DesignPatterns/CMakeFiles/install.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/DesignPatterns/CMakeFiles/install/local.dir
+C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/DesignPatterns/CMakeFiles/install/strip.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test/CMakeFiles/IdlegameTests.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test/CMakeFiles/test.dir
 C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test/CMakeFiles/edit_cache.dir

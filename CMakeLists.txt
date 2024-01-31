@@ -21,5 +21,6 @@ add_subdirectory(googletest)
 add_subdirectory(DataStructuresAndAlgorithmsStudy)
 add_subdirectory(CircuitSim)
 add_subdirectory(EigenStuff)
+add_subdirectory(DesignPatterns)
 
 add_subdirectory(test)

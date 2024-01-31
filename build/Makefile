@@ -431,6 +431,32 @@ EigenStuffinstance/fast:
 .PHONY : EigenStuffinstance/fast
 
 #=============================================================================
+# Target rules for targets named DesignPatterns
+
+# Build rule for target.
+DesignPatterns: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 DesignPatterns
+.PHONY : DesignPatterns
+
+# fast build rule for target.
+DesignPatterns/fast:
+	$(MAKE) $(MAKESILENT) -f DesignPatterns\CMakeFiles\DesignPatterns.dir\build.make DesignPatterns/CMakeFiles/DesignPatterns.dir/build
+.PHONY : DesignPatterns/fast
+
+#=============================================================================
+# Target rules for targets named DesignPatternsinstance
+
+# Build rule for target.
+DesignPatternsinstance: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 DesignPatternsinstance
+.PHONY : DesignPatternsinstance
+
+# fast build rule for target.
+DesignPatternsinstance/fast:
+	$(MAKE) $(MAKESILENT) -f DesignPatterns\CMakeFiles\DesignPatternsinstance.dir\build.make DesignPatterns/CMakeFiles/DesignPatternsinstance.dir/build
+.PHONY : DesignPatternsinstance/fast
+
+#=============================================================================
 # Target rules for targets named IdlegameTests
 
 # Build rule for target.
@@ -458,6 +484,8 @@ help:
 	@echo ... test
 	@echo ... CircuitSim
 	@echo ... CircuitSiminstance
+	@echo ... DesignPatterns
+	@echo ... DesignPatternsinstance
 	@echo ... EigenStuff
 	@echo ... EigenStuffinstance
 	@echo ... IdlegameTests

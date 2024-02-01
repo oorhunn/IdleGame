@@ -1,17 +1,20 @@
 #include <iostream>
 #include <vector>
-#include "./include/CompositePattern/Composite.h"
+#include "./include/StrategyPattern/Strategy.h"
 
-int main() {
-    Chassis* chassis = new Chassis("PC Chassis");
-    chassis->Add(new FloppyDisk("3.5 inch Floppy"));
-    
-    std::cout << "Chassis Name: " << chassis->Name() << std::endl;
-    std::cout << "Chassis Power: " << chassis->Power() << " watts" << std::endl;
-    std::cout << "Chassis Net Price: $" << chassis->NetPrice() << std::endl;
-    std::cout << "Chassis Discount Price: $" << chassis->DiscountPrice() << std::endl;
-    
-    delete chassis;
-    
+void clientCode()
+{
+    Context context(std::make_unique<ConcreteStrategyA>());
+    std::cout << "Client: Strategy is set to normal sorting.\n";
+    context.doSomeBusinessLogic();
+    std::cout << "\n";
+    std::cout << "Client: Strategy is set to reverse sorting.\n";
+    context.set_strategy(std::make_unique<ConcreteStrategyB>());
+    context.doSomeBusinessLogic();
+}
+
+int main()
+{
+    clientCode();
     return 0;
 }

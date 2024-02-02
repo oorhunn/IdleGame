@@ -331,6 +331,12 @@
 },
 {
   "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/DesignPatterns",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/DesignPatterns.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\DesignPatterns.dir\\src\\DecoratorPattern\\Decorator.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\DesignPatterns\\src\\DecoratorPattern\\Decorator.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/DesignPatterns/src/DecoratorPattern/Decorator.cpp",
+  "output": "DesignPatterns/CMakeFiles/DesignPatterns.dir/src/DecoratorPattern/Decorator.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/DesignPatterns",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/DesignPatternsinstance.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\DesignPatternsinstance.dir\\main.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\DesignPatterns\\main.cpp",
   "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/DesignPatterns/main.cpp",
   "output": "DesignPatterns/CMakeFiles/DesignPatternsinstance.dir/main.cpp.obj"
@@ -346,6 +352,12 @@
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/DesignPatternsinstance.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\DesignPatternsinstance.dir\\src\\StrategyPattern\\Strategy.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\DesignPatterns\\src\\StrategyPattern\\Strategy.cpp",
   "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/DesignPatterns/src/StrategyPattern/Strategy.cpp",
   "output": "DesignPatterns/CMakeFiles/DesignPatternsinstance.dir/src/StrategyPattern/Strategy.cpp.obj"
+},
+{
+  "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/DesignPatterns",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/DesignPatternsinstance.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\DesignPatternsinstance.dir\\src\\DecoratorPattern\\Decorator.cpp.obj -c C:\\Users\\aorhun.demiroglu\\workspace\\codes\\IdleGame\\DesignPatterns\\src\\DecoratorPattern\\Decorator.cpp",
+  "file": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/DesignPatterns/src/DecoratorPattern/Decorator.cpp",
+  "output": "DesignPatterns/CMakeFiles/DesignPatternsinstance.dir/src/DecoratorPattern/Decorator.cpp.obj"
 },
 {
   "directory": "C:/Users/aorhun.demiroglu/workspace/codes/IdleGame/build/test",

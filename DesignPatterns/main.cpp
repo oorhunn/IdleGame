@@ -3,7 +3,9 @@
 #include <array>
 #include "./include/DecoratorPattern/Decorator.h"
 
-
+void ClientCode(Component* component) {
+    std::cout << "RESULT: " << component->Operation();
+}
 
 int main()
 {

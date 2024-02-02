@@ -39,9 +39,7 @@ public:
     std::string Operation() const override;
 };
 
-void ClientCode(Component* component) {
-    std::cout << "RESULT: " << component->Operation();
-}
+
 
 // int main() {
 

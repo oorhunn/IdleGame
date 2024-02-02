@@ -2,6 +2,10 @@
 
 
 
+ConcreteComponent::ConcreteComponent() {
+    std::cout << "concreate component here \n"; 
+}
+
 std::string ConcreteComponent::Operation() const {
     return "ConcreteComponent";
 }
@@ -23,6 +27,7 @@ ConcreteDecoratorA::ConcreteDecoratorA(Component* component) :
 }
 
 std::string ConcreteDecoratorA::Operation() const {
+    std::cout << "decorator A is here  \n";
     return "ConcreteDecoratorA(" + Decorator::Operation() + ")";
 }
 

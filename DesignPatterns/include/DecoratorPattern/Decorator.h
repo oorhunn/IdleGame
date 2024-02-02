@@ -13,6 +13,7 @@ public:
 
 class ConcreteComponent : public Component {
 public:
+    ConcreteComponent();
     std::string Operation() const override;
 };
 
@@ -41,24 +42,32 @@ public:
 
 
 
-// int main() {
+// void ClientCode(Component* component) {
+//     std::cout << "RESULT: " << component->Operation();
+// }
 
-// Component* simple = new ConcreteComponent;
-// std::cout << "Client: I've got a simple component:\n";
-// ClientCode(simple);
-// std::cout << "\n\n";
+// int main()
+// {
 
-// Component* decorator1 = new ConcreteDecoratorA(simple);
-// Component* decorator2 = new ConcreteDecoratorB(decorator1);
-// std::cout << "Client: Now I've got a decorated component:\n";
-// ClientCode(decorator2);
-// std::cout << "\n";
+//     Component* simple = new ConcreteComponent;
+//     std::cout << "Client: I've got a simple component:\n";
+//     ClientCode(simple);
+//     std::cout << "\n\n";
 
-// delete simple;
-// delete decorator1;
-// delete decorator2;
+//     Component* decorator1 = new ConcreteDecoratorA(simple);
+//     ClientCode(decorator1);
 
-// return 0;
+//     Component* decorator2 = new ConcreteDecoratorB(decorator1);
+//     std::cout << "Client: Now I've got a decorated component:\n";
+//     ClientCode(decorator2);
+//     std::cout << "\n";
+
+//     delete simple;
+//     delete decorator1;
+//     delete decorator2;
+
+
+//     return 0;
 // }
 
 

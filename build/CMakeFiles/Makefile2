@@ -914,8 +914,8 @@ DesignPatterns/CMakeFiles/DesignPatternsinstance.dir/clean:
 # Target rules for target test/CMakeFiles/IdlegameTests.dir
 
 # All Build rule for target.
-test/CMakeFiles/IdlegameTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 test/CMakeFiles/IdlegameTests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
+test/CMakeFiles/IdlegameTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 test/CMakeFiles/IdlegameTests.dir/all: DataStructuresAndAlgorithmsStudy/worst_algorithms/CMakeFiles/worstAlgorithms.dir/all
 test/CMakeFiles/IdlegameTests.dir/all: DataStructuresAndAlgorithmsStudy/worst_priority_queues/CMakeFiles/worstPriorityQueuesLib.dir/all
 test/CMakeFiles/IdlegameTests.dir/all: DataStructuresAndAlgorithmsStudy/worst_trees/CMakeFiles/worstTrees.dir/all

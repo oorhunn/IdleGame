@@ -4,18 +4,21 @@
 #include <map>
 #include <algorithm>
 #include <unordered_map>
-#include "./include/AbstractPattern/Abstract.h"
-
+#include "./include/BridgePattern/Bridge.h"
 
 int main() {
-    std::cout << "Client: Testing client code with the first factory type:\n";
-    ConcreteFactory1 *f1 = new ConcreteFactory1();
-    ClientCode(*f1);
-    delete f1;
+    Implementation* implementation = new ConcreteImplementationA;
+    Abstraction* abstraction = new Abstraction(implementation);
+    ClientCode(*abstraction);
     std::cout << std::endl;
-    std::cout << "Client: Testing the same client code with the second factory type:\n";
-    ConcreteFactory2 *f2 = new ConcreteFactory2();
-    ClientCode(*f2);
-    delete f2;
+    delete implementation;
+    delete abstraction;
+
+    implementation = new ConcreteImplementationB;
+    abstraction = new ExtendedAbstraction(implementation);
+    ClientCode(*abstraction);
+    delete implementation;
+    delete abstraction;
+
     return 0;
 }

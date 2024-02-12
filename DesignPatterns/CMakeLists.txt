@@ -7,6 +7,8 @@ set(Sources
     src/StrategyPattern/Strategy.cpp
     src/DecoratorPattern/Decorator.cpp
     src/AbstractPattern/Abstract.cpp
+    src/BridgePattern/Bridge.cpp
+
 
 )
 
@@ -17,6 +19,7 @@ target_include_directories(${This} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include/Co
 target_include_directories(${This} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include/StrategyPattern/)
 target_include_directories(${This} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include/DecoratorPattern/)
 target_include_directories(${This} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include/AbstractPattern/)
+target_include_directories(${This} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include/BridgePattern/)
 
 
 # target_include_directories(${This} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include/CompositePattern/)

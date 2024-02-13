@@ -8,7 +8,7 @@ set(Sources
     src/DecoratorPattern/Decorator.cpp
     src/AbstractPattern/Abstract.cpp
     src/BridgePattern/Bridge.cpp
-
+    src/IteratorPattern/Iterator.cpp
 
 )
 
@@ -20,7 +20,7 @@ target_include_directories(${This} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include/St
 target_include_directories(${This} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include/DecoratorPattern/)
 target_include_directories(${This} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include/AbstractPattern/)
 target_include_directories(${This} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include/BridgePattern/)
-
+target_include_directories(${This} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include/IteratorPattern/)
 
 # target_include_directories(${This} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include/CompositePattern/)
 

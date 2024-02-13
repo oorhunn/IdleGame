@@ -7,10 +7,10 @@
 #include <string>
 
 
-#include "./include/BridgePattern/Bridge.h"
+#include "./include/IteratorPattern/Iterator.h"
 
 
 int main() {
-
+    ClientCode();
     return 0;
 }
